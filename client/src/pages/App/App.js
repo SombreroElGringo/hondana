@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 import logo from '../../assets/images/logo.svg';
 import './App.css';
+import {connect} from "react-redux";
+import getAppName from "../../redux/selectors/app/getAppName";
+import {bindActionCreators} from "redux";
+import {setAppName} from "../../redux/actions/app";
 
 
 class App extends Component {
+	componentDidMount(){
+		const {setAppName} = this.props;
+		setTimeout(() => setAppName('SNCF-PLOP'), 3000)
+	}
   render() {
+		const {appName} = this.props;
+
     return (
       <div className="App">
         <header className="App-header">
@@ -18,7 +28,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            {appName}
           </a>
         </header>
       </div>
@@ -26,4 +36,12 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+	appName: getAppName(state)
+});
+
+const mapDispatchToProps = (dispatch) => bindActionCreators({
+	setAppName
+}, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
