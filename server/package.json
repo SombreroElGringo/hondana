@@ -16,6 +16,7 @@
     "@nestjs/common": "^5.4.0",
     "@nestjs/core": "^5.4.0",
     "@nestjs/microservices": "^5.4.0",
+    "@nestjs/swagger": "^2.5.1",
     "@nestjs/testing": "^5.4.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.3",
