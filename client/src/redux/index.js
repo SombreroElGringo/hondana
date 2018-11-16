@@ -1,21 +1,18 @@
-import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
-import appReducer from './reducers/app'
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import appReducer from './reducers/app';
 import thunk from 'redux-thunk';
-import {createLogger} from 'redux-logger'
+import { createLogger } from 'redux-logger';
 
 const reducer = combineReducers({
-	app: appReducer
+  app: appReducer,
 });
 
 const logger = createLogger({
-	duration: true,
-	diff: true,
+  duration: true,
+  diff: true,
 });
 
-const middlewares = [
-	thunk,
-	logger
-];
+const middlewares = [thunk, logger];
 
 const enhancer = applyMiddleware(...middlewares);
 
