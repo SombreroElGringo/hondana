@@ -25,7 +25,7 @@ export class StationService {
               commune: item.fields.commune,
               code_ligne: item.fields.code_ligne,
               coordonnees_geographiques: item.fields.coordonnees_geographiques,
-            }; 
+            };
             stations.push(station);
           });
         }
