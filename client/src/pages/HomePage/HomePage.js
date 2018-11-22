@@ -12,7 +12,7 @@ class HomePage extends Component {
     const { stations, fetchStations } = this.props;
 
     return (
-      <div className={'container'} id={'homepage'}>
+      <div className="container" id={'homepage'}>
         <SearchStation fetchStations={fetchStations} stations={stations} />
         <StationsList stations={stations} />
       </div>

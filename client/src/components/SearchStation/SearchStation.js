@@ -15,7 +15,7 @@ class SearchStation extends React.Component {
   render() {
     const { stations } = this.props;
     return (
-      <div className={'search-station'}>
+      <div className="search-station">
         <form
           onSubmit={e => {
             e.preventDefault();
@@ -26,11 +26,11 @@ class SearchStation extends React.Component {
             <input
               className="form-control"
               type="text"
-              placeholder={'Renseignez votre gare'}
+              placeholder="Renseignez votre gare"
             />
-            <button className={'btn btn-info'} type={'submit'}>
+            <button className="btn btn-info" type="submit">
               {stations === undefined ? (
-                <i className={'fa fa-spinner fa-spin'} />
+                <i className="fa fa-spinner fa-spin" />
               ) : (
                 'Rechercher'
               )}

@@ -9,7 +9,7 @@ class Station extends React.Component {
     return (
       <Link
         key={station.id}
-        className={'col-md-4 station'}
+        className="col-md-4 station"
         to={{ pathname: '/gare/' + station.id }}
       >
         <div className="station-image">
