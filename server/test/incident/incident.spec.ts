@@ -27,14 +27,14 @@ describe("Module incident", () => {
   it(`/GET (/incident)`, () => {
     return request(server)
       .get("/incident")
-      .expect('Content-Type', /json/)
+      .expect("Content-Type", /json/)
       .expect(200);
   });
 
   it(`/GET (/incident?query)`, () => {
     return request(server)
       .get("/incident?sort=date&refine.date=2018/09/29")
-      .expect('Content-Type', /json/)
+      .expect("Content-Type", /json/)
       .expect(200);
   });
 
