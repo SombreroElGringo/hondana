@@ -21,8 +21,8 @@ class StationsList extends React.Component {
           </div>
         ) : (
           <div className="row">
-            {stations.map(station => (
-              <Station key={station.id} station={station} />
+            {stations.map((station, index) => (
+              <Station key={station.id} station={station} index={index}/>
             ))}
           </div>
         )}
