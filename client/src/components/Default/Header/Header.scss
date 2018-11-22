@@ -1,0 +1,35 @@
+header {
+  border-bottom: 1px solid gray;
+  nav {
+    height: 50px;
+    display: flex;
+    > div {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      white-space: nowrap;
+      &.brand {
+        a {
+          color: black;
+        }
+      }
+      a {
+        color: gray;
+        text-decoration: none;
+        &:hover {
+          color: rgba(black, 0.8);
+        }
+        &:active {
+          color: black;
+        }
+      }
+      &:not(:last-child) {
+        padding-right: 20px;
+      }
+    }
+    .logo {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Default/Header/Header';
 import BookPage from '../BookPage/BookPage';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header />
+          <Header/>
           <Switch>
             <Route component={HomePage} exact path="/" />
             <Route component={BookPage} exact path="/books/search/:query" />
