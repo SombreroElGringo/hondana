@@ -1,13 +1,9 @@
 import { Controller, Get, HttpStatus, Query, Response } from "@nestjs/common";
-import { ClientProxy, Client, Transport } from "@nestjs/microservices";
 import { IncidentService } from "./incident.service";
 
-@Controller("incident")
+@Controller("incidents")
 export class IncidentController {
   constructor(private readonly incidentService: IncidentService) {}
-
-  @Client({ transport: Transport.TCP })
-  client: ClientProxy;
 
   @Get()
   async getAllIncidents(@Response() res, @Query() query): Promise<any> {
