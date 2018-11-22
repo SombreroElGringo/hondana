@@ -35,5 +35,5 @@ export const fetchStations = query => dispatch => {
         },
       ],
     });
-  }, 2000);
+  }, 500);
 };

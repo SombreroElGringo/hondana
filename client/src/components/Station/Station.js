@@ -4,12 +4,15 @@ import './Station.css';
 
 class Station extends React.Component {
   render() {
-    const { station } = this.props;
+    const { station, index } = this.props;
 
     return (
       <Link
         key={station.id}
-        className="col-md-4 station"
+        className="col-md-4 station animated fadeInUp"
+        style={{
+        	animationDelay: (index)+'00ms'
+        }}
         to={{ pathname: '/gare/' + station.id }}
       >
         <div className="station-image">
