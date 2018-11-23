@@ -16,8 +16,10 @@
     "@nestjs/common": "^5.4.0",
     "@nestjs/core": "^5.4.0",
     "@nestjs/microservices": "^5.4.0",
+    "@nestjs/mongoose": "^5.2.2",
     "@nestjs/swagger": "^2.5.1",
     "@nestjs/testing": "^5.4.0",
+    "mongoose": "^5.3.13",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.3",
     "typescript": "^3.1.6"
