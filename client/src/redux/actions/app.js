@@ -5,7 +5,7 @@ export const setAppName = newName => ({
   payload: newName,
 });
 
-export const fetchBooks = query => dispatch => {
+export const fetchBooks = (title, categories) => dispatch => {
   dispatch({ type: FETCH_BOOKS });
   setTimeout(() => {
     dispatch({

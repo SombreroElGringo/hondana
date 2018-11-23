@@ -9,7 +9,6 @@ const reducer = combineReducers({
 
 const logger = createLogger({
   duration: true,
-  diff: true,
 });
 
 const middlewares = [thunk, logger];

@@ -13,7 +13,7 @@ class Book extends React.Component {
         style={{
           animationDelay: index + '00ms',
         }}
-        to={{ pathname: '/gare/' + book.id }}
+        to={{ pathname: '/livres/' + book.id }}
       >
         <div className="book-image">
           <img src={book.image} alt={book.name} />
