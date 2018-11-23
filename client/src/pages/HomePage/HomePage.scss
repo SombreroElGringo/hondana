@@ -4,4 +4,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  .homepage_image {
+    width: 100%;
+    max-width: 320px;
+  }
 }

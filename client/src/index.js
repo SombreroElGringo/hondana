@@ -5,6 +5,8 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import store from './redux';
 
+console.clear();
+
 class Main extends React.Component {
   render() {
     return (

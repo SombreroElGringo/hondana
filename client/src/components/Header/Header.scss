@@ -1,0 +1,42 @@
+header {
+  //border-bottom: 1px solid gray;
+  nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    .right,
+    .left {
+      display: flex;
+      > div {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        white-space: nowrap;
+        justify-content: flex-start;
+        &:not(:first-child) {
+          padding-left: 20px;
+        }
+        &.brand {
+          a {
+            color: black;
+            font-weight: bold;
+          }
+        }
+        a {
+          color: gray;
+          text-decoration: none;
+          &:hover {
+            color: rgba(black, 0.8);
+          }
+          &:active {
+            color: black;
+          }
+        }
+      }
+    }
+    .logo {
+      height: 100%;
+    }
+  }
+}

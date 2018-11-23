@@ -1,45 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import { connect } from 'react-redux';
-import getAppName from '../../redux/selectors/app/getAppName';
-import { bindActionCreators } from 'redux';
-import { setAppName } from '../../redux/actions/app';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
-import Link from 'react-router-dom/es/Link';
+import Header from '../../components/Header/Header';
 import BookPage from '../BookPage/BookPage';
 
 class App extends Component {
-  componentDidMount() {
-    const { setAppName } = this.props;
-    setTimeout(() => setAppName('SNCF-PLOP'), 3000);
-  }
-
   render() {
     return (
       <Router>
         <div className="App">
-          <header>
-            <nav>
-              <div className="brand">
-                <div>
-                  <img
-                    className="logo"
-                    src="https://png2.kisspng.com/20180303/ede/kisspng-train-station-rail-transport-tgv-logo-high-speed-train-logo-5a9b35fd96c683.4309293215201213416176.png"
-                    alt=""
-                  />
-                </div>
-                <div>SNCF Live</div>
-              </div>
-              <div>
-                <Link to={'/'}>Home</Link>
-              </div>
-            </nav>
-          </header>
+          <Header />
           <Switch>
             <Route component={HomePage} exact path="/" />
-            <Route component={BookPage} exact path="/livre/:id([0-9]+)" />
+            <Route component={BookPage} exact path="/books/search/:query" />
             <Route component={NotFoundPage} />
           </Switch>
         </div>
@@ -48,19 +23,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  appName: getAppName(state),
-});
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      setAppName,
-    },
-    dispatch
-  );
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default App;
