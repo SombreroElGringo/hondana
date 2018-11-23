@@ -1,21 +1,21 @@
 import React from 'react';
-import './SearchStation.css';
+import './SearchBook.css';
 
-class SearchStation extends React.Component {
+class SearchBook extends React.Component {
   submitHandler() {
-    const { fetchStations } = this.props;
-    fetchStations();
+    const { fetchBooks } = this.props;
+    fetchBooks();
   }
 
   componentDidMount() {
-    const { fetchStations } = this.props;
-    fetchStations();
+    const { fetchBooks } = this.props;
+    fetchBooks();
   }
 
   render() {
-    const { stations } = this.props;
+    const { books } = this.props;
     return (
-      <div className="search-station">
+      <div className="search-book">
         <form
           onSubmit={e => {
             e.preventDefault();
@@ -29,7 +29,7 @@ class SearchStation extends React.Component {
               placeholder="Renseignez votre gare"
             />
             <button className="btn btn-info" type="submit">
-              {stations === undefined ? (
+              {books === undefined ? (
                 <i className="fa fa-spinner fa-spin" />
               ) : (
                 'Rechercher'
@@ -42,4 +42,4 @@ class SearchStation extends React.Component {
   }
 }
 
-export default SearchStation;
+export default SearchBook;

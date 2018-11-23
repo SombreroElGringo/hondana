@@ -1,23 +1,22 @@
 import { Map } from 'immutable';
 import {
-  FETCH_STATIONS,
-  FETCH_STATIONS_FAIL,
-  FETCH_STATIONS_SUCCESS,
+  FETCH_BOOKS,
+  FETCH_BOOKS_FAIL,
+  FETCH_BOOKS_SUCCESS,
   SET_APP_NAME,
 } from '../consts/app';
 
 const initState = Map({
   appName: 'SNCF-LIVE',
-  stations: null,
+  books: null,
 });
 
 const handlers = {
   [SET_APP_NAME]: (state, action) => state.set('appName', action.payload),
 
-  [FETCH_STATIONS]: state => state.set('stations', undefined),
-  [FETCH_STATIONS_SUCCESS]: (state, action) =>
-    state.set('stations', action.payload),
-  [FETCH_STATIONS_FAIL]: state => state.set('stations', null),
+  [FETCH_BOOKS]: state => state.set('books', undefined),
+  [FETCH_BOOKS_SUCCESS]: (state, action) => state.set('books', action.payload),
+  [FETCH_BOOKS_FAIL]: state => state.set('books', null),
 };
 
 export default (state = initState, action) => {

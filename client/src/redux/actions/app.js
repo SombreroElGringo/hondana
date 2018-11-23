@@ -1,19 +1,15 @@
-import {
-  FETCH_STATIONS,
-  FETCH_STATIONS_SUCCESS,
-  SET_APP_NAME,
-} from '../consts/app';
+import { FETCH_BOOKS, FETCH_BOOKS_SUCCESS, SET_APP_NAME } from '../consts/app';
 
 export const setAppName = newName => ({
   type: SET_APP_NAME,
   payload: newName,
 });
 
-export const fetchStations = query => dispatch => {
-  dispatch({ type: FETCH_STATIONS });
+export const fetchBooks = query => dispatch => {
+  dispatch({ type: FETCH_BOOKS });
   setTimeout(() => {
     dispatch({
-      type: FETCH_STATIONS_SUCCESS,
+      type: FETCH_BOOKS_SUCCESS,
       payload: [
         {
           id: 1,

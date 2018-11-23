@@ -1,8 +1,8 @@
-.station {
+.book {
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
-    .station-image {
+    .book-image {
       img {
         filter: grayscale(0);
       }
@@ -10,10 +10,10 @@
   }
   &:active {
     transform: scale(1.025);
-    .station-image {
+    .book-image {
     }
   }
-  .station-image {
+  .book-image {
     padding-top: 100%;
     position: relative;
     width: 100%;
