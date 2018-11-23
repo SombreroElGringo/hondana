@@ -7,6 +7,7 @@ import {
   Body,
   Param,
   Query,
+  Put,
 } from "@nestjs/common";
 import { AuthorService } from "./author.service";
 import { Author } from "./models/author.interface";
@@ -17,19 +18,19 @@ export class AuthorController {
 
   @Post()
   async createAuthor(@Response() res, @Body() body) {
-    if (!body.initialize) {
+    if (body) {
       const author: Author = {
         name: body.name,
         biography: body.biography,
         profileImageUrl: body.profileImageUrl,
       };
       await this.authorService.createAuthor(author);
-      res.status(HttpStatus.OK).json(author);
+      res.status(HttpStatus.CREATED).json(author);
     } else {
-      await this.authorService.initializeAuthors();
-      res
-        .status(HttpStatus.OK)
-        .json({ msg: "Success the authors are initialized in the DB!" });
+      res.status(HttpStatus.BAD_REQUEST).json({
+        status: HttpStatus.BAD_REQUEST,
+        message: "Please renseign the body!",
+      });
     }
   }
 
@@ -43,5 +44,36 @@ export class AuthorController {
   async getAuthorById(@Response() res, @Param() param): Promise<any> {
     const author = await this.authorService.findById(param.id);
     res.status(HttpStatus.OK).json(author);
+  }
+
+  @Put(":id")
+  async editAuthor(@Response() res, @Param() param, @Body() body) {
+    if (body) {
+      const POSSIBLE_KEYS = ["name", "biography", "profileImageUrl"];
+      let queryArgs = {};
+
+      Object.keys(body).forEach(key => {
+        if (~POSSIBLE_KEYS.indexOf(key)) {
+          queryArgs[key] = body[key];
+        }
+      });
+
+      if (!queryArgs) {
+        return res.status(HttpStatus.BAD_REQUEST).json({
+          status: HttpStatus.BAD_REQUEST,
+          message: "Please renseign valid parameters!",
+        });
+      }
+
+      await this.authorService.editAuthor(param.id, queryArgs);
+      res
+        .status(HttpStatus.OK)
+        .json({ status: HttpStatus.OK, message: "Author edited!" });
+    } else {
+      res.status(HttpStatus.BAD_REQUEST).json({
+        status: HttpStatus.BAD_REQUEST,
+        message: "Please renseign the body!",
+      });
+    }
   }
 }

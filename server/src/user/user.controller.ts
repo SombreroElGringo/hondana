@@ -17,7 +17,7 @@ export class UserController {
 
   @Post()
   async createUser(@Response() res, @Body() body) {
-    if (!body.initialize) {
+    if (body) {
       const user: User = {
         pseudo: body.name,
         password: body.password,
@@ -26,12 +26,12 @@ export class UserController {
         comments: body.comments,
       };
       await this.userService.createUser(user);
-      res.status(HttpStatus.OK).json(user);
+      res.status(HttpStatus.CREATED).json(user);
     } else {
-      await this.userService.initializeUsers();
-      res
-        .status(HttpStatus.OK)
-        .json({ msg: "Success the users are initialized in the DB!" });
+      res.status(HttpStatus.BAD_REQUEST).json({
+        status: HttpStatus.BAD_REQUEST,
+        message: "Please renseign the body!",
+      });
     }
   }
 

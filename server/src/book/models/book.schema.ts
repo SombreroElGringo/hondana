@@ -1,19 +1,16 @@
 import * as mongoose from "mongoose";
 
+mongoose.set("useCreateIndex", true);
+
 export const BookSchema = new mongoose.Schema(
   {
-    isbn: { type: String, unique: true },
+    isbn10: { type: String, unique: true },
+    isbn13: { type: String, unique: true },
     title: String,
     authors: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Author",
-      },
-    ],
-    owners: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
       },
     ],
     description: String,
@@ -27,7 +24,7 @@ export const BookSchema = new mongoose.Schema(
       favorites: Number,
       likes: Number,
     },
-    hidden: Boolean,
+    hidden: { type: Boolean, default: false },
   },
   { timestamps: true },
 );

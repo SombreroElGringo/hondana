@@ -1,5 +1,5 @@
 export class Comment {
-  public rating: string;
+  public rating: number;
   public message: string;
   public createdAt?: Date;
 }

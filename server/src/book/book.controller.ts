@@ -17,9 +17,10 @@ export class BookController {
 
   @Post()
   async createBook(@Response() res, @Body() body) {
-    if (!body.initialize) {
+    if (body) {
       const book: Book = {
-        isbn: body.isbn,
+        isbn10: body.isbn10,
+        isbn13: body.isbn13,
         title: body.title,
         authors: body.authors,
         coverImageUrl: body.coverImageUrl,
@@ -31,12 +32,12 @@ export class BookController {
         hidden: body.hidden,
       };
       await this.bookService.createBook(book);
-      res.status(HttpStatus.OK).json(book);
+      res.status(HttpStatus.CREATED).json(book);
     } else {
-      await this.bookService.initializeBooks();
-      res
-        .status(HttpStatus.OK)
-        .json({ msg: "Success the books are initialized in the DB!" });
+      res.status(HttpStatus.BAD_REQUEST).json({
+        status: HttpStatus.BAD_REQUEST,
+        message: "Please renseign the body!",
+      });
     }
   }
 

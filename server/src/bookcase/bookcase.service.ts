@@ -24,7 +24,11 @@ export class BookcaseService {
     return await this.bookcaseModel.findOne({ _id: new ObjectId(id) });
   }
 
-  async initializeBookcases() {
-    return null;
+  async initializeBookcases(bookcase: Bookcase) {
+    return await this.createBookcase(bookcase);
+  }
+
+  async cleanBookcase() {
+    return await this.bookcaseModel.deleteMany().exec();
   }
 }

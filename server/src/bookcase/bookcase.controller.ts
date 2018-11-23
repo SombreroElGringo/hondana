@@ -17,19 +17,18 @@ export class BookcaseController {
 
   @Post()
   async createBookcase(@Response() res, @Body() body) {
-    if (!body.initialize) {
+    if (body) {
       const bookcase: Bookcase = {
-        name: body.name,
-        biography: body.biography,
-        profileImageUrl: body.profileImageUrl,
+        owner: body.owner,
+        books: body.books,
       };
       await this.bookcaseService.createBookcase(bookcase);
-      res.status(HttpStatus.OK).json(bookcase);
+      res.status(HttpStatus.CREATED).json(bookcase);
     } else {
-      await this.bookcaseService.initializeBookcases();
-      res
-        .status(HttpStatus.OK)
-        .json({ msg: "Success the bookcases are initialized in the DB!" });
+      res.status(HttpStatus.BAD_REQUEST).json({
+        status: HttpStatus.BAD_REQUEST,
+        message: "Please renseign the body!",
+      });
     }
   }
 

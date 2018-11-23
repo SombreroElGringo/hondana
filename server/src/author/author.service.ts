@@ -1,9 +1,8 @@
 import { Model, ObjectId } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
-import { get } from "../common/http/http";
-import * as qs from "querystring";
 import { Author } from "./models/author.interface";
+import { authors as authorsMockup } from "./mockup/author.mockup";
 
 @Injectable()
 export class AuthorService {
@@ -21,10 +20,20 @@ export class AuthorService {
   }
 
   async findById(id: string): Promise<Author> {
-    return await this.authorModel.findOne({ _id: new ObjectId(id) });
+    return await this.authorModel.findOne({ _id: new ObjectId(id) }).exec();
+  }
+
+  async editAuthor(id: string, params: Object): Promise<Author> {
+    return await this.authorModel
+      .update({ _id: new ObjectId(id) }, { $set: params })
+      .exec();
   }
 
   async initializeAuthors() {
-    return null;
+    return await authorsMockup.map(author => this.createAuthor(author));
+  }
+
+  async cleanAuthors() {
+    return await this.authorModel.deleteMany().exec();
   }
 }

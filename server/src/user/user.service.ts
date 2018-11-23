@@ -1,9 +1,8 @@
 import { Model, ObjectId } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
-import { get } from "../common/http/http";
-import * as qs from "querystring";
 import { User } from "./models/user.interface";
+import { users as usersMockup } from "./mockup/user.mockup";
 
 @Injectable()
 export class UserService {
@@ -27,6 +26,10 @@ export class UserService {
   }
 
   async initializeUsers() {
-    return null;
+    return await usersMockup.map(user => this.createUser(user));
+  }
+
+  async cleanUsers() {
+    return await this.userModel.deleteMany().exec();
   }
 }

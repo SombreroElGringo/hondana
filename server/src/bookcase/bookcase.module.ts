@@ -10,5 +10,6 @@ import { BookcaseSchema } from "./models/bookcase.schema";
   ],
   controllers: [BookcaseController],
   providers: [BookcaseService],
+  exports: [BookcaseService],
 })
 export class BookcaseModule {}
