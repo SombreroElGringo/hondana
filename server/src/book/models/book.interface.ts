@@ -4,7 +4,7 @@ import { Comment } from "./comment.interface";
 export class Book {
   public isbn: string;
   public title: string;
-  public author: string[];
+  public authors: string[];
   public owners?: string[];
   public description: string;
   public coverImageUrl: string;

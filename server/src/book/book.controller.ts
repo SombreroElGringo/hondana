@@ -21,7 +21,7 @@ export class BookController {
       const book: Book = {
         isbn: body.isbn,
         title: body.title,
-        author: body.author,
+        authors: body.authors,
         coverImageUrl: body.coverImageUrl,
         categories: body.categories,
         description: body.description,
