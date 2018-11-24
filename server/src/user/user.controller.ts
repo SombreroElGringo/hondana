@@ -19,7 +19,7 @@ export class UserController {
   async createUser(@Response() res, @Body() body) {
     if (body) {
       const user: User = {
-        pseudo: body.name,
+        pseudo: body.pseudo,
         password: body.password,
         email: body.email,
         profileImageUrl: body.profileImageUrl,
@@ -45,5 +45,17 @@ export class UserController {
   async getUserById(@Response() res, @Param() param): Promise<any> {
     const user = await this.userService.findById(param.id);
     res.status(HttpStatus.OK).json(user);
+  }
+
+  @Post(":id/comments")
+  async commentUser(
+    @Response() res,
+    @Param() param,
+    @Body() body,
+  ): Promise<any> {
+    await this.userService.commentUser(param.id, body.comment);
+    res
+      .status(HttpStatus.OK)
+      .json({ status: HttpStatus.OK, message: "User commented!" });
   }
 }

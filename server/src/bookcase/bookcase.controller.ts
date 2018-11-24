@@ -7,6 +7,7 @@ import {
   Body,
   Param,
   Query,
+  Delete,
 } from "@nestjs/common";
 import { BookcaseService } from "./bookcase.service";
 import { Bookcase } from "./models/bookcase.interface";
@@ -42,5 +43,54 @@ export class BookcaseController {
   async getBookcaseById(@Response() res, @Param() param): Promise<any> {
     const bookcase = await this.bookcaseService.findById(param.id);
     res.status(HttpStatus.OK).json(bookcase);
+  }
+
+  @Post(":id/books")
+  async addBookInBookcase(
+    @Response() res,
+    @Param() param,
+    @Body() body,
+  ): Promise<any> {
+    await this.bookcaseService.addBookInBookcase(
+      param.id,
+      body.bookId,
+      body.isAvailable,
+    );
+    res
+      .status(HttpStatus.OK)
+      .json({ status: HttpStatus.OK, message: "Book added in the Bookcase!" });
+  }
+
+  @Delete(":id/books")
+  async removeBookFromBookcase(
+    @Response() res,
+    @Param() param,
+    @Body() body,
+  ): Promise<any> {
+    await this.bookcaseService.removeBookFromBookcase(
+      param.id,
+      body.bookId,
+      body.isAvailable,
+    );
+    res.status(HttpStatus.OK).json({
+      status: HttpStatus.OK,
+      message: "Book removed from the Bookcase!",
+    });
+  }
+
+  @Post(":id/books/:bookId")
+  async changeBookAviability(
+    @Response() res,
+    @Param() param,
+    @Body() body,
+  ): Promise<any> {
+    await this.bookcaseService.changeBookAviability(
+      param.id,
+      param.bookId,
+      body.isAvailable,
+    );
+    res
+      .status(HttpStatus.OK)
+      .json({ status: HttpStatus.OK, message: "Book aviability changed!" });
   }
 }

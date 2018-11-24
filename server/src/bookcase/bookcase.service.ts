@@ -24,6 +24,31 @@ export class BookcaseService {
     return await this.bookcaseModel.findOne({ _id: new ObjectId(id) });
   }
 
+  async addBookInBookcase(id: string, bookId: string, isAvailable: boolean) {
+    return await this.bookcaseModel.update(
+      { _id: new ObjectId(id) },
+      { $push: { books: { bookId: bookId, isAvailable: isAvailable } } },
+    );
+  }
+
+  async removeBookFromBookcase(
+    id: string,
+    bookId: string,
+    isAvailable: boolean,
+  ) {
+    return await this.bookcaseModel.update(
+      { _id: new ObjectId(id) },
+      { $pull: { books: { bookId: bookId, isAvailable: isAvailable } } },
+    );
+  }
+
+  async changeBookAviability(id: string, bookId: string, isAvailable: boolean) {
+    return await this.bookcaseModel.update(
+      { _id: new ObjectId(id), "books.bookId": new ObjectId(bookId) },
+      { $set: { books: { isAvailable: isAvailable } } },
+    );
+  }
+
   async initializeBookcases(bookcase: Bookcase) {
     return await this.createBookcase(bookcase);
   }

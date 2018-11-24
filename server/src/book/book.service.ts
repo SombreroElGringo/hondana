@@ -73,7 +73,7 @@ export class BookService {
       .exec();
   }
 
-  async commentAnBook(id: string, comment: string) {
+  async commentAnBook(id: string, comment: object) {
     return await this.bookModel.update(
       { _id: new ObjectId(id) },
       { $push: { comments: comment } },

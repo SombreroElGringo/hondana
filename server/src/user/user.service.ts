@@ -25,6 +25,13 @@ export class UserService {
     return await this.userModel.findOne({ pseudo: pseudo });
   }
 
+  async commentUser(id: string, comment: object) {
+    return await this.userModel.update(
+      { _id: new ObjectId(id) },
+      { $push: { comments: comment } },
+    );
+  }
+
   async initializeUsers() {
     return await usersMockup.map(user => this.createUser(user));
   }

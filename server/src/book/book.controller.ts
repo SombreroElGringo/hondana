@@ -88,8 +88,12 @@ export class BookController {
   }
 
   @Post(":id/comments")
-  async commentAnBook(@Response() res, @Param() param): Promise<any> {
-    await this.bookService.commentAnBook(param.id, param.comment);
+  async commentAnBook(
+    @Response() res,
+    @Param() param,
+    @Body() body,
+  ): Promise<any> {
+    await this.bookService.commentAnBook(param.id, body.comment);
     res
       .status(HttpStatus.OK)
       .json({ status: HttpStatus.OK, message: "Book commented!" });
