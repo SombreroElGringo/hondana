@@ -56,7 +56,9 @@ export class BookController {
   @Post(":id/likes/:pseudo")
   async likeBook(@Response() res, @Param() param): Promise<any> {
     const action = await this.bookService.likeBook(param.id, param.pseudo);
-    res.status(HttpStatus.OK).json({status: HttpStatus.OK, message: `Book ${action}!`});
+    res
+      .status(HttpStatus.OK)
+      .json({ status: HttpStatus.OK, message: `Book ${action}!` });
   }
 
   @Get("likes/:pseudo")
@@ -67,13 +69,29 @@ export class BookController {
 
   @Post(":id/favorites/:pseudo")
   async addBookToYourFavorites(@Response() res, @Param() param): Promise<any> {
-    const action = await this.bookService.addBookToYourFavorites(param.id, param.pseudo);
-    res.status(HttpStatus.OK).json({status: HttpStatus.OK, message: `Book ${action}!`});
+    const action = await this.bookService.addBookToYourFavorites(
+      param.id,
+      param.pseudo,
+    );
+    res
+      .status(HttpStatus.OK)
+      .json({ status: HttpStatus.OK, message: `Book ${action}!` });
   }
 
   @Get("favorites/:pseudo")
-  async getBookInFavoritesByUser(@Response() res, @Param() param): Promise<any> {
+  async getBookInFavoritesByUser(
+    @Response() res,
+    @Param() param,
+  ): Promise<any> {
     const books = await this.bookService.findBooksInFavorites(param.pseudo);
     res.status(HttpStatus.OK).json(books);
+  }
+
+  @Post(":id/comments")
+  async commentAnBook(@Response() res, @Param() param): Promise<any> {
+    await this.bookService.commentAnBook(param.id, param.comment);
+    res
+      .status(HttpStatus.OK)
+      .json({ status: HttpStatus.OK, message: "Book commented!" });
   }
 }
