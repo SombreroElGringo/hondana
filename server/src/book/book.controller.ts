@@ -52,4 +52,28 @@ export class BookController {
     const book = await this.bookService.findById(param.id);
     res.status(HttpStatus.OK).json(book);
   }
+
+  @Post(":id/likes/:pseudo")
+  async likeBook(@Response() res, @Param() param): Promise<any> {
+    const action = await this.bookService.likeBook(param.id, param.pseudo);
+    res.status(HttpStatus.OK).json({status: HttpStatus.OK, message: `Book ${action}!`});
+  }
+
+  @Get("likes/:pseudo")
+  async getBookLikedByUser(@Response() res, @Param() param): Promise<any> {
+    const books = await this.bookService.findBooksLiked(param.pseudo);
+    res.status(HttpStatus.OK).json(books);
+  }
+
+  @Post(":id/favorites/:pseudo")
+  async addBookToYourFavorites(@Response() res, @Param() param): Promise<any> {
+    const action = await this.bookService.addBookToYourFavorites(param.id, param.pseudo);
+    res.status(HttpStatus.OK).json({status: HttpStatus.OK, message: `Book ${action}!`});
+  }
+
+  @Get("favorites/:pseudo")
+  async getBookInFavoritesByUser(@Response() res, @Param() param): Promise<any> {
+    const books = await this.bookService.findBooksInFavorites(param.pseudo);
+    res.status(HttpStatus.OK).json(books);
+  }
 }

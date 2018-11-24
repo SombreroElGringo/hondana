@@ -21,8 +21,8 @@ export const BookSchema = new mongoose.Schema(
       { message: String, createdAt: { type: Date, default: Date.now } },
     ],
     meta: {
-      favorites: Number,
-      likes: Number,
+      favorites: [String],
+      likes: [String],
     },
     hidden: { type: Boolean, default: false },
   },
