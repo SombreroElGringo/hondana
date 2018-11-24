@@ -1,9 +1,21 @@
 import { Module } from "@nestjs/common";
-import { HelloModule } from "./hello/hello.module";
-import { IncidentModule } from "./incident/incident.module";
-import { StationModule } from "./station/station.module";
+import { HomeModule } from "./home/home.module";
+import { AuthorModule } from "./author/author.module";
+import { BookModule } from "./book/book.module";
+import { MongooseModule } from "@nestjs/mongoose";
+import { UserModule } from "./user/user.module";
+import { BookcaseModule } from "./bookcase/bookcase.module";
 
 @Module({
-  imports: [HelloModule, IncidentModule, StationModule],
+  imports: [
+    AuthorModule,
+    BookModule,
+    BookcaseModule,
+    UserModule,
+    HomeModule,
+    MongooseModule.forRoot("mongodb://localhost/hondana", {
+      useNewUrlParser: true,
+    }),
+  ],
 })
 export class ApplicationModule {}

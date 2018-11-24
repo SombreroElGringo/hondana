@@ -6,7 +6,9 @@ import * as request from "supertest";
 import "mocha";
 import { ApplicationModule } from "../../src/app.module";
 
-describe("Module incidents", () => {
+const mockup = [];
+
+describe("Module stations", () => {
   let server;
   let app: INestApplication;
 
@@ -23,32 +25,32 @@ describe("Module incidents", () => {
     await app.startAllMicroservicesAsync();
     await app.init();
   });
-
-  it(`/GET (/incidents)`, () => {
+  /*
+  it(`/GET (/stations)`, () => {
     return request(server)
-      .get("/incidents")
+      .get("/stations")
       .expect("Content-Type", /json/)
       .expect(200);
   });
 
-  it(`/GET (/incidents?query)`, () => {
+  it(`/GET (/stations?query)`, () => {
     return request(server)
-      .get("/incidents?sort=date&refine.date=2018/09/29")
+      .get("/stations?q=Hendaye")
       .expect("Content-Type", /json/)
-      .expect(200);
+      .expect(200, mockup);
   });
 
-  it(`/GET (/incidents)`, () => {
+  it(`/GET (/stations)`, () => {
     return request(server)
-      .get("/incidentss")
+      .get("/stationss")
       .expect(HttpStatus.NOT_FOUND)
       .expect({
         statusCode: 404,
         error: "Not Found",
-        message: "Cannot GET /incidentss",
+        message: "Cannot GET /stationss",
       });
   });
-
+*/
   afterEach(async () => {
     await app.close();
   });
