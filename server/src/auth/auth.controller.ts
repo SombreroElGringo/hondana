@@ -8,7 +8,7 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post("login")
-  async signIn(@Response() res, @Body() body): Promise<any> {
+  async login(@Response() res, @Body() body): Promise<any> {
     const user: JwtPayload = {
       email: body.email,
       password: body.password,
