@@ -1,4 +1,4 @@
-import { Model, ObjectId } from "mongoose";
+import { Model, Types } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { User } from "./models/user.interface";
@@ -18,7 +18,7 @@ export class UserService {
   }
 
   async findById(id: string): Promise<User> {
-    return await this.userModel.findOne({ _id: new ObjectId(id) });
+    return await this.userModel.findOne({ _id: new Types.ObjectId(id) });
   }
 
   async findByPseudo(pseudo: string): Promise<User> {
@@ -27,7 +27,7 @@ export class UserService {
 
   async commentUser(id: string, comment: object) {
     return await this.userModel.update(
-      { _id: new ObjectId(id) },
+      { _id: new Types.ObjectId(id) },
       { $push: { comments: comment } },
     );
   }

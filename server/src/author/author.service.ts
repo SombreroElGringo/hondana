@@ -1,4 +1,4 @@
-import { Model, ObjectId } from "mongoose";
+import { Model, Types } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Author } from "./models/author.interface";
@@ -20,12 +20,12 @@ export class AuthorService {
   }
 
   async findById(id: string): Promise<Author> {
-    return await this.authorModel.findOne({ _id: new ObjectId(id) }).exec();
+    return await this.authorModel.findOne({ _id: new Types.ObjectId(id) }).exec();
   }
 
   async editAuthor(id: string, params: Object): Promise<Author> {
     return await this.authorModel
-      .update({ _id: new ObjectId(id) }, { $set: params })
+      .update({ _id: new Types.ObjectId(id) }, { $set: params })
       .exec();
   }
 

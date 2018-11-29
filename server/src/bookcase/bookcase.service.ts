@@ -1,8 +1,6 @@
-import { Model, ObjectId } from "mongoose";
+import { Model, Types } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
-import { get } from "../common/http/http";
-import * as qs from "querystring";
 import { Bookcase } from "./models/bookcase.interface";
 
 @Injectable()
@@ -21,12 +19,12 @@ export class BookcaseService {
   }
 
   async findById(id: string): Promise<Bookcase> {
-    return await this.bookcaseModel.findOne({ _id: new ObjectId(id) });
+    return await this.bookcaseModel.findOne({ _id: new Types.ObjectId(id) });
   }
 
   async addBookInBookcase(id: string, bookId: string, isAvailable: boolean) {
     return await this.bookcaseModel.update(
-      { _id: new ObjectId(id) },
+      { _id: new Types.ObjectId(id) },
       { $push: { books: { bookId: bookId, isAvailable: isAvailable } } },
     );
   }
@@ -37,14 +35,14 @@ export class BookcaseService {
     isAvailable: boolean,
   ) {
     return await this.bookcaseModel.update(
-      { _id: new ObjectId(id) },
+      { _id: new Types.ObjectId(id) },
       { $pull: { books: { bookId: bookId, isAvailable: isAvailable } } },
     );
   }
 
   async changeBookAviability(id: string, bookId: string, isAvailable: boolean) {
     return await this.bookcaseModel.update(
-      { _id: new ObjectId(id), "books.bookId": new ObjectId(bookId) },
+      { _id: new Types.ObjectId(id), "books.bookId": new Types.ObjectId(bookId) },
       { $set: { books: { isAvailable: isAvailable } } },
     );
   }

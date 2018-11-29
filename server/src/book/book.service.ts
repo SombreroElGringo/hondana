@@ -1,7 +1,6 @@
-import { Model, ObjectId } from "mongoose";
+import { Model, Types} from "mongoose";
 import { Injectable, Query } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
-import _ from "lodash";
 import { Book } from "./models/book.interface";
 
 @Injectable()
@@ -18,7 +17,7 @@ export class BookService {
   }
 
   async findById(id: string): Promise<Book> {
-    return await this.bookModel.findOne({ _id: new ObjectId(id) }).exec();
+    return await this.bookModel.findOne({ _id: new Types.ObjectId(id) }).exec();
   }
 
   async search(title: string): Promise<Book[]> {
@@ -27,17 +26,17 @@ export class BookService {
 
   async likeBook(id: string, pseudo: string): Promise<string> {
     const book: Book = await this.bookModel
-      .findOne({ _id: new ObjectId(id) })
+      .findOne({ _id: new Types.ObjectId(id) })
       .exec();
 
     const actionQuery =
-      _.indexOf(book.meta.likes, pseudo) === -1
+    book.meta.likes.indexOf(pseudo) === -1
         ? { $push: { "meta.likes": pseudo } }
         : { $pull: { "meta.likes": pseudo } };
     const action =
-      _.indexOf(book.meta.likes, pseudo) === -1 ? "liked" : "unliked";
+    book.meta.likes.indexOf(pseudo) === -1 ? "liked" : "unliked";
 
-    await this.bookModel.update({ _id: new ObjectId(id) }, actionQuery).exec();
+    await this.bookModel.updateOne({ _id: new Types.ObjectId(id) }, actionQuery).exec();
     return action;
   }
 
@@ -50,19 +49,19 @@ export class BookService {
 
   async addBookToYourFavorites(id: string, pseudo: string): Promise<string> {
     const book: Book = await this.bookModel
-      .findOne({ _id: new ObjectId(id) })
+      .findOne({ _id: new Types.ObjectId(id) })
       .exec();
 
     const actionQuery =
-      _.indexOf(book.meta.favorites, pseudo) === -1
+    book.meta.favorites.indexOf(pseudo) === -1
         ? { $push: { "meta.favorites": pseudo } }
         : { $pull: { "meta.favorites": pseudo } };
     const action =
-      _.indexOf(book.meta.favorites, pseudo) === -1
+    book.meta.favorites.indexOf(pseudo) === -1
         ? "added to your favorites"
         : "removed from your favorites";
 
-    await this.bookModel.update({ _id: new ObjectId(id) }, actionQuery).exec();
+    await this.bookModel.update({ _id: new Types.ObjectId(id) }, actionQuery).exec();
     return action;
   }
 
@@ -75,7 +74,7 @@ export class BookService {
 
   async commentAnBook(id: string, comment: object) {
     return await this.bookModel.update(
-      { _id: new ObjectId(id) },
+      { _id: new Types.ObjectId(id) },
       { $push: { comments: comment } },
     );
   }
