@@ -19,6 +19,7 @@
     "@nestjs/mongoose": "^5.2.2",
     "@nestjs/swagger": "^2.5.1",
     "@nestjs/testing": "^5.4.0",
+    "@nestjs/websockets": "^5.4.0",
     "lodash": "^4.17.11",
     "mongoose": "^5.3.13",
     "reflect-metadata": "^0.1.12",

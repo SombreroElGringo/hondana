@@ -20,7 +20,9 @@ export class AuthorService {
   }
 
   async findById(id: string): Promise<Author> {
-    return await this.authorModel.findOne({ _id: new Types.ObjectId(id) }).exec();
+    return await this.authorModel
+      .findOne({ _id: new Types.ObjectId(id) })
+      .exec();
   }
 
   async editAuthor(id: string, params: Object): Promise<Author> {
