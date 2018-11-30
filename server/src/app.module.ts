@@ -5,10 +5,12 @@ import { BookModule } from "./book/book.module";
 import { MongooseModule } from "@nestjs/mongoose";
 import { UserModule } from "./user/user.module";
 import { BookcaseModule } from "./bookcase/bookcase.module";
+import { AuthModule } from "./auth/auth.module";
 import { WebsocketModule } from "./websocket/websocket.module";
 
 @Module({
   imports: [
+    AuthModule,
     AuthorModule,
     BookModule,
     BookcaseModule,

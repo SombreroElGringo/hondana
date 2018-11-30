@@ -25,6 +25,10 @@ export class UserService {
     return await this.userModel.findOne({ pseudo: pseudo });
   }
 
+  async findByEmail(email: string): Promise<User> {
+    return await this.userModel.findOne({ email: email });
+  }
+
   async commentUser(id: string, comment: object) {
     return await this.userModel.update(
       { _id: new Types.ObjectId(id) },
