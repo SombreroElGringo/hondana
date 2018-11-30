@@ -1,35 +1,35 @@
-import { FETCH_BOOKS, FETCH_BOOKS_SUCCESS, SET_APP_NAME } from '../consts/app';
+import {
+  FETCH_BOOKS,
+  FETCH_BOOKS_FAIL,
+  FETCH_BOOKS_SUCCESS,
+} from '../consts/app';
+import { BOOKS_URL } from '../../utils/api_enpoints';
+import axios from 'axios';
 
-export const setAppName = newName => ({
-  type: SET_APP_NAME,
-  payload: newName,
-});
-
-export const fetchBooks = (title, categories) => dispatch => {
+export const fetchBooks = (title, categories) => async dispatch => {
   dispatch({ type: FETCH_BOOKS });
-  setTimeout(() => {
+  try {
+    const response = await axios.get(BOOKS_URL, {
+      params: {
+        title,
+        categories,
+      },
+    });
+
+    if (!response.data) throw 'There is no results';
+
+    const payload = response.data.map(({ title }) => ({
+      title,
+    }));
+
     dispatch({
       type: FETCH_BOOKS_SUCCESS,
-      payload: [
-        {
-          id: 1,
-          name: 'Bordeaux saint-jean',
-          image:
-            'https://img.20mn.fr/AnGcEiqxQ6umsAf3qVEe1w/830x532_10-janvier-2017-hall-1-gare-saint-jean-bordeaux-entierement-reamenage.jpg',
-        },
-        {
-          id: 2,
-          name: 'Paris (Toutes gares)',
-          image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Paris-Gare_de_l%27Est-2009.jpg/1200px-Paris-Gare_de_l%27Est-2009.jpg',
-        },
-        {
-          id: 3,
-          name: 'Arcachon',
-          image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Arcachon_Gare_R01.jpg/1200px-Arcachon_Gare_R01.jpg',
-        },
-      ],
+      payload,
     });
-  }, 500);
+  } catch (error) {
+    dispatch({
+      type: FETCH_BOOKS_FAIL,
+      error,
+    });
+  }
 };
