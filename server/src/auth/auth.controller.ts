@@ -1,7 +1,7 @@
 import { Controller, Post, Body, Response, HttpStatus } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { JwtPayload } from "./interfaces/jwt-payload.interface";
-import { User } from "../user/models/user.interface";
+import { User } from "../user/interfaces/user.interface";
 
 @Controller("auth")
 export class AuthController {

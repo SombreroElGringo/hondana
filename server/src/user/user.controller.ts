@@ -11,7 +11,7 @@ import {
 } from "@nestjs/common";
 import { AuthGuard } from "@nestjs/passport";
 import { UserService } from "./user.service";
-import { User } from "./models/user.interface";
+import { User } from "./interfaces/user.interface";
 
 @Controller("users")
 export class UserController {

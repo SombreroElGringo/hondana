@@ -1,7 +1,7 @@
 import { Model, Types } from "mongoose";
 import { Injectable, Query } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
-import { User } from "./models/user.interface";
+import { User } from "./interfaces/user.interface";
 import { users as usersMockup } from "./mockup/user.mockup";
 
 @Injectable()
