@@ -13,7 +13,25 @@ export class BookService {
   }
 
   async findAll(@Query() query): Promise<Book[]> {
-    return await this.bookModel.find(query).exec();
+    if (query) {
+      const actionQueries = {};
+      if (query.categories) {
+        const arrOfCategories = Array.isArray(query.categories)
+          ? query.categories
+          : query.categories.split(",");
+        actionQueries["categories"] = { $in: arrOfCategories };
+      }
+
+      if (query.title) {
+        actionQueries["title"] = {
+          $regex: query.title,
+          $options: "i",
+        };
+      }
+      return await this.bookModel.find(actionQueries).exec();
+    } else {
+      return await this.bookModel.find().exec();
+    }
   }
 
   async findById(id: string): Promise<Book> {
