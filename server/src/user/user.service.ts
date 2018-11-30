@@ -1,5 +1,5 @@
 import { Model, Types } from "mongoose";
-import { Injectable } from "@nestjs/common";
+import { Injectable, Query } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { User } from "./models/user.interface";
 import { users as usersMockup } from "./mockup/user.mockup";
@@ -13,8 +13,19 @@ export class UserService {
     return await createdUser.save();
   }
 
-  async findAll(): Promise<User[]> {
-    return await this.userModel.find().exec();
+  async findAll(@Query() query): Promise<User[]> {
+    const actionQueries = {};
+    if (query) {
+      if (query.pseudo) {
+        actionQueries["pseudo"] = {
+          $regex: query.pseudo,
+          $options: "i",
+        };
+      }
+      return await this.userModel.find(actionQueries).exec();
+    } else {
+      return await this.userModel.find().exec();
+    }
   }
 
   async findById(id: string): Promise<User> {

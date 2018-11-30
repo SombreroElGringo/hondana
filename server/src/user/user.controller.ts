@@ -40,7 +40,7 @@ export class UserController {
   @Get()
   @UseGuards(AuthGuard())
   async getAllUsers(@Response() res, @Query() query): Promise<any> {
-    const users = await this.userService.findAll();
+    const users = await this.userService.findAll(query);
     res.status(HttpStatus.OK).json(users);
   }
 

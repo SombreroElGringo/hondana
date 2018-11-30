@@ -1,5 +1,5 @@
 import { Model, Types } from "mongoose";
-import { Injectable } from "@nestjs/common";
+import { Injectable, Query } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Author } from "./models/author.interface";
 import { authors as authorsMockup } from "./mockup/author.mockup";
@@ -15,8 +15,19 @@ export class AuthorService {
     return await createdAuthor.save();
   }
 
-  async findAll(): Promise<Author[]> {
-    return await this.authorModel.find().exec();
+  async findAll(@Query() query): Promise<Author[]> {
+    if (query) {
+      const actionQueries = {};
+      if (query.name) {
+        actionQueries["name"] = {
+          $regex: query.name,
+          $options: "i",
+        };
+      }
+      return await this.authorModel.find(actionQueries).exec();
+    } else {
+      return await this.authorModel.find().exec();
+    }
   }
 
   async findById(id: string): Promise<Author> {

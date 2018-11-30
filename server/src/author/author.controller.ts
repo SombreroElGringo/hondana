@@ -36,7 +36,7 @@ export class AuthorController {
 
   @Get()
   async getAllAuthors(@Response() res, @Query() query): Promise<any> {
-    const authors = await this.authorService.findAll();
+    const authors = await this.authorService.findAll(query);
     res.status(HttpStatus.OK).json(authors);
   }
 
