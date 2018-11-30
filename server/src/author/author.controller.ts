@@ -10,7 +10,7 @@ import {
   Put,
 } from "@nestjs/common";
 import { AuthorService } from "./author.service";
-import { Author } from "./models/author.interface";
+import { Author } from "./interfaces/author.interface";
 
 @Controller("authors")
 export class AuthorController {

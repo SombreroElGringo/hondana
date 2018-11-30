@@ -13,7 +13,7 @@ export class UserService {
     return await createdUser.save();
   }
 
-  async findAll(@Query() query): Promise<User[]> {
+  async findAll(@Query() query?): Promise<User[]> {
     const actionQueries = {};
     if (query) {
       if (query.pseudo) {

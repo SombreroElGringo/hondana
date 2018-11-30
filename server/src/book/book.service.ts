@@ -12,7 +12,7 @@ export class BookService {
     return await createdBook.save();
   }
 
-  async findAll(@Query() query): Promise<Book[]> {
+  async findAll(@Query() query?): Promise<Book[]> {
     if (query) {
       const actionQueries = {};
       if (query.categories) {

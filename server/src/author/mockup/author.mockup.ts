@@ -1,4 +1,4 @@
-import { Author } from "../models/author.interface";
+import { Author } from "../interfaces/author.interface";
 
 export const authors: Author[] = [
   {
