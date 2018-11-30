@@ -23,7 +23,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "prettier": "prettier --write src/**/**/*.{js,jsx,json,scss}"
+    "prettier": "prettier --write {src,test}/**/**/*.{js,jsx,json,scss}"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,18 +35,17 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-react-app": "^6.1.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "enzyme-to-json": "^3.3.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
-    "react-test-renderer": "^16.6.3",
-    "prettier": "1.14.3"
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+    "jest": "^23.6.0",
+    "prettier": "1.14.3",
+    "redux-mock-store": "^1.5.3"
   }
 }
