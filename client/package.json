@@ -37,6 +37,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react-app": "^6.1.0",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
