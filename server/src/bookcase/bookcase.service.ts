@@ -42,7 +42,10 @@ export class BookcaseService {
 
   async changeBookAviability(id: string, bookId: string, isAvailable: boolean) {
     return await this.bookcaseModel.update(
-      { _id: new Types.ObjectId(id), "books.bookId": new Types.ObjectId(bookId) },
+      {
+        _id: new Types.ObjectId(id),
+        "books.bookId": new Types.ObjectId(bookId),
+      },
       { $set: { books: { isAvailable: isAvailable } } },
     );
   }

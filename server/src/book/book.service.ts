@@ -1,4 +1,4 @@
-import { Model, Types} from "mongoose";
+import { Model, Types } from "mongoose";
 import { Injectable, Query } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Book } from "./models/book.interface";
@@ -30,13 +30,14 @@ export class BookService {
       .exec();
 
     const actionQuery =
-    book.meta.likes.indexOf(pseudo) === -1
+      book.meta.likes.indexOf(pseudo) === -1
         ? { $push: { "meta.likes": pseudo } }
         : { $pull: { "meta.likes": pseudo } };
-    const action =
-    book.meta.likes.indexOf(pseudo) === -1 ? "liked" : "unliked";
+    const action = book.meta.likes.indexOf(pseudo) === -1 ? "liked" : "unliked";
 
-    await this.bookModel.updateOne({ _id: new Types.ObjectId(id) }, actionQuery).exec();
+    await this.bookModel
+      .updateOne({ _id: new Types.ObjectId(id) }, actionQuery)
+      .exec();
     return action;
   }
 
@@ -53,15 +54,17 @@ export class BookService {
       .exec();
 
     const actionQuery =
-    book.meta.favorites.indexOf(pseudo) === -1
+      book.meta.favorites.indexOf(pseudo) === -1
         ? { $push: { "meta.favorites": pseudo } }
         : { $pull: { "meta.favorites": pseudo } };
     const action =
-    book.meta.favorites.indexOf(pseudo) === -1
+      book.meta.favorites.indexOf(pseudo) === -1
         ? "added to your favorites"
         : "removed from your favorites";
 
-    await this.bookModel.update({ _id: new Types.ObjectId(id) }, actionQuery).exec();
+    await this.bookModel
+      .update({ _id: new Types.ObjectId(id) }, actionQuery)
+      .exec();
     return action;
   }
 

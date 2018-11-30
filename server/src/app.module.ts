@@ -5,6 +5,7 @@ import { BookModule } from "./book/book.module";
 import { MongooseModule } from "@nestjs/mongoose";
 import { UserModule } from "./user/user.module";
 import { BookcaseModule } from "./bookcase/bookcase.module";
+import { WebsocketModule } from "./websocket/websocket.module";
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { BookcaseModule } from "./bookcase/bookcase.module";
     BookcaseModule,
     UserModule,
     HomeModule,
+    WebsocketModule,
     MongooseModule.forRoot("mongodb://localhost/hondana", {
       useNewUrlParser: true,
     }),
