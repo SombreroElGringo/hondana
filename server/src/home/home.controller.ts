@@ -5,7 +5,7 @@ import { AuthorService } from "../author/author.service";
 import { BookService } from "../book/book.service";
 import { BookcaseService } from "../bookcase/bookcase.service";
 import { books as booksMockup } from "../book/mockup/book.mockup";
-import { Book } from "../book/models/book.interface";
+import { Book } from "../book/interfaces/book.interface";
 import { Bookcase } from "../bookcase/models/bookcase.interface";
 
 @Controller()

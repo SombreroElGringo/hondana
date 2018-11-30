@@ -9,7 +9,7 @@ import {
   Query,
 } from "@nestjs/common";
 import { BookService } from "./book.service";
-import { Book } from "./models/book.interface";
+import { Book } from "./interfaces/book.interface";
 
 @Controller("books")
 export class BookController {
