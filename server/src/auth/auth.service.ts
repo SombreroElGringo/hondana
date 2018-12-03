@@ -12,19 +12,27 @@ export class AuthService {
     private readonly jwtService: JwtService,
   ) {}
 
-  async login(payload: JwtPayload): Promise<string> {
-    await this.checkUser(payload);
-    return this.jwtService.sign(payload);
+  async login(payload: JwtPayload): Promise<Object> {
+    await this.validateUser(payload);
+    const token = this.jwtService.sign(payload);
+    return {
+      expiresIn: 3600,
+      token,
+    };
   }
 
-  async register(user: User): Promise<string> {
+  async register(user: User): Promise<Object> {
     try {
       const userInst = await this.userService.createUser(user);
       const payload: JwtPayload = {
         email: userInst.email,
         password: userInst.password,
       };
-      return this.jwtService.sign(payload);
+      const token = this.jwtService.sign(payload);
+      return {
+        expiresIn: 3600,
+        token,
+      };
     } catch (err) {
       const customError =
         err.code == "11000" ? "User already exist" : "Something went wrong ..";
@@ -32,7 +40,7 @@ export class AuthService {
     }
   }
 
-  async checkUser(payload: JwtPayload): Promise<User> {
+  async validateUser(payload: JwtPayload): Promise<User> {
     const user = await this.userService.findByEmail(payload.email);
     if (user) {
       const compare = await bcrypt.compare(payload.password, user.password);

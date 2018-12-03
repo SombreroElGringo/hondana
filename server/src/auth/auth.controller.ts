@@ -1,7 +1,16 @@
-import { Controller, Post, Body, Response, HttpStatus } from "@nestjs/common";
+import {
+  Controller,
+  Post,
+  Body,
+  Response,
+  HttpStatus,
+  Get,
+  UseGuards,
+} from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { JwtPayload } from "./interfaces/jwt-payload.interface";
 import { User } from "../user/interfaces/user.interface";
+import { AuthGuard } from "@nestjs/passport";
 
 @Controller("auth")
 export class AuthController {
@@ -14,7 +23,7 @@ export class AuthController {
       password: body.password,
     };
     const token = await this.authService.login(user);
-    res.status(HttpStatus.OK).json({ status: HttpStatus.OK, token: token });
+    res.status(HttpStatus.OK).json({ status: HttpStatus.OK, data: token });
   }
 
   @Post("register")
@@ -27,6 +36,6 @@ export class AuthController {
       comments: body.comments,
     };
     const token = await this.authService.register(user);
-    res.status(HttpStatus.OK).json({ status: HttpStatus.OK, token: token });
+    res.status(HttpStatus.OK).json({ status: HttpStatus.OK, data: token });
   }
 }
