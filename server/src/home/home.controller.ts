@@ -1,35 +1,21 @@
-import { Controller, Get, Query, Response, HttpStatus } from "@nestjs/common";
+import { Controller, Get, Response, HttpStatus } from "@nestjs/common";
 import { ClientProxy, Client, Transport } from "@nestjs/microservices";
-import { UserService } from "../user/user.service";
-import { AuthorService } from "../author/author.service";
-import { BookService } from "../book/book.service";
-import { BookcaseService } from "../bookcase/bookcase.service";
-import { books as booksMockup } from "../book/mockup/book.mockup";
-import { Book } from "../book/interfaces/book.interface";
-import { Bookcase } from "../bookcase/models/bookcase.interface";
 
 @Controller()
 export class HomeController {
   @Client({ transport: Transport.TCP })
   client: ClientProxy;
 
-  constructor(
-    private readonly authorService: AuthorService,
-    private readonly bookService: BookService,
-    private readonly bookcaseService: BookcaseService,
-    private readonly userService: UserService,
-  ) {}
-
   @Get()
   call(@Response() res) {
-    const apiUrl = "http://localhost:3001/api/v1/docs";
+    const apiUrl = `http://localhost:${process.env.PORT}/api/v1/docs`;
     return res.status(HttpStatus.OK).json({
       status: HttpStatus.OK,
       message: "Hello welcome on the Hondana API!",
       docs: apiUrl,
     });
   }
-
+  /*
   @Get("/dev")
   async initializeDatabase(@Response() res, @Query() query) {
     if (query.init && process.env.NODE_ENV === "development") {
@@ -81,5 +67,5 @@ export class HomeController {
         message: "Database not initialized!",
       });
     }
-  }
+  }*/
 }
