@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha",
+    "test": "SECRET_KEY=test nyc mocha",
     "prettier": "prettier --parser typescript --trailing-comma all \"{src,test}/**/*.ts\"",
     "format": "npm run prettier -- --write",
     "format:check": "npm run prettier -- -l",
@@ -23,6 +23,7 @@
     "@nestjs/testing": "^5.4.0",
     "@nestjs/websockets": "^5.4.0",
     "bcrypt": "^1.0.3",
+    "chai": "^4.2.0",
     "dotenv": "^6.1.0",
     "lodash": "^4.17.11",
     "mongoose": "^5.3.13",

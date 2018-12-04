@@ -17,7 +17,7 @@ export class BookController {
 
   @Post()
   async createBook(@Response() res, @Body() body) {
-    if (body) {
+    if (body.title) {
       const book: Book = {
         isbn10: body.isbn10,
         isbn13: body.isbn13,
@@ -26,7 +26,7 @@ export class BookController {
         coverImageUrl: body.coverImageUrl,
         categories: body.categories,
         description: body.description,
-        releaseAt: body.description,
+        releaseAt: body.releaseAt,
         comments: body.comments,
         meta: body.meta,
         hidden: body.hidden,

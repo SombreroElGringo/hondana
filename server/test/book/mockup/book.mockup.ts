@@ -1,6 +1,6 @@
-import { Book } from "../interfaces/book.interface";
+import { Book } from "../../../src/book/interfaces/book.interface";
 
-export const books: Book[] = [
+export const booksMockup: Book[] = [
   {
     isbn10: "201210133X",
     isbn13: "9782012101333",

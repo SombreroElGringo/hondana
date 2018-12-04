@@ -13,33 +13,25 @@ export class BookService {
   }
 
   async findAll(@Query() query?): Promise<Book[]> {
-    if (query) {
-      const actionQueries = {};
-      if (query.categories) {
-        const arrOfCategories = Array.isArray(query.categories)
-          ? query.categories
-          : query.categories.split(",");
-        actionQueries["categories"] = { $in: arrOfCategories };
-      }
-
-      if (query.title) {
-        actionQueries["title"] = {
-          $regex: query.title,
-          $options: "i",
-        };
-      }
-      return await this.bookModel.find(actionQueries).exec();
-    } else {
-      return await this.bookModel.find().exec();
+    const actionQueries = {};
+    if (query.categories) {
+      const arrOfCategories = Array.isArray(query.categories)
+        ? query.categories
+        : query.categories.split(",");
+      actionQueries["categories"] = { $in: arrOfCategories };
     }
+
+    if (query.title) {
+      actionQueries["title"] = {
+        $regex: query.title,
+        $options: "i",
+      };
+    }
+    return await this.bookModel.find(actionQueries).exec();
   }
 
   async findById(id: string): Promise<Book> {
     return await this.bookModel.findOne({ _id: new Types.ObjectId(id) }).exec();
-  }
-
-  async search(title: string): Promise<Book[]> {
-    return await this.bookModel.find({ $text: { $search: title } }).exec();
   }
 
   async likeBook(id: string, pseudo: string): Promise<string> {
@@ -81,7 +73,7 @@ export class BookService {
         : "removed from your favorites";
 
     await this.bookModel
-      .update({ _id: new Types.ObjectId(id) }, actionQuery)
+      .updateOne({ _id: new Types.ObjectId(id) }, actionQuery)
       .exec();
     return action;
   }
@@ -94,19 +86,15 @@ export class BookService {
   }
 
   async commentAnBook(id: string, comment: object) {
-    return await this.bookModel.update(
+    return await this.bookModel.updateOne(
       { _id: new Types.ObjectId(id) },
       { $push: { comments: comment } },
     );
   }
 
-  async initializeBooks(books: Book[]) {
-    return await books.map(book => {
-      this.createBook(book);
-    });
-  }
-
-  async cleanBooks() {
-    return await this.bookModel.deleteMany().exec();
+  async deleteBook(isbn10: string) {
+    return await this.bookModel
+      .deleteOne({ isbn10: isbn10 })
+      .exec();
   }
 }
