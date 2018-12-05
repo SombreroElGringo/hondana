@@ -47,11 +47,7 @@ export class UserService {
     );
   }
 
-  async initializeUsers() {
-    return await usersMockup.map(user => this.createUser(user));
-  }
-
-  async cleanUsers() {
-    return await this.userModel.deleteMany().exec();
+  async deleteUser(pseudo: string) {
+    return await this.userModel.deleteOne({ pseudo: pseudo }).exec();
   }
 }

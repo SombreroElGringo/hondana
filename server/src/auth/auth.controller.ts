@@ -22,8 +22,14 @@ export class AuthController {
       email: body.email,
       password: body.password,
     };
-    const token = await this.authService.login(user);
-    res.status(HttpStatus.OK).json({ status: HttpStatus.OK, data: token });
+    try {
+      const token = await this.authService.login(user);
+      res.status(HttpStatus.OK).json({ status: HttpStatus.OK, data: token });
+    } catch (err) {
+      res
+        .status(HttpStatus.BAD_REQUEST)
+        .json({ status: HttpStatus.BAD_REQUEST, err });
+    }
   }
 
   @Post("register")
@@ -35,7 +41,16 @@ export class AuthController {
       profileImageUrl: body.profileImageUrl,
       comments: body.comments,
     };
-    const token = await this.authService.register(user);
-    res.status(HttpStatus.OK).json({ status: HttpStatus.OK, data: token });
+    try {
+      const token = await this.authService.register(user);
+      res
+        .status(HttpStatus.CREATED)
+        .json({ status: HttpStatus.CREATED, data: token });
+    } catch (err) {
+        res
+          .status(HttpStatus.BAD_REQUEST)
+          .json({ status: HttpStatus.BAD_REQUEST, err });
+      
+    }
   }
 }
