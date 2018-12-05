@@ -80,10 +80,24 @@ describe("Module User: ", () => {
       });
   });
 
+  it("/GET users?pseudo", async () => {
+    return await request(app.getHttpServer())
+      .get("/users?pseudo=test")
+      .set("Authorization", `Bearer ${token}`)
+      .expect(HttpStatus.OK)
+      .expect("Content-Type", /json/)
+      .expect(async ({ body }) => {
+        chai.assert.isArray(body);
+      });
+  });
+
   it("/GET users invalid token", async () => {
     return await request(app.getHttpServer())
       .get("/users")
-      .set("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJwYXNzd29yZCI6InRlc3QiLCJpYXQiOjE1NDM4NjE5MjksImV4cCI6MTU0Mzg2NTUyOX0.4Vpz6LOi5W6eScZJyNEOultHsEkVMlSEjBtt8HKEp9U")
+      .set(
+        "Authorization",
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJwYXNzd29yZCI6InRlc3QiLCJpYXQiOjE1NDM4NjE5MjksImV4cCI6MTU0Mzg2NTUyOX0.4Vpz6LOi5W6eScZJyNEOultHsEkVMlSEjBtt8HKEp9U",
+      )
       .expect(HttpStatus.UNAUTHORIZED)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {

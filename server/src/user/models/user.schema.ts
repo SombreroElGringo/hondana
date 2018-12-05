@@ -22,20 +22,21 @@ UserSchema.pre("save", function(next) {
   const user = this;
   if (this.isModified("password") || this.isNew) {
     bcrypt.genSalt(10, function(err, salt) {
-      if (err) {
+      /*  if (err) {
         return next(err);
-      }
+      } */
       bcrypt.hash(user.password, salt, function(err, hash) {
-        if (err) {
+        /* if (err) {
           return next(err);
-        }
+        } */
         user.password = hash;
         next();
       });
     });
-  } else {
-    return next();
   }
+  /* else {
+    return next();
+  } */
 });
 
 export { UserSchema };

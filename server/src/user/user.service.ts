@@ -14,25 +14,18 @@ export class UserService {
 
   async findAll(@Query() query?): Promise<User[]> {
     const actionQueries = {};
-    if (query) {
-      if (query.pseudo) {
-        actionQueries["pseudo"] = {
-          $regex: query.pseudo,
-          $options: "i",
-        };
-      }
-      return await this.userModel.find(actionQueries).exec();
-    } else {
-      return await this.userModel.find().exec();
+
+    if (query.pseudo) {
+      actionQueries["pseudo"] = {
+        $regex: query.pseudo,
+        $options: "i",
+      };
     }
+    return await this.userModel.find(actionQueries).exec();
   }
 
   async findById(id: string): Promise<User> {
     return await this.userModel.findOne({ _id: new Types.ObjectId(id) });
-  }
-
-  async findByPseudo(pseudo: string): Promise<User> {
-    return await this.userModel.findOne({ pseudo: pseudo });
   }
 
   async findByEmail(email: string): Promise<User> {
