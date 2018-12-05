@@ -1,6 +1,6 @@
-import { User } from "../interfaces/user.interface";
+import { User } from "../../../src/user/interfaces/user.interface";
 
-export const users: User[] = [
+export const usersMockup: User[] = [
   {
     pseudo: "test",
     password: "test",

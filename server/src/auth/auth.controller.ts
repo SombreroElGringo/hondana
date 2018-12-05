@@ -47,10 +47,9 @@ export class AuthController {
         .status(HttpStatus.CREATED)
         .json({ status: HttpStatus.CREATED, data: token });
     } catch (err) {
-        res
-          .status(HttpStatus.BAD_REQUEST)
-          .json({ status: HttpStatus.BAD_REQUEST, err });
-      
+      res
+        .status(HttpStatus.BAD_REQUEST)
+        .json({ status: HttpStatus.BAD_REQUEST, err });
     }
   }
 }

@@ -136,8 +136,16 @@ describe("Module Book: ", () => {
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body))
           .expect(({ body }) => chai.assert.equal("Book liked!", body.message));
+      });
+  });
 
-        await request(app.getHttpServer())
+  it("/POST books/:id/likes/:pseudo unlike book", async () => {
+    return request(app.getHttpServer())
+      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
+      .then( ({ body }, err) => {
+        if (err) throw err;
+        setTimeout(async () => {
+          await request(app.getHttpServer())
           .post(encodeURI(`/books/${body[0]._id}/likes/testo`))
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)
@@ -145,6 +153,8 @@ describe("Module Book: ", () => {
           .expect(({ body }) =>
             chai.assert.equal("Book unliked!", body.message),
           );
+        }, 1000);
+        
       });
   });
 
