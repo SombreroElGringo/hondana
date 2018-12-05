@@ -1,6 +1,6 @@
-import { Author } from "../interfaces/author.interface";
+import { Author } from "../../../src/author/interfaces/author.interface";
 
-export const authors: Author[] = [
+export const authorsMockup: Author[] = [
   {
     name: "J. K. Rowling",
     biography:

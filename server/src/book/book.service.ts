@@ -93,8 +93,6 @@ export class BookService {
   }
 
   async deleteBook(isbn10: string) {
-    return await this.bookModel
-      .deleteOne({ isbn10: isbn10 })
-      .exec();
+    return await this.bookModel.deleteOne({ isbn10: isbn10 }).exec();
   }
 }

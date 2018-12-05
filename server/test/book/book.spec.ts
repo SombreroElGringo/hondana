@@ -200,7 +200,7 @@ describe("Module Book: ", () => {
         await request(app.getHttpServer())
           .post(encodeURI(`/books/${body[0]._id}/comments`))
           .send({
-            comment: {message: 'test'},
+            comment: { message: "test" },
           })
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)

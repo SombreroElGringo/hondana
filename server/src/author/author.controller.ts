@@ -9,6 +9,7 @@ import {
   Query,
   Put,
 } from "@nestjs/common";
+import * as _ from "lodash";
 import { AuthorService } from "./author.service";
 import { Author } from "./interfaces/author.interface";
 
@@ -18,7 +19,7 @@ export class AuthorController {
 
   @Post()
   async createAuthor(@Response() res, @Body() body) {
-    if (body) {
+    if (!_.isEmpty(body)) {
       const author: Author = {
         name: body.name,
         biography: body.biography,
@@ -48,7 +49,7 @@ export class AuthorController {
 
   @Put(":id")
   async editAuthor(@Response() res, @Param() param, @Body() body) {
-    if (body) {
+    if (!_.isEmpty(body)) {
       const POSSIBLE_KEYS = ["name", "biography", "profileImageUrl"];
       let queryArgs = {};
 
@@ -58,13 +59,12 @@ export class AuthorController {
         }
       });
 
-      if (!queryArgs) {
+      if (_.isEmpty(queryArgs)) {
         return res.status(HttpStatus.BAD_REQUEST).json({
           status: HttpStatus.BAD_REQUEST,
           message: "Please renseign valid parameters!",
         });
       }
-
       await this.authorService.editAuthor(param.id, queryArgs);
       res
         .status(HttpStatus.OK)

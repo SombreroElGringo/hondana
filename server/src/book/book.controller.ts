@@ -8,6 +8,7 @@ import {
   Param,
   Query,
 } from "@nestjs/common";
+import * as _ from "lodash";
 import { BookService } from "./book.service";
 import { Book } from "./interfaces/book.interface";
 
@@ -17,7 +18,7 @@ export class BookController {
 
   @Post()
   async createBook(@Response() res, @Body() body) {
-    if (body.title) {
+    if (!_.isEmpty(body)) {
       const book: Book = {
         isbn10: body.isbn10,
         isbn13: body.isbn13,
