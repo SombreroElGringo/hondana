@@ -145,13 +145,16 @@ describe("Module Author: ", () => {
         await request(app.getHttpServer())
           .put(encodeURI(`/authors/${body[0]._id}`))
           .send({
-            test: "test"
+            test: "test",
           })
           .expect(HttpStatus.BAD_REQUEST)
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body))
           .expect(({ body }) =>
-            chai.assert.equal("Please renseign valid parameters!", body.message),
+            chai.assert.equal(
+              "Please renseign valid parameters!",
+              body.message,
+            ),
           );
       });
   });

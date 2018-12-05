@@ -169,7 +169,14 @@ describe("Module Book: ", () => {
           .expect(({ body }) =>
             chai.assert.equal("Book added to your favorites!", body.message),
           );
+      });
+  });
 
+  it("/POST books/:id/favorites/:pseudo remove book from favorites", async () => {
+    return request(app.getHttpServer())
+      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
+      .then(async ({ body }, err) => {
+        if (err) throw err;
         await request(app.getHttpServer())
           .post(encodeURI(`/books/${body[0]._id}/favorites/testo`))
           .expect(HttpStatus.OK)
