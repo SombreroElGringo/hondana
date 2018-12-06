@@ -14,7 +14,6 @@ const initState = Map({
 const handlers = {
   [SET_APP_NAME]: (state, action) => state.set('appName', action.payload),
 
-  [FETCH_BOOKS]: state => state.set('books', undefined),
   [FETCH_BOOKS_SUCCESS]: (state, action) => state.set('books', action.payload),
   [FETCH_BOOKS_FAIL]: state => state.set('books', null),
 };
