@@ -23,7 +23,7 @@ async function bootstrap() {
   SwaggerModule.setup("api/v1/docs", app, document);
 
   await app.startAllMicroservicesAsync();
-  await app.listen(parseInt(process.env.PORT) || 3001);
+  await app.listen(Number(process.env.PORT) || 3001);
 }
 
 bootstrap();
