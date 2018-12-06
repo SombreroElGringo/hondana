@@ -5,19 +5,23 @@ import * as request from "supertest";
 import "mocha";
 import * as chai from "chai";
 import { ApplicationModule } from "../../src/app.module";
-import { booksMockup } from "./mockup/book.mockup";
+import { bookMockup } from "./mockup/book.mockup";
+
 import { BookService } from "../../src/book/book.service";
+import { UserService } from "../../src/user/user.service";
+import { userAuthMockup } from "../user/mockup/user.mockup";
 
 describe("Module Book: ", () => {
   let server;
   let app: INestApplication;
   let bookService: BookService;
+  let userService: UserService;
   let token;
 
   before(async () => {
     const module = await Test.createTestingModule({
       imports: [ApplicationModule],
-      providers: [BookService],
+      providers: [BookService, UserService],
     }).compile();
 
     server = express();
@@ -26,13 +30,14 @@ describe("Module Book: ", () => {
     await app.init();
 
     bookService = module.get<BookService>(BookService);
+    userService = module.get<UserService>(UserService);
 
-    request
-      .agent(app.getHttpServer())
+    await userService.createUser(userAuthMockup);
+    await request(app.getHttpServer())
       .post("/auth/login")
       .send({
-        email: process.env.TEST_EMAIL,
-        password: process.env.TEST_PASSWORD,
+        email: userAuthMockup.email,
+        password: userAuthMockup.password,
       })
       .then((res, err) => {
         if (err) throw err;
@@ -41,35 +46,16 @@ describe("Module Book: ", () => {
   });
 
   it("/POST books", async () => {
-    return request(app.getHttpServer())
+    return await request(app.getHttpServer())
       .post(encodeURI("/books"))
-      .send({
-        isbn10: "0000000000",
-        isbn13: "0000000000",
-        title: "_Testo_Book_",
-        authors: [],
-        description: "description",
-        coverImageUrl:
-          "https://images.tandf.co.uk/common/jackets/amazon/978146656/9781466560680.jpg",
-        categories: ["Humor"],
-        releaseAt: "1967-12-19 23:00:00.000Z",
-        comments: [
-          {
-            message: "Excellent!",
-          },
-        ],
-        meta: {
-          favorites: ["testo"],
-          likes: ["testo"],
-        },
-        hidden: false,
-      })
+      .send(bookMockup)
       .expect(HttpStatus.CREATED)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {
         await bookService.deleteBook(body.isbn10);
         chai.assert.isObject(body);
-      });
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/POST books without body", async () => {
@@ -81,124 +67,159 @@ describe("Module Book: ", () => {
 
   it("/GET books", async () => {
     return await request(app.getHttpServer())
-      .get("/books")
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(({ body }) => Array.isArray(body));
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get("/books")
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => Array.isArray(body));
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/GET books?title", async () => {
     return await request(app.getHttpServer())
-      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(({ body }) => Array.isArray(body))
-      .expect(({ body }) =>
-        chai.assert.equal(booksMockup[0].title, body[0].title),
-      );
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get(encodeURI(`/books?title=${bookMockup.title}`))
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => Array.isArray(body))
+          .expect(({ body }) =>
+            chai.assert.equal(bookMockup.title, body[0].title),
+          );
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/GET books?categories", async () => {
     return await request(app.getHttpServer())
-      .get(encodeURI(`/books?categories=${booksMockup[0].categories[0]}`))
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(({ body }) => Array.isArray(body))
-      .expect(({ body }) =>
-        chai.assert.equal(booksMockup[0].categories[0], body[0].categories[0]),
-      );
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get(encodeURI(`/books?categories=${bookMockup.categories[0]}`))
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => Array.isArray(body))
+          .expect(({ body }) =>
+            chai.assert.equal(bookMockup.categories[0], body[0].categories[0]),
+          );
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/GET books?categories[]", async () => {
     return await request(app.getHttpServer())
-      .get(encodeURI(`/books?categories[]=${booksMockup[0].categories[0]}`))
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(({ body }) => Array.isArray(body))
-      .expect(({ body }) =>
-        chai.assert.equal(booksMockup[0].categories[0], body[0].categories[0]),
-      );
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get(encodeURI(`/books?categories[]=${bookMockup.categories[0]}`))
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => Array.isArray(body))
+          .expect(({ body }) =>
+            chai.assert.equal(bookMockup.categories[0], body[0].categories[0]),
+          );
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/GET books/:id", async () => {
-    return request(app.getHttpServer())
-      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
-      .then(async ({ body }, err) => {
-        if (err) throw err;
+    return await request(app.getHttpServer())
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        const book = await bookService.findByIsbn10(bookMockup.isbn10);
         await request(app.getHttpServer())
-          .get(encodeURI(`/books/${body[0]._id}`))
+          .get(encodeURI(`/books/${book._id}`))
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body))
-          .expect(({ body }) =>
-            chai.assert.equal(booksMockup[0].title, body.title),
-          );
-      });
+          .expect(({ body }) => chai.assert.equal(book.title, body.title));
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/POST books/:id/likes/:pseudo", async () => {
-    return request(app.getHttpServer())
-      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
-      .then(async ({ body }, err) => {
-        if (err) throw err;
+    return await request(app.getHttpServer())
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        const book = await bookService.findByIsbn10(bookMockup.isbn10);
         await request(app.getHttpServer())
-          .post(encodeURI(`/books/${body[0]._id}/likes/testo`))
+          .post(encodeURI(`/books/${book._id}/likes/testo`))
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body))
           .expect(({ body }) => chai.assert.equal("Book liked!", body.message));
-      });
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/POST books/:id/likes/:pseudo unlike book", async () => {
-    return request(app.getHttpServer())
-      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
-      .then(({ body }, err) => {
-        if (err) throw err;
-        setTimeout(async () => {
-          await request(app.getHttpServer())
-            .post(encodeURI(`/books/${body[0]._id}/likes/testo`))
-            .expect(HttpStatus.OK)
-            .expect("Content-Type", /json/)
-            .expect(({ body }) => chai.assert.isObject(body))
-            .expect(({ body }) =>
-              chai.assert.equal("Book unliked!", body.message),
-            );
-        }, 1000);
-      });
+    return await request(app.getHttpServer())
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        const book = await bookService.findByIsbn10(bookMockup.isbn10);
+        await request(app.getHttpServer())
+          .post(encodeURI(`/books/${book._id}/likes/test`))
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => chai.assert.isObject(body))
+          .expect(({ body }) =>
+            chai.assert.equal("Book unliked!", body.message),
+          );
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/GET books/likes/:pseudo", async () => {
     return await request(app.getHttpServer())
-      .get(encodeURI("/books/likes/test"))
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(({ body }) => Array.isArray(body));
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get(encodeURI("/books/likes/test"))
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => Array.isArray(body));
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/POST books/:id/favorites/:pseudo", async () => {
-    return request(app.getHttpServer())
-      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
-      .then(async ({ body }, err) => {
-        if (err) throw err;
+    return await request(app.getHttpServer())
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        const book = await bookService.findByIsbn10(bookMockup.isbn10);
         await request(app.getHttpServer())
-          .post(encodeURI(`/books/${body[0]._id}/favorites/testo`))
+          .post(encodeURI(`/books/${book._id}/favorites/testo`))
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body))
           .expect(({ body }) =>
             chai.assert.equal("Book added to your favorites!", body.message),
           );
-      });
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/POST books/:id/favorites/:pseudo remove book from favorites", async () => {
-    return request(app.getHttpServer())
-      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
-      .then(async ({ body }, err) => {
-        if (err) throw err;
+    return await request(app.getHttpServer())
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        const book = await bookService.findByIsbn10(bookMockup.isbn10);
         await request(app.getHttpServer())
-          .post(encodeURI(`/books/${body[0]._id}/favorites/testo`))
+          .post(encodeURI(`/books/${book._id}/favorites/test`))
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body))
@@ -208,24 +229,32 @@ describe("Module Book: ", () => {
               body.message,
             ),
           );
-      });
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/GET books/favorites/:pseudo", async () => {
     return await request(app.getHttpServer())
-      .get(encodeURI("/books/favorites/test"))
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(({ body }) => Array.isArray(body));
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get(encodeURI("/books/favorites/test"))
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => Array.isArray(body));
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   it("/POST books/:id/comments", async () => {
-    return request(app.getHttpServer())
-      .get(encodeURI(`/books?title=${booksMockup[0].title}`))
-      .then(async ({ body }, err) => {
-        if (err) throw err;
+    return await request(app.getHttpServer())
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        const book = await bookService.findByIsbn10(bookMockup.isbn10);
         await request(app.getHttpServer())
-          .post(encodeURI(`/books/${body[0]._id}/comments`))
+          .post(encodeURI(`/books/${book._id}/comments`))
           .send({
             comment: { message: "test" },
           })
@@ -235,10 +264,12 @@ describe("Module Book: ", () => {
           .expect(({ body }) =>
             chai.assert.equal("Book commented!", body.message),
           );
-      });
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
   after(async () => {
+    await userService.deleteUser(userAuthMockup.pseudo);
     await app.close();
   });
 });

@@ -7,6 +7,13 @@ export const userMockup: User = {
   profileImageUrl: "img.png",
 };
 
+export const userAuthMockup: User = {
+  pseudo: "_test_auth_",
+  password: "_test_",
+  email: "test.auth@gmail.com",
+  profileImageUrl: "img.png",
+};
+
 export const userBookcaseMockup: User = {
   pseudo: "_test_bk_",
   password: "_test_",

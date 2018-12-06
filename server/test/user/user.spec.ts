@@ -6,7 +6,7 @@ import "mocha";
 import * as chai from "chai";
 import { ApplicationModule } from "../../src/app.module";
 import { UserService } from "../../src/user/user.service";
-import { userMockup, usersMockup } from "./mockup/user.mockup";
+import { userMockup, userAuthMockup } from "./mockup/user.mockup";
 
 describe("Module User: ", () => {
   let server;
@@ -27,12 +27,13 @@ describe("Module User: ", () => {
 
     userService = module.get<UserService>(UserService);
 
-    request
+    await userService.createUser(userAuthMockup);
+    await request
       .agent(app.getHttpServer())
       .post("/auth/login")
       .send({
-        email: process.env.TEST_EMAIL,
-        password: process.env.TEST_PASSWORD,
+        email: userAuthMockup.email,
+        password: userAuthMockup.password,
       })
       .then((res, err) => {
         if (err) throw err;
@@ -47,9 +48,9 @@ describe("Module User: ", () => {
       .expect(HttpStatus.CREATED)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {
-        await userService.deleteUser("_test_");
         chai.assert.isObject(body);
-      });
+      })
+      .then(async () => await userService.deleteUser(userMockup.pseudo));
   });
 
   it("/POST users without body", async () => {
@@ -59,31 +60,41 @@ describe("Module User: ", () => {
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {
         chai.assert.isObject(body);
-
-        await userService.deleteUser("_test_");
       });
   });
 
   it("/GET users", async () => {
     return await request(app.getHttpServer())
-      .get("/users")
-      .set("Authorization", `Bearer ${token}`)
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(async ({ body }) => {
-        chai.assert.isArray(body);
-      });
+      .post("/users")
+      .send(userMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get("/users")
+          .set("Authorization", `Bearer ${token}`)
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(async ({ body }) => {
+            chai.assert.isArray(body);
+          });
+      })
+      .then(async () => await userService.deleteUser(userMockup.pseudo));
   });
 
   it("/GET users?pseudo", async () => {
     return await request(app.getHttpServer())
-      .get("/users?pseudo=test")
-      .set("Authorization", `Bearer ${token}`)
-      .expect(HttpStatus.OK)
-      .expect("Content-Type", /json/)
-      .expect(async ({ body }) => {
-        chai.assert.isArray(body);
-      });
+      .post("/users")
+      .send(userMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get(`/users?pseudo=${userMockup.pseudo}`)
+          .set("Authorization", `Bearer ${token}`)
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(async ({ body }) => {
+            chai.assert.isArray(body);
+          });
+      })
+      .then(async () => await userService.deleteUser(userMockup.pseudo));
   });
 
   it("/GET users invalid token", async () => {
@@ -112,34 +123,37 @@ describe("Module User: ", () => {
 
   it("/GET users/:id", async () => {
     return await request(app.getHttpServer())
-      .get("/users")
-      .set("Authorization", `Bearer ${token}`)
-      .then(async ({ body }, err) => {
-        if (err) throw err;
+      .post("/users")
+      .send(userMockup)
+      .then(async () => {
+        const user = await userService.findByPseudo(userMockup.pseudo);
         await request(app.getHttpServer())
-          .get(encodeURI(`/users/${body[0]._id}`))
+          .get(encodeURI(`/users/${user._id}`))
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body));
-      });
+      })
+      .then(async () => await userService.deleteUser(userMockup.pseudo));
   });
 
   it("/POST users/:id/comments", async () => {
     return await request(app.getHttpServer())
-      .get("/users")
-      .set("Authorization", `Bearer ${token}`)
-      .then(async ({ body }, err) => {
-        if (err) throw err;
+      .post("/users")
+      .send(userMockup)
+      .then(async () => {
+        const user = await userService.findByPseudo(userMockup.pseudo);
         await request(app.getHttpServer())
-          .post(encodeURI(`/users/${body[0]._id}/comments`))
+          .post(encodeURI(`/users/${user._id}/comments`))
           .send({ comment: { message: "Excellent!", rating: 5 } })
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/)
           .expect(({ body }) => chai.assert.isObject(body));
-      });
+      })
+      .then(async () => await userService.deleteUser(userMockup.pseudo));
   });
 
   after(async () => {
+    await userService.deleteUser(userAuthMockup.pseudo);
     await app.close();
   });
 });

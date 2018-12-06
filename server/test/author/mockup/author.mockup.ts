@@ -1,5 +1,11 @@
 import { Author } from "../../../src/author/interfaces/author.interface";
 
+export const authorMockup: Author = {
+  name: "_J.K_Test_",
+  biography: "test test",
+  profileImageUrl: "img.png",
+};
+
 export const authorsMockup: Author[] = [
   {
     name: "J. K. Rowling",
