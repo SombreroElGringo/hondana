@@ -1,0 +1,82 @@
+#bookpage {
+  display: flex;
+  flex: 1;
+  border-top: 1px solid lightgrey;
+  .left {
+    width: 300px;
+    padding: 10px 10px;
+    .search-options {
+      color: grey;
+      font-size: 14px;
+      .title {
+        font-size: 13px;
+        font-style: italic;
+      }
+      .categories {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        .category {
+          padding: 2.5px 5px;
+          border: 1px solid lightgray;
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .results {
+      margin-top: 20px;
+      font-size: 14px;
+      ul {
+        padding: 0;
+        margin-top: 10px;
+        li {
+          display: flex;
+          border-bottom: 1px solid lightgrey;
+          padding-bottom: 10px;
+          .cover {
+            width: 75px;
+            margin-right: 10px;
+            img {
+              width: 100%;
+            }
+          }
+          .details {
+            font-size: 12px;
+            .title {
+              font-weight: bold;
+            }
+            .description {
+              font-size: 10px;
+            }
+            .metas {
+              display: flex;
+              > div:not(:last-child) {
+                margin-right: 5px;
+              }
+              i {
+                margin-right: 2.5px;
+              }
+              .favorites {
+                color: darkorange;
+              }
+              .likes {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    .map {
+      height: 100%;
+      > div {
+        height: 100%;
+      }
+    }
+  }
+}
