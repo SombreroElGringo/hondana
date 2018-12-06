@@ -109,6 +109,17 @@ describe("Module Book: ", () => {
       );
   });
 
+  it("/GET books?categories[]", async () => {
+    return await request(app.getHttpServer())
+      .get(encodeURI(`/books?categories[]=${booksMockup[0].categories[0]}`))
+      .expect(HttpStatus.OK)
+      .expect("Content-Type", /json/)
+      .expect(({ body }) => Array.isArray(body))
+      .expect(({ body }) =>
+        chai.assert.equal(booksMockup[0].categories[0], body[0].categories[0]),
+      );
+  });
+
   it("/GET books/:id", async () => {
     return request(app.getHttpServer())
       .get(encodeURI(`/books?title=${booksMockup[0].title}`))
