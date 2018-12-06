@@ -34,6 +34,10 @@ export class BookService {
     return await this.bookModel.findOne({ _id: new Types.ObjectId(id) }).exec();
   }
 
+  async findByIsbn10(isbn10: string): Promise<Book> {
+    return await this.bookModel.findOne({ isbn10: isbn10 }).exec();
+  }
+
   async likeBook(id: string, pseudo: string): Promise<string> {
     const book: Book = await this.bookModel
       .findOne({ _id: new Types.ObjectId(id) })

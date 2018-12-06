@@ -28,6 +28,10 @@ export class UserService {
     return await this.userModel.findOne({ _id: new Types.ObjectId(id) });
   }
 
+  async findByPseudo(pseudo: string): Promise<User> {
+    return await this.userModel.findOne({ pseudo: pseudo });
+  }
+
   async findByEmail(email: string): Promise<User> {
     return await this.userModel.findOne({ email: email });
   }

@@ -22,10 +22,23 @@ export class BookcaseService {
     return await this.bookcaseModel.findOne({ _id: new Types.ObjectId(id) });
   }
 
+  async findByOwner(owner: string): Promise<Bookcase> {
+    return await this.bookcaseModel.findOne({
+      owner: new Types.ObjectId(owner),
+    });
+  }
+
   async addBookInBookcase(id: string, bookId: string, isAvailable: boolean) {
-    return await this.bookcaseModel.update(
+    return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
-      { $push: { books: { bookId: bookId, isAvailable: isAvailable } } },
+      {
+        $push: {
+          books: {
+            bookId: new Types.ObjectId(bookId),
+            isAvailable: isAvailable,
+          },
+        },
+      },
     );
   }
 
@@ -34,14 +47,14 @@ export class BookcaseService {
     bookId: string,
     isAvailable: boolean,
   ) {
-    return await this.bookcaseModel.update(
+    return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
       { $pull: { books: { bookId: bookId, isAvailable: isAvailable } } },
     );
   }
 
   async changeBookAviability(id: string, bookId: string, isAvailable: boolean) {
-    return await this.bookcaseModel.update(
+    return await this.bookcaseModel.updateOne(
       {
         _id: new Types.ObjectId(id),
         "books.bookId": new Types.ObjectId(bookId),
@@ -50,11 +63,7 @@ export class BookcaseService {
     );
   }
 
-  async initializeBookcases(bookcase: Bookcase) {
-    return await this.createBookcase(bookcase);
-  }
-
-  async cleanBookcase() {
-    return await this.bookcaseModel.deleteMany().exec();
+  async deleteBookcase(owner: string) {
+    return await this.bookcaseModel.deleteOne({ owner: owner }).exec();
   }
 }

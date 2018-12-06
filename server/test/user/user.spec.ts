@@ -6,7 +6,7 @@ import "mocha";
 import * as chai from "chai";
 import { ApplicationModule } from "../../src/app.module";
 import { UserService } from "../../src/user/user.service";
-import { usersMockup } from "./mockup/user.mockup";
+import { userMockup, usersMockup } from "./mockup/user.mockup";
 
 describe("Module User: ", () => {
   let server;
@@ -43,12 +43,7 @@ describe("Module User: ", () => {
   it("/POST users", async () => {
     return await request(app.getHttpServer())
       .post("/users")
-      .send({
-        pseudo: "_test_",
-        password: "_test_",
-        email: "test@gmail.com",
-        profileImageUrl: "img.png",
-      })
+      .send(userMockup)
       .expect(HttpStatus.CREATED)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {

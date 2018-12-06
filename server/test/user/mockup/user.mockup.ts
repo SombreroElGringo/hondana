@@ -1,5 +1,19 @@
 import { User } from "../../../src/user/interfaces/user.interface";
 
+export const userMockup: User = {
+  pseudo: "_test_",
+  password: "_test_",
+  email: "test@gmail.com",
+  profileImageUrl: "img.png",
+};
+
+export const userBookcaseMockup: User = {
+  pseudo: "_test_bk_",
+  password: "_test_",
+  email: "test.bk@gmail.com",
+  profileImageUrl: "img.png",
+};
+
 export const usersMockup: User[] = [
   {
     pseudo: "test",

@@ -1,5 +1,49 @@
 import { Book } from "../../../src/book/interfaces/book.interface";
 
+export const bookMockup: Book = {
+  isbn10: "0000000000",
+  isbn13: "0000000000",
+  title: "_Testo_Book_",
+  authors: [],
+  description: "description",
+  coverImageUrl:
+    "https://images.tandf.co.uk/common/jackets/amazon/978146656/9781466560680.jpg",
+  categories: ["Humor"],
+  releaseAt: new Date("1967-12-19 23:00:00.000Z"),
+  comments: [
+    {
+      message: "Excellent!",
+    },
+  ],
+  meta: {
+    favorites: ["testo"],
+    likes: ["testo"],
+  },
+  hidden: false,
+};
+
+export const bookBookcaseMockup: Book = {
+  isbn10: "000000test",
+  isbn13: "000000test",
+  title: "_Testo_Book_",
+  authors: [],
+  description: "description",
+  coverImageUrl:
+    "https://images.tandf.co.uk/common/jackets/amazon/978146656/9781466560680.jpg",
+  categories: ["Humor"],
+  releaseAt: new Date("1967-12-19 23:00:00.000Z"),
+  comments: [
+    {
+      message: "Excellent!",
+    },
+  ],
+  meta: {
+    favorites: ["testo"],
+    likes: ["testo"],
+  },
+  hidden: false,
+};
+
 export const booksMockup: Book[] = [
   {
     isbn10: "201210133X",

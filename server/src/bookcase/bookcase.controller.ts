@@ -6,9 +6,10 @@ import {
   Post,
   Body,
   Param,
-  Query,
   Delete,
+  Put,
 } from "@nestjs/common";
+import * as _ from "lodash";
 import { BookcaseService } from "./bookcase.service";
 import { Bookcase } from "./models/bookcase.interface";
 
@@ -18,7 +19,7 @@ export class BookcaseController {
 
   @Post()
   async createBookcase(@Response() res, @Body() body) {
-    if (body) {
+    if (!_.isEmpty(body)) {
       const bookcase: Bookcase = {
         owner: body.owner,
         books: body.books,
@@ -34,7 +35,7 @@ export class BookcaseController {
   }
 
   @Get()
-  async getAllBookcases(@Response() res, @Query() query): Promise<any> {
+  async getAllBookcases(@Response() res): Promise<any> {
     const bookcases = await this.bookcaseService.findAll();
     res.status(HttpStatus.OK).json(bookcases);
   }
@@ -45,7 +46,7 @@ export class BookcaseController {
     res.status(HttpStatus.OK).json(bookcase);
   }
 
-  @Post(":id/books")
+  @Post(":id/book")
   async addBookInBookcase(
     @Response() res,
     @Param() param,
@@ -61,7 +62,7 @@ export class BookcaseController {
       .json({ status: HttpStatus.OK, message: "Book added in the Bookcase!" });
   }
 
-  @Delete(":id/books")
+  @Delete(":id/book/:bookId")
   async removeBookFromBookcase(
     @Response() res,
     @Param() param,
@@ -69,7 +70,7 @@ export class BookcaseController {
   ): Promise<any> {
     await this.bookcaseService.removeBookFromBookcase(
       param.id,
-      body.bookId,
+      param.bookId,
       body.isAvailable,
     );
     res.status(HttpStatus.OK).json({
@@ -78,7 +79,7 @@ export class BookcaseController {
     });
   }
 
-  @Post(":id/books/:bookId")
+  @Put(":id/book/:bookId")
   async changeBookAviability(
     @Response() res,
     @Param() param,
