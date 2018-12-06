@@ -15,6 +15,10 @@ export const BookcaseSchema = new mongoose.Schema(
         isAvailable: Boolean,
       },
     ],
+    coordinate: {
+      latitude: String,
+      longitude: String,
+    },
   },
   { timestamps: true },
 );

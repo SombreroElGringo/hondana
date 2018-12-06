@@ -7,4 +7,8 @@ export class Bookcase {
       isAvailable: Boolean;
     }
   ];
+  public coordinate?: {
+    latitude: string;
+    longitude: string;
+  };
 }

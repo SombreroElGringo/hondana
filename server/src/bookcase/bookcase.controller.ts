@@ -23,6 +23,7 @@ export class BookcaseController {
       const bookcase: Bookcase = {
         owner: body.owner,
         books: body.books,
+        coordinate: body.coordinate,
       };
       await this.bookcaseService.createBookcase(bookcase);
       res.status(HttpStatus.CREATED).json(bookcase);

@@ -55,6 +55,10 @@ describe("Module Bookcase: ", () => {
       .send({
         owner: user._id,
         body: [book._id],
+        coordinate: {
+          latitude: "35.971338",
+          longitude: "139.471432",
+        },
       })
       .expect(HttpStatus.CREATED)
       .expect("Content-Type", /json/)
