@@ -1,6 +1,5 @@
 import { Map } from 'immutable';
 import {
-  FETCH_BOOKS,
   FETCH_BOOKS_FAIL,
   FETCH_BOOKS_SUCCESS,
   SET_APP_NAME,

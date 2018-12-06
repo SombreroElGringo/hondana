@@ -11,7 +11,14 @@ const logger = createLogger({
   duration: true,
 });
 
-const middlewares = [thunk, logger];
+const middlewares = [
+  thunk,
+  //logger,
+  store => next => action => {
+    console.log(action.type);
+    return next(action);
+  },
+];
 
 const enhancer = applyMiddleware(...middlewares);
 
