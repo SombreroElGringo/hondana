@@ -15,12 +15,15 @@ export class BookService {
   async findAll(@Query() query?): Promise<Book[]> {
     const actionQueries = {};
     if (query.categories) {
-      const arrOfCategories = Array.isArray(query.categories)
+      let arrOfCategoriesTemp = Array.isArray(query.categories)
         ? query.categories
         : query.categories.split(",");
+      let arrOfCategories = [];
+      arrOfCategoriesTemp.map(item =>
+        arrOfCategories.push(new RegExp(item, "i")),
+      );
       actionQueries["categories"] = { $in: arrOfCategories };
     }
-
     if (query.title) {
       actionQueries["title"] = {
         $regex: query.title,
