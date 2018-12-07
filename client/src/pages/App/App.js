@@ -6,6 +6,7 @@ import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Header from '../../components/Header/Header';
 import AuthPage from '../AuthPage/AuthPage';
 import BookPage from '../BookPage/BookPage';
+import Detail from '../Detail/Detail';
 
 class App extends Component {
   render() {
@@ -15,12 +16,13 @@ class App extends Component {
           <Header />
           <Switch>
             <Route component={HomePage} exact path="/" />
+            <Route component={BookPage} exact path="/books/search/:query" />
+            <Route component={Detail} exact path="/related_book/:id" />
             <Route
               component={() => <AuthPage type="register" />}
               exact
               path="/sign"
             />
-            <Route component={BookPage} exact path="/books/search/" />
             <Route component={NotFoundPage} />
           </Switch>
         </div>
