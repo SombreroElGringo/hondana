@@ -5,6 +5,7 @@ import * as autopopulate from "mongoose-autopopulate";
 const AuthorSchema = new mongoose.Schema(
   {
     name: String,
+    authorCode: { type: String, unique: true },
     biography: String,
     profileImageUrl: String,
     books: [

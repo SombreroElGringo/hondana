@@ -2,6 +2,7 @@ import { Author } from "../../../src/author/interfaces/author.interface";
 
 export const authorMockup: Author = {
   name: "_J.K_Test_",
+  authorCode: "testjk_",
   biography: "test test",
   profileImageUrl: "img.png",
   books: [],
@@ -10,6 +11,7 @@ export const authorMockup: Author = {
 export const authorsMockup: Author[] = [
   {
     name: "J. K. Rowling",
+    authorCode: "rowlingjk",
     biography:
       "J.K. Rowling is the author of the much-loved series of seven Harry Potter novels, originally published between 1997 and 2007.",
     profileImageUrl:
@@ -18,6 +20,7 @@ export const authorsMockup: Author[] = [
   },
   {
     name: "Albert Uderzo",
+    authorCode: "uderzoalbert",
     biography:
       "Alberto Aleandro Uderzo, est un dessinateur et scénariste de bande dessinée",
     profileImageUrl:
