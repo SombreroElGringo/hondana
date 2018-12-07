@@ -6,24 +6,23 @@ import UserRating from '../UserRating/UserRating';
 
 class UserProfile extends Component{
     state={
-        user : undefined,
-        userRating: 0
+        user : undefined
     };
 
     componentDidMount(){
-    const {userId} = this.props;
-    axios.get(`${API_URL}/users/${userId}`)
-    .then(response => this.setState({user: response.data}))
-}
+    const {userID} = this.props;
+    axios.get(`${API_URL}/users/${userID}`)
+    .then(response => this.setState({user: response.data }))
+    }
     render(){
-        const { userId } = this.props;
+        const { userID } = this.props;
         const {user} = this.state;
         return(
         <section className={'user--profile'}>
             <img src={user && user.profileImageUrl} alt='profile_picture'/>
             <p>{user && user.pseudo}</p>
             <p>{user && user.email}</p>
-            {user && <UserRating userRating= {user.comments[0].rating}/>}
+            <UserRating userId={userID}/>
         </section>
         )
     }
