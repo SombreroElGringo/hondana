@@ -24,6 +24,7 @@ export class AuthorController {
         name: body.name,
         biography: body.biography,
         profileImageUrl: body.profileImageUrl,
+        books: body.books,
       };
       await this.authorService.createAuthor(author);
       res.status(HttpStatus.CREATED).json(author);

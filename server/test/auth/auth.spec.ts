@@ -53,6 +53,18 @@ describe("Module Auth: ", () => {
       .then(async () => await userService.deleteUser(userAuthMockup.pseudo));
   });
 
+  it("/POST auth/register withou body", async () => {
+    await userService.createUser(userAuthMockup);
+    return await request(app.getHttpServer())
+      .post("/auth/register")
+      .expect(HttpStatus.BAD_REQUEST)
+      .expect("Content-Type", /json/)
+      .expect(async ({ body }) => {
+        chai.assert.isObject(body);
+      })
+      .then(async () => await userService.deleteUser(userAuthMockup.pseudo));
+  });
+
   it("/POST auth/login", async () => {
     await userService.createUser(userAuthMockup);
     return await request(app.getHttpServer())

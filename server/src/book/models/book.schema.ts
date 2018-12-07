@@ -1,8 +1,10 @@
 import * as mongoose from "mongoose";
+import * as autoref from "mongoose-autorefs";
+import * as autopopulate from "mongoose-autopopulate";
 
 mongoose.set("useCreateIndex", true);
 
-export const BookSchema = new mongoose.Schema(
+const BookSchema = new mongoose.Schema(
   {
     isbn10: { type: String, unique: true },
     isbn13: { type: String, unique: true },
@@ -11,6 +13,14 @@ export const BookSchema = new mongoose.Schema(
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Author",
+        autopopulate: { maxDepth: 1 },
+      },
+    ],
+    bookcases: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Bookcase",
+        autopopulate: { maxDepth: 1 },
       },
     ],
     description: String,
@@ -28,3 +38,8 @@ export const BookSchema = new mongoose.Schema(
   },
   { timestamps: true },
 );
+
+BookSchema.plugin(autoref, ["authors.books", "bookcases.books"]);
+BookSchema.plugin(autopopulate);
+
+export { BookSchema };
