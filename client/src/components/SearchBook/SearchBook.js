@@ -1,25 +1,25 @@
 import React from 'react';
 import { fetchBooks } from '../../redux/actions/app';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import getBooks from '../../redux/selectors/app/getBooks';
 import { Search } from 'semantic-ui-react';
 import './SearchBook.css';
+import { mapDispatchToProps, mapStateToProps } from '../../utils/redux_helpers';
 
 class SearchBook extends React.Component {
   render() {
     const { books } = this.props;
 
     const categories = [
-      'polar',
-      'animation',
-      'action',
-      'aventure',
-      'fantasy',
-      'cuisine',
-      'botannique',
-      'manga',
-      'contes & légendes',
+      'Polar',
+      'Animation',
+      'Action',
+      'Aventure',
+      'Fantasy',
+      'Cuisine',
+      'Botannique',
+      'Manga',
+      'Contes & Légendes',
     ];
 
     return (
@@ -55,7 +55,7 @@ class SearchBook extends React.Component {
                   type="checkbox"
                   name="category"
                   multiple="multiple"
-                  value={category.toLowerCase()}
+                  value={category}
                   className="mr-2"
                 />
                 {category[0].toUpperCase() + category.slice(1)}
@@ -74,17 +74,8 @@ class SearchBook extends React.Component {
     const title = formData.get('title');
     const categories = formData.getAll('category');
 
-    let query = [];
-    if (title) query.push(title);
-    if (categories && categories.length > 0)
-      query.push(`subject:${categories}`);
-
-    query = query
-      .join('&')
-      .replace(/ /g, '+')
-      .toLocaleLowerCase();
-
-    if (query.length > 0) history.push(`/books/search/${query}`);
+    if (title || (categories && categories.length > 0))
+      history.push(`/books/search/`, { title, categories });
   };
 
   handleAutocomplete = event => {
@@ -99,19 +90,11 @@ class SearchBook extends React.Component {
   };
 }
 
-const mapStateToProps = state => ({
-  books: getBooks(state),
-});
-
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      fetchBooks,
-    },
-    dispatch
-  );
-
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps({
+    books: getBooks,
+  }),
+  mapDispatchToProps({
+    fetchBooks,
+  })
 )(SearchBook);

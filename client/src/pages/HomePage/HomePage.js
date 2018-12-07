@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './HomePage.css';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { fetchBooks } from '../../redux/actions/app';
 import getBooks from '../../redux/selectors/app/getBooks';
 import SearchBook from '../../components/SearchBook/SearchBook';
+import { mapDispatchToProps, mapStateToProps } from '../../utils/redux_helpers';
 
 class HomePage extends Component {
   render() {
@@ -22,18 +22,11 @@ class HomePage extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  books: getBooks(state),
-});
-const mapDispatchToProps = dispatch =>
-  bindActionCreators(
-    {
-      fetchBooks,
-    },
-    dispatch
-  );
-
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps({
+    books: getBooks,
+  }),
+  mapDispatchToProps({
+    fetchBooks,
+  })
 )(HomePage);
