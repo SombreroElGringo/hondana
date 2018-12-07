@@ -35,7 +35,7 @@ class BookPage extends Component {
                 books.map(book => (
                   <li key={book._id}>
                     <div className="cover">
-                      <img src={book.coverImageUrl} />
+                      <img src={book.coverImageUrl} alt="cover" />
                     </div>
                     <div className="details">
                       <div className="title">{book.title}</div>

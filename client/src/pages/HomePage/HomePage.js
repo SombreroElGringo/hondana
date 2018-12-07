@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './HomePage.css';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { fetchBooks } from '../../redux/actions/app';
 import getBooks from '../../redux/selectors/app/getBooks';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { fetchBooks } from '../../redux/actions/app';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import getBooks from '../../redux/selectors/app/getBooks';
 import { Search } from 'semantic-ui-react';
