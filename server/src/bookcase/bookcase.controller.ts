@@ -11,7 +11,7 @@ import {
 } from "@nestjs/common";
 import * as _ from "lodash";
 import { BookcaseService } from "./bookcase.service";
-import { Bookcase } from "./models/bookcase.interface";
+import { Bookcase } from "./interfaces/bookcase.interface";
 
 @Controller("bookcases")
 export class BookcaseController {
