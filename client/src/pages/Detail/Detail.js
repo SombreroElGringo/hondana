@@ -8,12 +8,12 @@ import { API_URL } from '../../utils/api_endpoints';
 
 export default class Detail extends Component{
   componentDidMount(){
-    axios.get(`${API_URL}/bookcases?owner=5bffa87467accc0c40881457`).then((result) => console.log(result))
+    // axios.get(`${API_URL}/bookcases?owner=5bffa87467accc0c40881457`).then((result) =>)
   }
   render(){
     return(
       <div className={'related--book'}>
-        <UserProfile userID={this.props.match.params.id}/>
+        <UserProfile userId={this.props.match.params.id}/>
         {/* <Book bookId={}/> */}
       </div>
     )
