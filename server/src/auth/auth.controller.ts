@@ -1,17 +1,8 @@
-import {
-  Controller,
-  Post,
-  Body,
-  Response,
-  HttpStatus,
-  Get,
-  UseGuards,
-} from "@nestjs/common";
+import { Controller, Post, Body, Response, HttpStatus } from "@nestjs/common";
 import * as _ from "lodash";
 import { AuthService } from "./auth.service";
 import { JwtPayload } from "./interfaces/jwt-payload.interface";
 import { User } from "../user/interfaces/user.interface";
-import { AuthGuard } from "@nestjs/passport";
 
 @Controller("auth")
 export class AuthController {

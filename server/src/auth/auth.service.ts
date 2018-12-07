@@ -4,10 +4,12 @@ import { UserService } from "../user/user.service";
 import { JwtPayload } from "./interfaces/jwt-payload.interface";
 import { User } from "../user/interfaces/user.interface";
 import * as bcrypt from "bcrypt";
+import { BookcaseService } from "../bookcase/bookcase.service";
 
 @Injectable()
 export class AuthService {
   constructor(
+    private readonly bookcaseService: BookcaseService,
     private readonly userService: UserService,
     private readonly jwtService: JwtService,
   ) {}
@@ -29,8 +31,10 @@ export class AuthService {
         password: userInst.password,
       };
 
+      await this.bookcaseService.createBookcase({ owner: userInst._id });
+
       const token = this.jwtService.sign(payload);
-    
+
       return {
         expiresIn: 3600,
         token,

@@ -26,7 +26,7 @@ const BookcaseSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-BookcaseSchema.plugin(autoref, ["books.bookcases"]);
+BookcaseSchema.plugin(autoref, ["owner.bookcases", "books.bookcases"]);
 BookcaseSchema.plugin(autopopulate);
 
 export { BookcaseSchema };
