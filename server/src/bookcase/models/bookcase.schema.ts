@@ -10,12 +10,9 @@ const BookcaseSchema = new mongoose.Schema(
     },
     books: [
       {
-        bookId: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "Book",
-          autopopulate: { maxDepth: 1 },
-        },
-        isAvailable: Boolean,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Book",
+        autopopulate: { maxDepth: 1 },
       },
     ],
     coordinate: {

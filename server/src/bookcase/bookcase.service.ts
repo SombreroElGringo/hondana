@@ -28,38 +28,21 @@ export class BookcaseService {
     });
   }
 
-  async addBookInBookcase(id: string, bookId: string, isAvailable: boolean) {
+  async addBookInBookcase(id: string, bookId: string) {
     return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
       {
         $push: {
-          books: {
-            bookId: new Types.ObjectId(bookId),
-            isAvailable: isAvailable,
-          },
+          books: new Types.ObjectId(bookId),
         },
       },
     );
   }
 
-  async removeBookFromBookcase(
-    id: string,
-    bookId: string,
-    isAvailable: boolean,
-  ) {
+  async removeBookFromBookcase(id: string, bookId: string) {
     return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
-      { $pull: { books: { bookId: bookId, isAvailable: isAvailable } } },
-    );
-  }
-
-  async changeBookAviability(id: string, bookId: string, isAvailable: boolean) {
-    return await this.bookcaseModel.updateOne(
-      {
-        _id: new Types.ObjectId(id),
-        "books.bookId": new Types.ObjectId(bookId),
-      },
-      { $set: { books: { isAvailable: isAvailable } } },
+      { $pull: { books: bookId } },
     );
   }
 
