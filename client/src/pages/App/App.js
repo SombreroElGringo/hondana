@@ -16,13 +16,13 @@ class App extends Component {
           <Header />
           <Switch>
             <Route component={HomePage} exact path="/" />
-            <Route component={BookPage} exact path="/books/search/:query" />
-            <Route component={Detail} exact path="/related_book/:id" />
             <Route
               component={() => <AuthPage type="register" />}
               exact
               path="/sign"
             />
+            <Route component={BookPage} exact path="/books/search/:query" />
+            <Route component={Detail} exact path="/related_book/:id" />
             <Route component={NotFoundPage} />
           </Switch>
         </div>
