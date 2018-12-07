@@ -7,22 +7,23 @@ class UserRating extends Component{
         rightComma: 0
     }
 
-    splitRating(){
-
-    }
-    
     componentDidMount(){
-        // const {userRating} = this.props;
-        const userRating = Number.parseFloat(3).toFixed(1);
+        const {userRating} = this.props;
+        const {leftComma, rightComma} = this.state;
 
-        const sUserRating = userRating.toString();
-        const ratingArray = sUserRating.split('.')
-        this.setState(
-            {
-                leftComma: parseInt(ratingArray[0]), 
-                rightComma: parseInt(ratingArray[1])
-            }
-        )
+        const ratingRender = [];
+
+        if(userRating){
+            const sUserRating = userRating.toString();
+            const ratingArray = sUserRating.split('.')
+            this.setState(
+                {
+                    leftComma: parseInt(ratingArray[0]),
+                    rightComma: parseInt(ratingArray[1])
+                }
+            )
+        }
+    console.log(leftComma, rightComma)
 }
 
     render(){
@@ -35,12 +36,12 @@ class UserRating extends Component{
         if(rightComma > 2 && rightComma <= 7)
             ratingRender.push(<span className="fa fa-star-half checked"></span>)
         else if(rightComma > 7)
-            ratingRender.push(<span className="fa fa-star checked"></span>)  
+            ratingRender.push(<span className="fa fa-star checked"></span>)
         else if(rightComma <= 2)
             ratingRender.push(<span className="fa fa-star"></span>)
         if(ratingRender.length<5)
             for (let i = ratingRender.length; i < 5; i++) {
-                ratingRender.push(<span className="fa fa-star"></span>)               
+                ratingRender.push(<span className="fa fa-star"></span>)
             }
         return(
             <div className='user--rating'>
