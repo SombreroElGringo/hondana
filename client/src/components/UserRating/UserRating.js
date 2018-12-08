@@ -8,8 +8,8 @@ class UserRating extends Component{
     }
 
     componentDidMount(){
-        const {userRating} = this.props;
-        const {leftComma, rightComma} = this.state;
+        // const {userRating} = this.props;
+        const userRating = Number.parseFloat(3).toFixed(1);
 
         const ratingRender = [];
 

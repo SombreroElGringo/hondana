@@ -23,7 +23,7 @@ class UserProfile extends Component{
             <img src={user && user.profileImageUrl} alt='profile_picture'/>
             <p>{user && user.pseudo}</p>
             <p>{user && user.email}</p>
-            <UserRating userRating={user && user.comments[0].rating}/>
+            {user && <UserRating userRating= {user.comments[0].rating}/>}
         </section>
         )
     }
