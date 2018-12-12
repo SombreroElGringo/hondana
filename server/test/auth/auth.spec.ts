@@ -33,7 +33,12 @@ describe("Module Auth: ", () => {
   it("/POST auth/register", async () => {
     return await request(app.getHttpServer())
       .post("/auth/register")
-      .send(userAuthMockup)
+      .send({
+        email: userAuthMockup.email,
+        pseudo: userAuthMockup.pseudo,
+        password: userAuthMockup.password,
+        confirmPassword: userAuthMockup.password,
+      })
       .expect(HttpStatus.CREATED)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {
