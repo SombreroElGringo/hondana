@@ -1,5 +1,6 @@
 import { Map } from 'immutable';
 import {
+  HANDLE_AUTH,
   FETCH_BOOKS_FAIL,
   FETCH_BOOKS_SUCCESS,
   SET_APP_NAME,
@@ -8,11 +9,13 @@ import {
 const initState = Map({
   appName: 'SNCF-LIVE',
   books: null,
+  isAuth: undefined,
 });
 
 const handlers = {
   [SET_APP_NAME]: (state, action) => state.set('appName', action.payload),
 
+  [HANDLE_AUTH]: (state, { payload }) => state.set('isAuth', payload),
   [FETCH_BOOKS_SUCCESS]: (state, action) => state.set('books', action.payload),
   [FETCH_BOOKS_FAIL]: state => state.set('books', null),
 };
