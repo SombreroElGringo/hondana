@@ -33,7 +33,7 @@ class Auth extends React.Component {
   handleAuth(data, type) {
     const API_URL = 'http://localhost:5000/auth';
 
-    console.log(type);
+    console.log(data, type);
 
     const url =
       type === 'register' ? API_URL + '/register' : API_URL + '/login';
@@ -44,14 +44,20 @@ class Auth extends React.Component {
 
     axios
       .post(url, data)
-      .then(response => {
-        console.log(response);
+      .then(({data}) => {
+        console.log(data);
         this.setState({
-          token: response.token,
+          token: data.data.token,
         });
       })
       .catch(error => {
-        console.log(error);
+        if(error.response && error.response.status === 400) {
+          this.setState({
+            errors: error.response.data? error.response.data.message : [],
+          });
+        } else {
+          console.log(error);
+        }
       });
   }
 

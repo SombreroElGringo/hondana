@@ -37,14 +37,14 @@ class Register extends React.Component {
       <div>
         <h2 className="sub-title">Inscrivez-vous!</h2>
         <span className="info" />
-        <form onSubmit={e => this.handleSubmit(e)}>
+        <form >
           <div
             className={
               emailError ? 'tooltip inpt-d inpt-error' : 'tooltip inpt-d'
             }
           >
             <span className={emailError ? 'tooltiptext' : 'invisible'}>
-              {emailError && emailError.msg}
+              {emailError && emailError.message}
             </span>
             <input
               className="field"
@@ -62,7 +62,7 @@ class Register extends React.Component {
             }
           >
             <span className={pseudoError ? 'tooltiptext' : 'invisible'}>
-              {pseudoError && pseudoError.msg}
+              {pseudoError && pseudoError.message}
             </span>
             <input
               className="field"
@@ -80,7 +80,7 @@ class Register extends React.Component {
             }
           >
             <span className={passwordError ? 'tooltiptext' : 'invisible'}>
-              {passwordError && passwordError.msg}
+              {passwordError && passwordError.message}
             </span>
             <input
               className="field"
@@ -102,7 +102,7 @@ class Register extends React.Component {
             <span
               className={confirmPasswordError ? 'tooltiptext' : 'invisible'}
             >
-              {confirmPasswordError && confirmPasswordError.msg}
+              {confirmPasswordError && confirmPasswordError.message}
             </span>
             <input
               className="field"
@@ -114,7 +114,7 @@ class Register extends React.Component {
               placeholder="Confirmer le mot de passe"
             />
           </div>
-          <input className="btn-form" type="submit" value="Inscription" />
+          <input className="btn-form" type="button" value="Inscription" onClick={e => this.handleSubmit(e)} />
         </form>
       </div>
     );

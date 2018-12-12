@@ -29,14 +29,14 @@ class Login extends React.Component {
       <div>
         <h2 className={'sub-title'}>Vous nous avez manqué !</h2>
         <span className="info" />
-        <form onSubmit={e => this.handleSubmit(e)}>
+        <form>
           <div
             className={
               emailError ? 'tooltip inpt-d inpt-error' : 'tooltip inpt-d'
             }
           >
             <span className={emailError ? 'tooltiptext' : 'invisible'}>
-              {emailError && emailError.msg}
+              {emailError && emailError.message}
             </span>
             <input
               className="field"
@@ -55,7 +55,7 @@ class Login extends React.Component {
             }
           >
             <span className={passwordError ? 'tooltiptext' : 'invisible'}>
-              {passwordError && passwordError.msg}
+              {passwordError && passwordError.message}
             </span>
             <input
               className="field"
@@ -68,7 +68,7 @@ class Login extends React.Component {
             />
           </div>
 
-          <input className="btn-form" type="submit" value="Se connecter" />
+          <input className="btn-form" type="button" value="Se connecter" onClick={e => this.handleSubmit(e)} />
         </form>
       </div>
     );
