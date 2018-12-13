@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
+import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
 import { handle_auth } from '../../redux/actions/auth';
 import { connect } from 'react-redux';
 import HttpError from '../../components/HttpError/HttpError';
@@ -101,13 +101,12 @@ class Auth extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({
-  token: getToken(state),
-  errors: getErrors(state),
-});
-const mapDispatchToProps = dispatch =>
-  bindActionCreators({ handleAuth: handle_auth }, dispatch);
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  mapStateToProps({
+    token: getToken,
+    errors: getErrors,
+  }),
+  mapDispatchToProps({
+    handleAuth: handle_auth,
+  })
 )(Auth);

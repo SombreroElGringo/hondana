@@ -54,32 +54,25 @@ export class AuthController {
       });
     }
 
-    if (!_.isEmpty(body)) {
-      const user: User = {
-        pseudo: body.pseudo,
-        password: body.password,
-        email: body.email,
-        profileImageUrl:
-          (body.profileImageUrl || body.profileImageUrl === "")
-            ? body.profileImageUrl :"https://picsum.photos/200/300/?random"
-            ,
-        comments: body.comments ? body.comments : [],
-      };
-      try {
-        const token = await this.authService.register(user);
-        res
-          .status(HttpStatus.CREATED)
-          .json({ status: HttpStatus.CREATED, data: token });
-      } catch (err) {
-        res
-          .status(HttpStatus.BAD_REQUEST)
-          .json({ status: HttpStatus.BAD_REQUEST, message: err.message });
-      }
-    } else {
-      res.status(HttpStatus.BAD_REQUEST).json({
-        status: HttpStatus.BAD_REQUEST,
-        message: "Please renseign the body!",
-      });
+    const user: User = {
+      pseudo: body.pseudo,
+      password: body.password,
+      email: body.email,
+      profileImageUrl:
+        body.profileImageUrl || body.profileImageUrl === ""
+          ? body.profileImageUrl
+          : "https://picsum.photos/200/300/?random",
+      comments: body.comments ? body.comments : [],
+    };
+    try {
+      const token = await this.authService.register(user);
+      res
+        .status(HttpStatus.CREATED)
+        .json({ status: HttpStatus.CREATED, data: token });
+    } catch (err) {
+      res
+        .status(HttpStatus.BAD_REQUEST)
+        .json({ status: HttpStatus.BAD_REQUEST, message: err.message });
     }
   }
 
