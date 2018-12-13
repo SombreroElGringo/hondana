@@ -4,8 +4,6 @@ import './Header.css';
 
 class Header extends React.Component {
   render() {
-    const {} = this.props;
-
     return (
       <header>
         <nav>

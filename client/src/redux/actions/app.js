@@ -2,11 +2,16 @@ import {
   FETCH_BOOKS,
   FETCH_BOOKS_FAIL,
   FETCH_BOOKS_SUCCESS,
+  RESET_BOOKS,
 } from '../consts/app';
 import { BOOKS_URL } from '../../utils/api_enpoints';
 import axios from 'axios';
 
-export const fetchBooks = (title, categories) => async dispatch => {
+export const resetBooks = () => ({
+  type: RESET_BOOKS,
+});
+
+export const fetchBooks = (title, categories, full) => async dispatch => {
   dispatch({ type: FETCH_BOOKS });
   try {
     const response = await axios.get(BOOKS_URL, {
@@ -16,11 +21,13 @@ export const fetchBooks = (title, categories) => async dispatch => {
       },
     });
 
-    if (!response.data) throw 'There is no results';
+    if (!response.data) throw new Error('There is no results');
 
-    const payload = response.data.map(({ title }) => ({
-      title,
-    }));
+    const payload = full
+      ? response.data
+      : response.data.map(({ title }) => ({
+          title,
+        }));
 
     dispatch({
       type: FETCH_BOOKS_SUCCESS,

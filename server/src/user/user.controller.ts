@@ -9,6 +9,7 @@ import {
   Param,
   Query,
 } from "@nestjs/common";
+import * as _ from "lodash";
 import { AuthGuard } from "@nestjs/passport";
 import { UserService } from "./user.service";
 import { User } from "./interfaces/user.interface";
@@ -19,7 +20,7 @@ export class UserController {
 
   @Post()
   async createUser(@Response() res, @Body() body) {
-    if (body) {
+    if (!_.isEmpty(body)) {
       const user: User = {
         pseudo: body.pseudo,
         password: body.password,

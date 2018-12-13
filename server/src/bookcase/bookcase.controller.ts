@@ -6,11 +6,11 @@ import {
   Post,
   Body,
   Param,
-  Query,
   Delete,
 } from "@nestjs/common";
+import * as _ from "lodash";
 import { BookcaseService } from "./bookcase.service";
-import { Bookcase } from "./models/bookcase.interface";
+import { Bookcase } from "./interfaces/bookcase.interface";
 
 @Controller("bookcases")
 export class BookcaseController {
@@ -18,10 +18,11 @@ export class BookcaseController {
 
   @Post()
   async createBookcase(@Response() res, @Body() body) {
-    if (body) {
+    if (!_.isEmpty(body)) {
       const bookcase: Bookcase = {
         owner: body.owner,
         books: body.books,
+        coordinate: body.coordinate,
       };
       await this.bookcaseService.createBookcase(bookcase);
       res.status(HttpStatus.CREATED).json(bookcase);
@@ -34,7 +35,7 @@ export class BookcaseController {
   }
 
   @Get()
-  async getAllBookcases(@Response() res, @Query() query): Promise<any> {
+  async getAllBookcases(@Response() res): Promise<any> {
     const bookcases = await this.bookcaseService.findAll();
     res.status(HttpStatus.OK).json(bookcases);
   }
@@ -45,52 +46,20 @@ export class BookcaseController {
     res.status(HttpStatus.OK).json(bookcase);
   }
 
-  @Post(":id/books")
-  async addBookInBookcase(
-    @Response() res,
-    @Param() param,
-    @Body() body,
-  ): Promise<any> {
-    await this.bookcaseService.addBookInBookcase(
-      param.id,
-      body.bookId,
-      body.isAvailable,
-    );
+  @Post(":id/book/:bookId")
+  async addBookInBookcase(@Response() res, @Param() param): Promise<any> {
+    await this.bookcaseService.addBookInBookcase(param.id, param.bookId);
     res
       .status(HttpStatus.OK)
       .json({ status: HttpStatus.OK, message: "Book added in the Bookcase!" });
   }
 
-  @Delete(":id/books")
-  async removeBookFromBookcase(
-    @Response() res,
-    @Param() param,
-    @Body() body,
-  ): Promise<any> {
-    await this.bookcaseService.removeBookFromBookcase(
-      param.id,
-      body.bookId,
-      body.isAvailable,
-    );
+  @Delete(":id/book/:bookId")
+  async removeBookFromBookcase(@Response() res, @Param() param): Promise<any> {
+    await this.bookcaseService.removeBookFromBookcase(param.id, param.bookId);
     res.status(HttpStatus.OK).json({
       status: HttpStatus.OK,
       message: "Book removed from the Bookcase!",
     });
-  }
-
-  @Post(":id/books/:bookId")
-  async changeBookAviability(
-    @Response() res,
-    @Param() param,
-    @Body() body,
-  ): Promise<any> {
-    await this.bookcaseService.changeBookAviability(
-      param.id,
-      param.bookId,
-      body.isAvailable,
-    );
-    res
-      .status(HttpStatus.OK)
-      .json({ status: HttpStatus.OK, message: "Book aviability changed!" });
   }
 }

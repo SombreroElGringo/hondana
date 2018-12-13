@@ -2,7 +2,6 @@ import { Model, Types } from "mongoose";
 import { Injectable, Query } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { User } from "./interfaces/user.interface";
-import { users as usersMockup } from "./mockup/user.mockup";
 
 @Injectable()
 export class UserService {
@@ -15,17 +14,14 @@ export class UserService {
 
   async findAll(@Query() query?): Promise<User[]> {
     const actionQueries = {};
-    if (query) {
-      if (query.pseudo) {
-        actionQueries["pseudo"] = {
-          $regex: query.pseudo,
-          $options: "i",
-        };
-      }
-      return await this.userModel.find(actionQueries).exec();
-    } else {
-      return await this.userModel.find().exec();
+
+    if (query.pseudo) {
+      actionQueries["pseudo"] = {
+        $regex: query.pseudo,
+        $options: "i",
+      };
     }
+    return await this.userModel.find(actionQueries).exec();
   }
 
   async findById(id: string): Promise<User> {
@@ -41,17 +37,13 @@ export class UserService {
   }
 
   async commentUser(id: string, comment: object) {
-    return await this.userModel.update(
+    return await this.userModel.updateOne(
       { _id: new Types.ObjectId(id) },
       { $push: { comments: comment } },
     );
   }
 
-  async initializeUsers() {
-    return await usersMockup.map(user => this.createUser(user));
-  }
-
-  async cleanUsers() {
-    return await this.userModel.deleteMany().exec();
+  async deleteUser(pseudo: string) {
+    return await this.userModel.deleteOne({ pseudo: pseudo }).exec();
   }
 }

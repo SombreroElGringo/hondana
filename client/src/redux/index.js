@@ -1,17 +1,20 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import appReducer from './reducers/app';
+import authReducer from './reducers/auth';
 import thunk from 'redux-thunk';
-import { createLogger } from 'redux-logger';
 
 const reducer = combineReducers({
   app: appReducer,
+  auth: authReducer,
 });
 
-const logger = createLogger({
-  duration: true,
-});
-
-const middlewares = [thunk, logger];
+const middlewares = [
+  thunk,
+  store => next => action => {
+    console.log(action.type);
+    return next(action);
+  },
+];
 
 const enhancer = applyMiddleware(...middlewares);
 

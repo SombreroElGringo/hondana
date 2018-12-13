@@ -1,20 +1,30 @@
 import * as mongoose from "mongoose";
+import * as autoref from "mongoose-autorefs";
+import * as autopopulate from "mongoose-autopopulate";
 
-export const BookcaseSchema = new mongoose.Schema(
+const BookcaseSchema = new mongoose.Schema(
   {
     owner: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
+      autopopulate: { maxDepth: 1 },
     },
     books: [
       {
-        bookId: {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "Book",
-        },
-        isAvailable: Boolean,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Book",
+        autopopulate: { maxDepth: 1 },
       },
     ],
+    coordinate: {
+      latitude: String,
+      longitude: String,
+    },
   },
   { timestamps: true },
 );
+
+BookcaseSchema.plugin(autoref, ["owner.bookcases", "books.bookcases"]);
+BookcaseSchema.plugin(autopopulate);
+
+export { BookcaseSchema };

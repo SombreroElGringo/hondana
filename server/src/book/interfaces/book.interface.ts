@@ -7,6 +7,7 @@ export class Book {
   public isbn13?: string;
   public title: string;
   public authors: string[];
+  public bookcases: string[];
   public description: string;
   public coverImageUrl: string;
   public categories: string[];

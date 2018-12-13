@@ -1,7 +1,7 @@
 import { Model, Types } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
-import { Bookcase } from "./models/bookcase.interface";
+import { Bookcase } from "./interfaces/bookcase.interface";
 
 @Injectable()
 export class BookcaseService {
@@ -22,39 +22,31 @@ export class BookcaseService {
     return await this.bookcaseModel.findOne({ _id: new Types.ObjectId(id) });
   }
 
-  async addBookInBookcase(id: string, bookId: string, isAvailable: boolean) {
-    return await this.bookcaseModel.update(
-      { _id: new Types.ObjectId(id) },
-      { $push: { books: { bookId: bookId, isAvailable: isAvailable } } },
-    );
+  async findByOwner(owner: string): Promise<Bookcase> {
+    return await this.bookcaseModel.findOne({
+      owner: new Types.ObjectId(owner),
+    });
   }
 
-  async removeBookFromBookcase(
-    id: string,
-    bookId: string,
-    isAvailable: boolean,
-  ) {
-    return await this.bookcaseModel.update(
+  async addBookInBookcase(id: string, bookId: string) {
+    return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
-      { $pull: { books: { bookId: bookId, isAvailable: isAvailable } } },
-    );
-  }
-
-  async changeBookAviability(id: string, bookId: string, isAvailable: boolean) {
-    return await this.bookcaseModel.update(
       {
-        _id: new Types.ObjectId(id),
-        "books.bookId": new Types.ObjectId(bookId),
+        $push: {
+          books: new Types.ObjectId(bookId),
+        },
       },
-      { $set: { books: { isAvailable: isAvailable } } },
     );
   }
 
-  async initializeBookcases(bookcase: Bookcase) {
-    return await this.createBookcase(bookcase);
+  async removeBookFromBookcase(id: string, bookId: string) {
+    return await this.bookcaseModel.updateOne(
+      { _id: new Types.ObjectId(id) },
+      { $pull: { books: bookId } },
+    );
   }
 
-  async cleanBookcase() {
-    return await this.bookcaseModel.deleteMany().exec();
+  async deleteBookcase(owner: string) {
+    return await this.bookcaseModel.deleteOne({ owner: owner }).exec();
   }
 }
