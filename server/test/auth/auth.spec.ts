@@ -33,7 +33,12 @@ describe("Module Auth: ", () => {
   it("/POST auth/register", async () => {
     return await request(app.getHttpServer())
       .post("/auth/register")
-      .send(userAuthMockup)
+      .send({
+        email: userAuthMockup.email,
+        pseudo: userAuthMockup.pseudo,
+        password: userAuthMockup.password,
+        confirmPassword: userAuthMockup.password,
+      })
       .expect(HttpStatus.CREATED)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {
@@ -47,11 +52,31 @@ describe("Module Auth: ", () => {
       });
   });
 
+  it("/POST auth/register invalid confirmPassword", async () => {
+    return await request(app.getHttpServer())
+      .post("/auth/register")
+      .send({
+        email: userAuthMockup.email,
+        pseudo: userAuthMockup.pseudo,
+        password: userAuthMockup.password,
+        confirmPassword: userAuthMockup.password + "_invalid",
+      })
+      .expect(HttpStatus.BAD_REQUEST)
+      .expect("Content-Type", /json/);
+  });
+
   it("/POST auth/register duplicate", async () => {
     await userService.createUser(userAuthMockup);
     return await request(app.getHttpServer())
       .post("/auth/register")
-      .send(userAuthMockup)
+      .send({
+        email: userAuthMockup.email,
+        pseudo: userAuthMockup.pseudo,
+        password: userAuthMockup.password,
+        confirmPassword: userAuthMockup.password,
+        profileImageUrl: "http://img.png",
+        comments: [],
+      })
       .expect(HttpStatus.BAD_REQUEST)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {
@@ -60,7 +85,7 @@ describe("Module Auth: ", () => {
       .then(async () => await userService.deleteUser(userAuthMockup.pseudo));
   });
 
-  it("/POST auth/register withou body", async () => {
+  it("/POST auth/register without body", async () => {
     await userService.createUser(userAuthMockup);
     return await request(app.getHttpServer())
       .post("/auth/register")
@@ -85,6 +110,18 @@ describe("Module Auth: ", () => {
       .expect(async ({ body }) => {
         chai.assert.isObject(body);
         chai.assert.exists(body.data);
+      })
+      .then(async () => await userService.deleteUser(userAuthMockup.pseudo));
+  });
+
+  it("/POST auth/login without body", async () => {
+    await userService.createUser(userAuthMockup);
+    return await request(app.getHttpServer())
+      .post("/auth/login")
+      .expect(HttpStatus.BAD_REQUEST)
+      .expect("Content-Type", /json/)
+      .expect(async ({ body }) => {
+        chai.assert.isObject(body);
       })
       .then(async () => await userService.deleteUser(userAuthMockup.pseudo));
   });

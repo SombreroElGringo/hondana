@@ -4,6 +4,7 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import HomePage from '../HomePage/HomePage';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Header from '../../components/Header/Header';
+import AuthPage from '../AuthPage/AuthPage';
 import BookPage from '../BookPage/BookPage';
 
 class App extends Component {
@@ -14,6 +15,11 @@ class App extends Component {
           <Header />
           <Switch>
             <Route component={HomePage} exact path="/" />
+            <Route
+              component={() => <AuthPage type="register" />}
+              exact
+              path="/sign"
+            />
             <Route component={BookPage} exact path="/books/search/" />
             <Route component={NotFoundPage} />
           </Switch>
