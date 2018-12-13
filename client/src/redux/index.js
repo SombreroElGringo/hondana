@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 
 const reducer = combineReducers({
   app: appReducer,
-  auth: authReducer
+  auth: authReducer,
 });
 
 const middlewares = [
