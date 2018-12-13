@@ -68,7 +68,12 @@ class Login extends React.Component {
             />
           </div>
 
-          <input className="btn-form" type="button" value="Se connecter" onClick={e => this.handleSubmit(e)} />
+          <input
+            className="btn-form"
+            type="button"
+            value="Se connecter"
+            onClick={e => this.handleSubmit(e)}
+          />
         </form>
       </div>
     );

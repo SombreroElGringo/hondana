@@ -37,7 +37,7 @@ class Register extends React.Component {
       <div>
         <h2 className="sub-title">Inscrivez-vous!</h2>
         <span className="info" />
-        <form >
+        <form>
           <div
             className={
               emailError ? 'tooltip inpt-d inpt-error' : 'tooltip inpt-d'
@@ -114,7 +114,12 @@ class Register extends React.Component {
               placeholder="Confirmer le mot de passe"
             />
           </div>
-          <input className="btn-form" type="button" value="Inscription" onClick={e => this.handleSubmit(e)} />
+          <input
+            className="btn-form"
+            type="button"
+            value="Inscription"
+            onClick={e => this.handleSubmit(e)}
+          />
         </form>
       </div>
     );

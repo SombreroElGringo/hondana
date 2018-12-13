@@ -1,12 +1,12 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
-import * as axios from 'axios';
 import { handle_auth } from '../../redux/actions/auth';
 import { connect } from 'react-redux';
 import HttpError from '../../components/HttpError/HttpError';
 import './AuthPage.css';
-import getIsAuth from '../../redux/selectors/app/getIsAuth';
+import getToken from '../../redux/selectors/auth/getToken';
+import getErrors from '../../redux/selectors/auth/getErrors';
 import Register from '../../components/Register/Register';
 import Login from '../../components/Login/Login';
 
@@ -16,9 +16,6 @@ class Auth extends React.Component {
 
     this.state = {
       type: this.props.type || 'login',
-      token: '',
-      errors: [],
-      unhandledError: null,
     };
   }
 
@@ -26,45 +23,13 @@ class Auth extends React.Component {
     let newType = this.state.type === 'register' ? 'login' : 'register';
     this.setState({
       type: newType,
-      errors: [],
     });
-  }
-
-  handleAuth(data, type) {
-    const API_URL = 'http://localhost:5000/auth';
-
-    console.log(data, type);
-
-    const url =
-      type === 'register' ? API_URL + '/register' : API_URL + '/login';
-
-    this.setState({
-      errors: [],
-    });
-
-    axios
-      .post(url, data)
-      .then(({data}) => {
-        console.log(data);
-        this.setState({
-          token: data.data.token,
-        });
-      })
-      .catch(error => {
-        if(error.response && error.response.status === 400) {
-          this.setState({
-            errors: error.response.data? error.response.data.message : [],
-          });
-        } else {
-          console.log(error);
-        }
-      });
   }
 
   render() {
-    const { type, errors, unhandledError } = this.state;
+    const { type } = this.state;
 
-    const { isAuth } = this.props;
+    const { token, errors } = this.props;
 
     const emailError = errors.find(e => e.param === 'email') || null;
     const pseudoError = errors.find(e => e.param === 'pseudo') || null;
@@ -72,10 +37,10 @@ class Auth extends React.Component {
     const confirmPasswordError =
       errors.find(e => e.param === 'confirmPassword') || null;
 
-    return isAuth ? (
+    return token ? (
       <Redirect to="/" />
-    ) : unhandledError ? (
-      <HttpError error={unhandledError} />
+    ) : typeof errors === 'object' && !Array.isArray(errors) ? (
+      <HttpError error={errors.status} />
     ) : (
       <div>
         <section className="fs-fafafa'">
@@ -85,7 +50,7 @@ class Auth extends React.Component {
 
               {type === 'register' ? (
                 <Register
-                  onAuth={this.handleAuth.bind(this)}
+                  onAuth={this.props.handleAuth}
                   emailError={emailError}
                   pseudoError={pseudoError}
                   passwordError={passwordError}
@@ -93,7 +58,7 @@ class Auth extends React.Component {
                 />
               ) : (
                 <Login
-                  onAuth={this.handleAuth.bind(this)}
+                  onAuth={this.props.handleAuth}
                   emailError={emailError}
                   passwordError={passwordError}
                 />
@@ -136,7 +101,10 @@ class Auth extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({ isAuth: getIsAuth(state) });
+const mapStateToProps = state => ({
+  token: getToken(state),
+  errors: getErrors(state),
+});
 const mapDispatchToProps = dispatch =>
   bindActionCreators({ handleAuth: handle_auth }, dispatch);
 export default connect(
