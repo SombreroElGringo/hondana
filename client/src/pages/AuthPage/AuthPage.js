@@ -42,7 +42,7 @@ class Auth extends React.Component {
     ) : typeof errors === 'object' && !Array.isArray(errors) ? (
       <HttpError error={errors.status} />
     ) : (
-      <div>
+      <div id="auth">
         <section className="fs-fafafa'">
           <div className="content">
             <div className="content-form">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchBooks } from '../../redux/actions/app';
+import { fetchBooks, resetBooks } from '../../redux/actions/app';
 import { connect } from 'react-redux';
 import getBooks from '../../redux/selectors/app/getBooks';
 import { Search } from 'semantic-ui-react';
@@ -69,10 +69,13 @@ class SearchBook extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const { history } = this.props;
+
+    const { history, resetBooks } = this.props;
     const formData = new FormData(this.refs.form);
     const title = formData.get('title');
     const categories = formData.getAll('category');
+
+    resetBooks();
 
     if (title || (categories && categories.length > 0))
       history.push(`/books/search/`, { title, categories });
@@ -96,5 +99,6 @@ export default connect(
   }),
   mapDispatchToProps({
     fetchBooks,
+    resetBooks,
   })
 )(SearchBook);
