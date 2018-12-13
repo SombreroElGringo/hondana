@@ -7,12 +7,16 @@ class LibraryBook extends Component{
         const {libraryId} = this.props;
         return (
         <section className={'user--library'}>
-          {libraryId.map((bookcase) => 
-              bookcase.books.map((book) => 
-                    book._id && <Book bookId={book._id}/>
-                )
-            )
-        }
+            <div className="container">
+                <div className="row">
+                    {libraryId.map((bookcase) => 
+                        bookcase.books.map((book) => 
+                                book._id && <Book bookId={book._id}/>
+                            )
+                        )
+                    }
+                </div>
+            </div>
         </section>
         )
     }

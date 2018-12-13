@@ -37,12 +37,11 @@ class Book extends Component{
             bookCover,
             bookDescription} = this.state;
         return(
-            <div>
-                <h2>{bookTitle}</h2>
-                <img src={bookCover}/>
-                <p>{bookDescription}</p>
+            <div className="book">
+                <h2 className="book--title">{bookTitle}</h2>
+                <img src={bookCover} className="book--cover" alt="cover"/>
+                <p className="book--description">{bookDescription}</p>
             </div>
-            
         )
     }
 }
