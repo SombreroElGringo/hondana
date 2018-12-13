@@ -1,20 +1,8 @@
 import React from 'react';
 
 class Register extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      type: 'register',
-      emailError: this.props.emailError,
-      pseudoError: this.props.pseudoError,
-      passwordError: this.props.passwordError,
-      confirmPasswordError: this.props.confirmPasswordError,
-    };
-  }
-
   handleSubmit(e) {
-    const { type } = this.state;
+    const type = 'register';
     const data = {
       email: this.email.value,
       pseudo: this.pseudo.value,
