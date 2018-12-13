@@ -1,5 +1,60 @@
 [{
 	"_id": {
+		"$oid": "5c0acd9b712c951a9ef7c32a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0accf6b9bada1a75498b6b"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4285"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a2"
+		},
+		{
+			"$oid": "5c0aea062b6d72232c9f42af"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2070585204",
+	"isbn13": "2070585204",
+	"title": "Harry Potter, IV : Harry Potter et la Coupe de Feu",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/5f/75/5f7512894639977592b415a5741414141414141.jpg",
+	"releaseAt": {
+		"$date": "2017-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0acd9b712c951a9ef7c32b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:44:27.144Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:44:27.162Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.535Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0acd9b712c951a9ef7c326"
 	},
 	"meta": {
@@ -102,61 +157,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.201Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0acd9b712c951a9ef7c32a"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0accf6b9bada1a75498b6b"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4285"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a2"
-		},
-		{
-			"$oid": "5c0aea062b6d72232c9f42af"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2070585204",
-	"isbn13": "2070585204",
-	"title": "Harry Potter, IV : Harry Potter et la Coupe de Feu",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/5f/75/5f7512894639977592b415a5741414141414141.jpg",
-	"releaseAt": {
-		"$date": "2017-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0acd9b712c951a9ef7c32b"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:44:27.144Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:44:27.162Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.535Z"
 	},
 	"__v": 0
 },
@@ -284,6 +284,70 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d60d"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56281"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4284"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f428a"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f428e"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4299"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42aa"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429f"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2012014933",
+	"isbn13": "2012014933",
+	"title": "Saga Twilight, tome 3 : Hésitation",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012014933.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d60e"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.684Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.687Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.252Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0acd9b712c951a9ef7c330"
 	},
 	"meta": {
@@ -338,6 +402,60 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.141Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d60b"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56281"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4280"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a9"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2013212119",
+	"isbn13": "2013212119",
+	"title": "Saga Twilight - Tome 1 - Fascination",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013212119.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d60c"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.668Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.675Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.099Z"
 	},
 	"__v": 0
 },
@@ -405,12 +523,10 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d60b"
+		"$oid": "5c0ad06b9033b01bc0c8d611"
 	},
 	"meta": {
-		"favorites": [
-			"test"
-		],
+		"favorites": [],
 		"likes": [
 			"test"
 		]
@@ -422,94 +538,30 @@
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f4280"
+			"$oid": "5c0aea042b6d72232c9f428f"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f42a9"
+			"$oid": "5c0aea042b6d72232c9f42a7"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2013212119",
-	"isbn13": "2013212119",
-	"title": "Saga Twilight - Tome 1 - Fascination",
+	"isbn10": "2013232721",
+	"isbn13": "2013232721",
+	"title": "Saga Twilight - Tome 4 - Révélation",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013212119.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013232721.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
+		"$date": "2012-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d60c"
+				"$oid": "5c0ad06b9033b01bc0c8d612"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.668Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.675Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.099Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d60d"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d56281"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4284"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f428a"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f428e"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4299"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42aa"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429f"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2012014933",
-	"isbn13": "2012014933",
-	"title": "Saga Twilight, tome 3 : Hésitation",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012014933.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2007-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d60e"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.684Z"
+				"$date": "2018-12-07T19:56:27.685Z"
 			}
 		}
 	],
@@ -517,7 +569,7 @@
 		"$date": "2018-12-07T19:56:27.687Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.252Z"
+		"$date": "2018-12-07T21:45:42.242Z"
 	},
 	"__v": 0
 },
@@ -576,58 +628,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.117Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d611"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d56281"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f428f"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a7"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2013232721",
-	"isbn13": "2013232721",
-	"title": "Saga Twilight - Tome 4 - Révélation",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013232721.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2012-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d612"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.685Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.687Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.242Z"
 	},
 	"__v": 0
 },
@@ -734,55 +734,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.585Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d617"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d56289"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f428c"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2266201344",
-	"isbn13": "2266201344",
-	"title": "Wings, Tome 1",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266201344.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d618"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.695Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.698Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:41.862Z"
 	},
 	"__v": 0
 },
@@ -1074,6 +1025,107 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d617"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56289"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f428c"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2266201344",
+	"isbn13": "2266201344",
+	"title": "Wings, Tome 1",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266201344.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d618"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.695Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.698Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:41.862Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d625"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5628f"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f42aa"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a9"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2745945475",
+	"isbn13": "2745945475",
+	"title": "Rouge rubis",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2745945475.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d626"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.747Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.795Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.229Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d623"
 	},
 	"meta": {
@@ -1133,7 +1185,7 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d625"
+		"$oid": "5c0ad06b9033b01bc0c8d629"
 	},
 	"meta": {
 		"favorites": [
@@ -1143,35 +1195,41 @@
 	},
 	"authors": [
 		{
-			"$oid": "5c0acf5208a9d81b53d5628f"
+			"$oid": "5c0acf5208a9d81b53d562ae"
 		}
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f42aa"
+			"$oid": "5c0aea042b6d72232c9f4298"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f42a9"
+			"$oid": "5c0aea042b6d72232c9f428c"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a0"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42ab"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2745945475",
-	"isbn13": "2745945475",
-	"title": "Rouge rubis",
+	"isbn10": "2092543032",
+	"isbn13": "2092543032",
+	"title": "Nos étoiles contraires",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2745945475.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2092543032.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
+		"$date": "2013-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d626"
+				"$oid": "5c0ad06b9033b01bc0c8d62a"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.747Z"
+				"$date": "2018-12-07T19:56:27.748Z"
 			}
 		}
 	],
@@ -1179,7 +1237,7 @@
 		"$date": "2018-12-07T19:56:27.795Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.229Z"
+		"$date": "2018-12-07T21:45:42.218Z"
 	},
 	"__v": 0
 },
@@ -1249,64 +1307,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d629"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d562ae"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4298"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f428c"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a0"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ab"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2092543032",
-	"isbn13": "2092543032",
-	"title": "Nos étoiles contraires",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2092543032.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2013-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d62a"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.748Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.218Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d62b"
 	},
 	"meta": {
@@ -1354,6 +1354,58 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.064Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d62f"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5628a"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f42a4"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4290"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2012012027",
+	"isbn13": "2012012027",
+	"title": "Le jour où j'ai voulu devenir populaire",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012012027.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d630"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.751Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.795Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.202Z"
 	},
 	"__v": 0
 },
@@ -1412,58 +1464,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.241Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d62f"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d5628a"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f42a4"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4290"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2012012027",
-	"isbn13": "2012012027",
-	"title": "Le jour où j'ai voulu devenir populaire",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012012027.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2006-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d630"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.751Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.202Z"
 	},
 	"__v": 0
 },
@@ -1536,6 +1536,59 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d637"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56298"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f429d"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4292"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4295"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2266182692",
+	"isbn13": "2266182692",
+	"title": "Hunger Games - Tome 1",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266182692.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2009-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d638"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.756Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.795Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.229Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d635"
 	},
 	"meta": {
@@ -1593,46 +1646,50 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d637"
+		"$oid": "5c0ad06b9033b01bc0c8d63b"
 	},
 	"meta": {
-		"favorites": [],
-		"likes": []
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
 	},
 	"authors": [
 		{
-			"$oid": "5c0acf5208a9d81b53d56298"
+			"$oid": "5c0acf5208a9d81b53d562a1"
 		}
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f429d"
+			"$oid": "5c0aea042b6d72232c9f4289"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f4292"
+			"$oid": "5c0aea042b6d72232c9f42ad"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f4295"
+			"$oid": "5c0aea042b6d72232c9f42ad"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2266182692",
-	"isbn13": "2266182692",
-	"title": "Hunger Games - Tome 1",
+	"isbn10": "2253162213",
+	"isbn13": "2253162213",
+	"title": "Le Théorème de Cupidon",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266182692.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253162213.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2009-01-01T00:00:00.000Z"
+		"$date": "2012-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d638"
+				"$oid": "5c0ad06b9033b01bc0c8d63c"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.756Z"
+				"$date": "2018-12-07T19:56:27.757Z"
 			}
 		}
 	],
@@ -1640,7 +1697,7 @@
 		"$date": "2018-12-07T19:56:27.795Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.229Z"
+		"$date": "2018-12-07T21:45:42.097Z"
 	},
 	"__v": 0
 },
@@ -1707,63 +1764,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.242Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d63b"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d562a1"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4289"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ad"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ad"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2253162213",
-	"isbn13": "2253162213",
-	"title": "Le Théorème de Cupidon",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253162213.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2012-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d63c"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.757Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.097Z"
 	},
 	"__v": 0
 },
@@ -1883,58 +1883,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d63f"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d5628e"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4281"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429b"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2070634388",
-	"isbn13": "2070634388",
-	"title": "Promise",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2070634388.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d640"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.759Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.796Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.117Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d643"
 	},
 	"meta": {
@@ -1986,6 +1934,58 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.098Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d63f"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5628e"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4281"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429b"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2070634388",
+	"isbn13": "2070634388",
+	"title": "Promise",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2070634388.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d640"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.759Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.796Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.117Z"
 	},
 	"__v": 0
 },
@@ -2220,68 +2220,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d64d"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d5628f"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4282"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4297"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429d"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429c"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a3"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a2"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2745954814",
-	"isbn13": "2745954814",
-	"title": "Bleu Saphir",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2745954814.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d64e"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.767Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.796Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.140Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d64f"
 	},
 	"meta": {
@@ -2341,6 +2279,68 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.229Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d64d"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5628f"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4282"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4297"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429d"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429c"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a3"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a2"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2745954814",
+	"isbn13": "2745954814",
+	"title": "Bleu Saphir",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2745954814.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d64e"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.767Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.796Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.140Z"
 	},
 	"__v": 0
 },
@@ -2565,6 +2565,66 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad23c8226ce1c191a17e5"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a007"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4293"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4295"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a7"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429f"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0716728508",
+	"isbn13": "0716728508",
+	"title": "Self-Efficacy: The Exercise of Control",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0716728508.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23c8226ce1c191a17e6"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:12.925Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:12.935Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.249Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d65b"
 	},
 	"meta": {
@@ -2680,15 +2740,13 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad23c8226ce1c191a17e5"
+		"$oid": "5c0ad23c8226ce1c191a17e7"
 	},
 	"meta": {
 		"favorites": [
 			"test"
 		],
-		"likes": [
-			"test"
-		]
+		"likes": []
 	},
 	"authors": [
 		{
@@ -2697,44 +2755,38 @@
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f4293"
+			"$oid": "5c0aea042b6d72232c9f4296"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f4295"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a7"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429f"
+			"$oid": "5c0aea042b6d72232c9f4296"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "0716728508",
-	"isbn13": "0716728508",
-	"title": "Self-Efficacy: The Exercise of Control",
+	"isbn10": "0138167443",
+	"isbn13": "0138167443",
+	"title": "Social Learning Theory",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0716728508.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0138167443.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "1997-01-01T00:00:00.000Z"
+		"$date": "1976-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad23c8226ce1c191a17e6"
+				"$oid": "5c0ad23c8226ce1c191a17e8"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T20:04:12.925Z"
+				"$date": "2018-12-07T20:04:12.950Z"
 			}
 		}
 	],
 	"createdAt": {
-		"$date": "2018-12-07T20:04:12.935Z"
+		"$date": "2018-12-07T20:04:12.952Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.249Z"
+		"$date": "2018-12-07T21:45:41.862Z"
 	},
 	"__v": 0
 },
@@ -2790,170 +2842,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.115Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23c8226ce1c191a17e7"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a007"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4296"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4296"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "0138167443",
-	"isbn13": "0138167443",
-	"title": "Social Learning Theory",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0138167443.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "1976-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23c8226ce1c191a17e8"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:12.950Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:12.952Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:41.862Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23c8226ce1c191a17eb"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a007"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4285"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f428e"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "013815614X",
-	"isbn13": "013815614X",
-	"title": "Social Foundations of Thought and Action: A Social Cognitive Theory",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/013815614X.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "1985-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23c8226ce1c191a17ec"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:12.958Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:12.960Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:41.965Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23c8226ce1c191a17ed"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a007"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4280"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4289"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a4"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ae"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "1490497749",
-	"isbn13": "1490497749",
-	"title": "Psychology Classics All Psychology Students Should Read: The Bobo Doll Experiment",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1490497749.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2013-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23c8226ce1c191a17ee"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:12.967Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:12.975Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.098Z"
 	},
 	"__v": 0
 },
@@ -3123,6 +3011,118 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad23c8226ce1c191a17eb"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a007"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4285"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f428e"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "013815614X",
+	"isbn13": "013815614X",
+	"title": "Social Foundations of Thought and Action: A Social Cognitive Theory",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/013815614X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1985-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23c8226ce1c191a17ec"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:12.958Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:12.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:41.965Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad23c8226ce1c191a17ed"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a007"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4280"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4289"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a4"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42ae"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1490497749",
+	"isbn13": "1490497749",
+	"title": "Psychology Classics All Psychology Students Should Read: The Bobo Doll Experiment",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1490497749.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2013-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23c8226ce1c191a17ee"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:12.967Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:12.975Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.098Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad23d8226ce1c191a17f5"
 	},
 	"meta": {
@@ -3226,53 +3226,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.139Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a1801"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a02e"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f429e"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "1501158716",
-	"isbn13": "1501158716",
-	"title": "Samuel Beckett",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1501158716.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2016-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a1802"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.033Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.107Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.064Z"
 	},
 	"__v": 0
 },
@@ -3401,6 +3354,53 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.536Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a1801"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a02e"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f429e"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1501158716",
+	"isbn13": "1501158716",
+	"title": "Samuel Beckett",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1501158716.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2016-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a1802"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.033Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.107Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.064Z"
 	},
 	"__v": 0
 },
@@ -3640,63 +3640,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a1817"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a025"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4290"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4293"
-		},
-		{
-			"$oid": "5c0aea062b6d72232c9f42af"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2100051059",
-	"isbn13": "2100051059",
-	"title": "Psychologie de l'orientation professionnelle",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2100051059.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2001-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a1818"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.043Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.107Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.546Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad23d8226ce1c191a181d"
 	},
 	"meta": {
@@ -3753,6 +3696,63 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.202Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a1817"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a025"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4290"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4293"
+		},
+		{
+			"$oid": "5c0aea062b6d72232c9f42af"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2100051059",
+	"isbn13": "2100051059",
+	"title": "Psychologie de l'orientation professionnelle",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2100051059.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a1818"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.043Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.107Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.546Z"
 	},
 	"__v": 0
 },
@@ -3872,6 +3872,105 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a1825"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a01e"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "9781786515087",
+	"isbn13": "1786515083",
+	"title": "New Vocations",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/B01NBEWL26.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2017-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a1826"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.056Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.107Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T20:04:13.107Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a182b"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a01a"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f42a0"
+		},
+		{
+			"$oid": "5c0aea062b6d72232c9f42af"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "9782296823860",
+	"isbn13": "2296823866",
+	"title": "Les sciences de l'éducation dans les champs de formation: Quelles mobilisation et légitimation ? (French Edition)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/B01N4E4LB4.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2016-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a182c"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.061Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.107Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.567Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad23d8226ce1c191a1823"
 	},
 	"meta": {
@@ -3941,157 +4040,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a1825"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a01e"
-		}
-	],
-	"bookcases": [],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "9781786515087",
-	"isbn13": "1786515083",
-	"title": "New Vocations",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/B01NBEWL26.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2017-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a1826"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.056Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.107Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T20:04:13.107Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a1829"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a019"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4299"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4296"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2296039790",
-	"isbn13": "2296039790",
-	"title": "Le sens de l'orientation (French Edition)",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2296039790.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2007-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a182a"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.059Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.107Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:41.997Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a182b"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a01a"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f42a0"
-		},
-		{
-			"$oid": "5c0aea062b6d72232c9f42af"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "9782296823860",
-	"isbn13": "2296823866",
-	"title": "Les sciences de l'éducation dans les champs de formation: Quelles mobilisation et légitimation ? (French Edition)",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/B01N4E4LB4.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2016-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a182c"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.061Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.107Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.567Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad23d8226ce1c191a182d"
 	},
 	"meta": {
@@ -4145,6 +4093,58 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.139Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a1829"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a019"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4299"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4296"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2296039790",
+	"isbn13": "2296039790",
+	"title": "Le sens de l'orientation (French Edition)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2296039790.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a182a"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.059Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.107Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:41.997Z"
 	},
 	"__v": 0
 },
@@ -4260,6 +4260,104 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a1837"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a011"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4286"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f428b"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4290"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0802801374",
+	"isbn13": "0802801374",
+	"title": "Vocation: Discerning Our Callings in Life",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0802801374.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a1838"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.070Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.108Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.241Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a1845"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a017"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "274890026X",
+	"isbn13": "274890026X",
+	"title": "La science, profession et vocation : Suivi de",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/274890026X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2005-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a1846"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.079Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.108Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T20:04:13.108Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad23d8226ce1c191a1835"
 	},
 	"meta": {
@@ -4316,61 +4414,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.116Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a1837"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a011"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4286"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f428b"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4290"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "0802801374",
-	"isbn13": "0802801374",
-	"title": "Vocation: Discerning Our Callings in Life",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0802801374.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2003-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a1838"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.070Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.108Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.241Z"
 	},
 	"__v": 0
 },
@@ -4602,49 +4645,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:41.998Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a1845"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a017"
-		}
-	],
-	"bookcases": [],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "274890026X",
-	"isbn13": "274890026X",
-	"title": "La science, profession et vocation : Suivi de",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/274890026X.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2005-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a1846"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.079Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.108Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T20:04:13.108Z"
 	},
 	"__v": 0
 }]
