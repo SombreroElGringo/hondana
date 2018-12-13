@@ -7,6 +7,7 @@ const BookcaseSchema = new mongoose.Schema(
     owner: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
+      autopopulate: { maxDepth: 1 },
     },
     books: [
       {
