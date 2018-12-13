@@ -20,9 +20,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "gulp": "gulp",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "react-scripts test",
+    "coverage": "npm test -- --coverage",
     "prettier": "prettier --write {src,test}/**/**/*.{js,jsx,json,scss}"
   },
   "eslintConfig": {
