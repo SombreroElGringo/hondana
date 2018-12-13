@@ -5,13 +5,14 @@ import { API_URL } from '../../utils/api_endpoints';
 class LibraryBook extends Component{
     render(){
         const {libraryId} = this.props;
+        const {bookcases} = libraryId;
         return (
         <section className={'user--library'}>
             <div className="container">
                 <div className="row">
-                    {libraryId.map((bookcase) => 
+                    {bookcases.map((bookcase) => 
                         bookcase.books.map((book) => 
-                                book._id && <Book bookId={book._id}/>
+                                book && <Book bookId={book}/>
                             )
                         )
                     }

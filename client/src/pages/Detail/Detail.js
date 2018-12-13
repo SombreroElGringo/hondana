@@ -13,7 +13,7 @@ export default class Detail extends Component{
     // USER MOCKING
     const userId = '5c0ab0de12e593135f96c575'
     
-    axios.get(`${API_URL}/bookcases?owner=${userId}`)
+    axios.get(`${API_URL}/users/${userId}`)
     .then(response => this.setState({libraryId: response.data}))  
   }
 
