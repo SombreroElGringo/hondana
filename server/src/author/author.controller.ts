@@ -22,8 +22,10 @@ export class AuthorController {
     if (!_.isEmpty(body)) {
       const author: Author = {
         name: body.name,
+        authorCode: body.authorCode,
         biography: body.biography,
         profileImageUrl: body.profileImageUrl,
+        books: body.books,
       };
       await this.authorService.createAuthor(author);
       res.status(HttpStatus.CREATED).json(author);

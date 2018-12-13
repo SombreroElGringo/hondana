@@ -54,7 +54,7 @@ describe("Module Bookcase: ", () => {
       .post(encodeURI("/bookcases"))
       .send({
         owner: user._id,
-        body: [book._id],
+        books: [book._id],
         coordinate: {
           latitude: "35.971338",
           longitude: "139.471432",
@@ -87,7 +87,7 @@ describe("Module Bookcase: ", () => {
       .post(encodeURI("/bookcases"))
       .send({
         owner: user._id,
-        body: [book._id],
+        books: [book._id],
       })
       .then(async () => {
         await request(app.getHttpServer())
@@ -104,21 +104,17 @@ describe("Module Bookcase: ", () => {
       .then(() => bookcaseService.deleteBookcase(user._id));
   });
 
-  it("/POST bookcases/:id/book", async () => {
+  it("/POST bookcases/:id/book/:bookId", async () => {
     return await request(app.getHttpServer())
       .post(encodeURI("/bookcases"))
       .send({
         owner: user._id,
-        body: [],
+        books: [],
       })
       .then(async () => {
         const bookcase = await bookcaseService.findByOwner(user._id);
         await request(app.getHttpServer())
-          .post(encodeURI(`/bookcases/${bookcase._id}/book`))
-          .send({
-            bookId: book._id,
-            isAvailable: true,
-          })
+          .post(encodeURI(`/bookcases/${bookcase._id}/book/${book._id}`))
           .expect(HttpStatus.OK)
           .expect("Content-Type", /json/);
       })
@@ -130,32 +126,12 @@ describe("Module Bookcase: ", () => {
       .post(encodeURI("/bookcases"))
       .send({
         owner: user._id,
-        body: [book._id],
+        books: [book._id],
       })
       .then(async () => {
         const bookcase = await bookcaseService.findByOwner(user._id);
         await request(app.getHttpServer())
           .delete(encodeURI(`/bookcases/${bookcase._id}/book/${book._id}`))
-          .send({
-            isAvailable: true,
-          })
-          .expect(HttpStatus.OK)
-          .expect("Content-Type", /json/);
-      })
-      .then(async () => await bookcaseService.deleteBookcase(user._id));
-  });
-
-  it("/PUT bookcases/:id/book/:bookId", async () => {
-    return await request(app.getHttpServer())
-      .post(encodeURI("/bookcases"))
-      .send({
-        owner: user._id,
-        body: [book._id],
-      })
-      .then(async () => {
-        const bookcase = await bookcaseService.findByOwner(user._id);
-        await request(app.getHttpServer())
-          .put(encodeURI(`/bookcases/${bookcase._id}/book/${book._id}`))
           .send({
             isAvailable: true,
           })

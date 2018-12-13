@@ -6,5 +6,6 @@ export class User {
   public password: string;
   public email: string;
   public profileImageUrl?: string;
+  public bookcases?: string[];
   public comments?: Comment[];
 }

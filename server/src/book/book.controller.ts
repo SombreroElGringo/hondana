@@ -24,6 +24,7 @@ export class BookController {
         isbn13: body.isbn13,
         title: body.title,
         authors: body.authors,
+        bookcases: body.bookcases,
         coverImageUrl: body.coverImageUrl,
         categories: body.categories,
         description: body.description,

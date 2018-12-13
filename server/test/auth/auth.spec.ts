@@ -7,10 +7,12 @@ import * as chai from "chai";
 import { ApplicationModule } from "../../src/app.module";
 import { UserService } from "../../src/user/user.service";
 import { userAuthMockup } from "../user/mockup/user.mockup";
+import { BookcaseService } from "../../src/bookcase/bookcase.service";
 
 describe("Module Auth: ", () => {
   let server;
   let app: INestApplication;
+  let bookcaseService: BookcaseService;
   let userService: UserService;
 
   before(async () => {
@@ -24,6 +26,7 @@ describe("Module Auth: ", () => {
     await app.startAllMicroservicesAsync();
     await app.init();
 
+    bookcaseService = module.get<BookcaseService>(BookcaseService);
     userService = module.get<UserService>(UserService);
   });
 
@@ -37,7 +40,11 @@ describe("Module Auth: ", () => {
         chai.assert.isObject(body);
         chai.assert.exists(body.data);
       })
-      .then(async () => await userService.deleteUser(userAuthMockup.pseudo));
+      .then(async () => {
+        let user = await userService.findByPseudo(userAuthMockup.pseudo);
+        await bookcaseService.deleteBookcase(user._id);
+        await userService.deleteUser(userAuthMockup.pseudo);
+      });
   });
 
   it("/POST auth/register duplicate", async () => {
@@ -45,6 +52,18 @@ describe("Module Auth: ", () => {
     return await request(app.getHttpServer())
       .post("/auth/register")
       .send(userAuthMockup)
+      .expect(HttpStatus.BAD_REQUEST)
+      .expect("Content-Type", /json/)
+      .expect(async ({ body }) => {
+        chai.assert.isObject(body);
+      })
+      .then(async () => await userService.deleteUser(userAuthMockup.pseudo));
+  });
+
+  it("/POST auth/register withou body", async () => {
+    await userService.createUser(userAuthMockup);
+    return await request(app.getHttpServer())
+      .post("/auth/register")
       .expect(HttpStatus.BAD_REQUEST)
       .expect("Content-Type", /json/)
       .expect(async ({ body }) => {
