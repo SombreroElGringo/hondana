@@ -11,9 +11,10 @@ export default class Detail extends Component{
   }
   componentDidMount(){
     // USER MOCKING
-    const userId = '5c0ab0de12e593135f96c575'
+    // const userId = '5c0ab0de12e593135f96c575'
     
-    axios.get(`${API_URL}/users/${userId}`)
+    const {id} = this.props.match.params
+    axios.get(`${API_URL}/users/${id}`)
     .then(response => this.setState({libraryId: response.data}))  
   }
 
