@@ -11,10 +11,14 @@ import {
 import * as _ from "lodash";
 import { BookService } from "./book.service";
 import { Book } from "./interfaces/book.interface";
+import { BookGateway } from "./gateways/book.gateway";
 
 @Controller("books")
 export class BookController {
-  constructor(private readonly bookService: BookService) {}
+  constructor(
+    private readonly bookService: BookService,
+    private readonly bookGateway: BookGateway,
+  ) {}
 
   @Post()
   async createBook(@Response() res, @Body() body) {
@@ -34,6 +38,7 @@ export class BookController {
         hidden: body.hidden,
       };
       await this.bookService.createBook(book);
+      await this.bookGateway.sendAllBooksOnNewRow();
       res.status(HttpStatus.CREATED).json(book);
     } else {
       res.status(HttpStatus.BAD_REQUEST).json({
