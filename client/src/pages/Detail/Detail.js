@@ -3,18 +3,27 @@ import axios from 'axios';
 
 import './Detail.css';
 import UserProfile from '../../components/UserProfile/UserProfile';
-import Book from '../../components/LibraryBook/LibraryBook';
+import LibraryBook from '../../components/LibraryBook/LibraryBook';
 import { API_URL } from '../../utils/api_endpoints';
 
 export default class Detail extends Component{
-  componentDidMount(){
-    // axios.get(`${API_URL}/bookcases?owner=5bffa87467accc0c40881457`).then((result) =>)
+  state={
+    libraryId:0,
   }
+  componentDidMount(){
+    // USER MOCKING
+    const userId = '5c0ab0de12e593135f96c575'
+    
+    axios.get(`${API_URL}/bookcases?owner=${userId}`)
+    .then(response => this.setState({libraryId: response.data}))  
+  }
+
   render(){
+    const {libraryId}=this.state;
     return(
       <div className={'related--book'}>
         <UserProfile userId={this.props.match.params.id}/>
-        {/* <Book bookId={}/> */}
+        {libraryId && <LibraryBook libraryId={libraryId}/>}
       </div>
     )
   }
