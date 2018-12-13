@@ -82,7 +82,7 @@ export class AuthController {
         param: param,
         message: `${param} is not valid!`,
       };
-    } else if (body[param] || body[param] !== "") {
+    } else if (body[param] && body[param] !== "") {
       if (param === "confirmPassword") {
         if (!body["password"] || body["confirmPassword"] !== body["password"]) {
           return {
