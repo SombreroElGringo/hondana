@@ -22,7 +22,7 @@ class App extends Component {
               path="/sign"
             />
             <Route component={BookPage} exact path="/books/search/:query" />
-            <Route component={Detail} exact path="/related_book/:id" />
+            <Route component={Detail} exact path="/bookcases/:id" />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

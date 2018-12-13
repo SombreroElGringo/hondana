@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-import './Detail.css';
 import UserProfile from '../../components/UserProfile/UserProfile';
 import LibraryBook from '../../components/LibraryBook/LibraryBook';
 import { API_URL } from '../../utils/api_endpoints';
