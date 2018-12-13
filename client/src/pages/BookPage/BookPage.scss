@@ -5,6 +5,11 @@
   .left {
     width: 300px;
     padding: 10px;
+    max-height: 100vh;
+    overflow: auto;
+    .back-button {
+      cursor: pointer;
+    }
     .search-options {
       color: grey;
       font-size: 14px;
@@ -35,17 +40,31 @@
           display: flex;
           border-bottom: 1px solid lightgrey;
           padding-bottom: 10px;
+          margin-bottom: 10px;
+          &.hoverable {
+            cursor: pointer;
+            &:hover {
+              background: whitesmoke;
+            }
+          }
           .cover {
             width: 75px;
             margin-right: 10px;
             img {
-              width: 100%;
+              width: 75px;
+              height: 100px;
+              object-fit: cover;
+              background: url('https://images-na.ssl-images-amazon.com/images/I/61ztm36SbiL._SX258_BO1, 204, 203, 200_.jpg')
+                no-repeat center / cover;
             }
           }
           .details {
             font-size: 12px;
             .title {
               font-weight: bold;
+              a {
+                color: black;
+              }
             }
             .description {
               font-size: 10px;

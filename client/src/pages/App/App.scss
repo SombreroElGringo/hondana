@@ -1,5 +1,5 @@
 * {
-  transition: all 0.3s;
+  transition: color, background 0.3s;
 }
 
 body {
@@ -15,6 +15,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 2.5px 5px;
+  background: transparent;
+  border-radius: 2px;
+  margin: 5px 0;
+  &:hover {
+    background: whitesmoke;
+  }
+  &:active {
+    background: lightgray;
+  }
 }
 
 .flex-1 {
