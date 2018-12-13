@@ -9,7 +9,6 @@ import './UserProfile.css';
 class UserProfile extends Component{
     state={
         user : undefined,
-        userRating: 0
     };
 
     componentDidMount(){
@@ -26,7 +25,7 @@ class UserProfile extends Component{
             <div className="user--info">
                 <h2 className="user--pseudo">{user && user.pseudo}</h2>
                 <p className="user--mail">{user && user.email}</p>
-                {user && <UserRating userRating= {user.comments[0].rating}/>}
+                {user && <UserRating userRating={user.comments}/>}
             </div>
         </section>
         )

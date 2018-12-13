@@ -6,41 +6,41 @@ class UserRating extends Component{
         leftComma: 0,
         rightComma: 0
     }
-
+    
     componentDidMount(){
-        const userRating = Number.parseFloat(3).toFixed(1);
+        const{userRating}=this.props;
+        let median=0.0;
+        userRating.map(rating =>
+            median+=rating.rating
+        )
 
-        const ratingRender = [];
+        const userRatingFloat = Number.parseFloat(median/userRating.length).toFixed(1);
 
-        if(userRating){
-            const sUserRating = userRating.toString();
-            const ratingArray = sUserRating.split('.')
-            this.setState(
-                {
-                    leftComma: parseInt(ratingArray[0]),
-                    rightComma: parseInt(ratingArray[1])
-                }
-            )
-        }
-    console.log(leftComma, rightComma)
+        const sUserRating = userRatingFloat.toString();
+        const ratingArray = sUserRating.split('.')
+        if (ratingArray) {this.setState(
+            {
+                leftComma: parseInt(ratingArray[0]),
+                rightComma: parseInt(ratingArray[1])
+            }
+        )}
 }
 
     render(){
         const {leftComma, rightComma} = this.state;
         let ratingRender = [];
-
         for (let i = 0; i < leftComma; i++) {
             ratingRender.push(<span className="fa fa-star checked" key={i}></span>)
         }
         if(rightComma > 2 && rightComma <= 7)
-            ratingRender.push(<span className="fa fa-star-half checked"></span>)
+            ratingRender.push(<span className="fa fa-star-half checked" key={Math.random()*100}></span>)
         else if(rightComma > 7)
-            ratingRender.push(<span className="fa fa-star checked"></span>)
+            ratingRender.push(<span className="fa fa-star checked" key={Math.random()*100}></span>)
         else if(rightComma <= 2)
-            ratingRender.push(<span className="fa fa-star"></span>)
+            ratingRender.push(<span className="fa fa-star" key={Math.random()*100}></span>)
         if(ratingRender.length<5)
             for (let i = ratingRender.length; i < 5; i++) {
-                ratingRender.push(<span className="fa fa-star"></span>)
+                ratingRender.push(<span className="fa fa-star" key={Math.random()*100}></span>)
             }
         return(
             <div className='user--rating'>

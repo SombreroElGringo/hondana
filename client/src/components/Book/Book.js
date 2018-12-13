@@ -15,7 +15,6 @@ class Book extends Component{
 
     componentDidMount(){
         const{bookId} = this.props;
-        console.log(bookId)
         axios.get(`${API_URL}/books/${bookId}`)
         .then(response => (
             this.setState({

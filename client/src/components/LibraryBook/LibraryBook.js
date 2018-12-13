@@ -12,7 +12,7 @@ class LibraryBook extends Component{
                 <div className="row">
                     {bookcases.map((bookcase) => 
                         bookcase.books.map((book) => 
-                                book && <Book bookId={book}/>
+                                book && <Book bookId={book} key={Math.random()*100}/>
                             )
                         )
                     }
