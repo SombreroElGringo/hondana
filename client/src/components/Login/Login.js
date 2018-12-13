@@ -1,19 +1,8 @@
 import React from 'react';
 
 class Login extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      type: 'login',
-      emailError: this.props.emailError,
-      passwordError: this.props.passwordError,
-    };
-  }
-
   handleSubmit(e) {
-    const { type } = this.state;
-
+    const type = 'login';
     const data = {
       email: this.email.value,
       password: this.password.value,
