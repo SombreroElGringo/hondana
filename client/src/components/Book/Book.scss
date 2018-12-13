@@ -1,0 +1,27 @@
+.book--cover{
+    background-image: url('../../assets/images/404_cover_not_found.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;  
+    width:160px;
+    height: 240px;
+}
+
+.book{
+    padding-bottom: 5em;
+    padding-top:2em;
+    padding-right:1em; 
+}
+
+.book--title{
+    font-size: 18px;
+    max-width: 160px;
+    max-height: 2em;
+    text-overflow: ellipsis;
+    padding-bottom: 2em;
+}
+
+.book--description{
+    max-width: 160px;
+    max-height: 1em;
+    text-overflow: ellipsis;
+}
