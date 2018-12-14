@@ -21,7 +21,7 @@ export const fetchBooks = (title, categories, full) => async dispatch => {
       },
     });
 
-    if (!response.data) throw new Error('There is no results');
+    if (!(response.data.length >= 0)) throw new Error('There is no results');
 
     const payload = full
       ? response.data

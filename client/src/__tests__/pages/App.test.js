@@ -1,7 +1,13 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import App from '../../pages/App/App';
+import { Provider } from 'react-redux';
+import store from '../../redux';
 
 it('renders without crashing', () => {
-  shallow(<App />);
+  mount(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
 });
