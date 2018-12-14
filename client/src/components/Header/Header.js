@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'react-router-dom/es/Link';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import { mapStateToProps } from '../../utils/redux_helpers';
 import getAccess from '../../redux/selectors/auth/getAccess';
