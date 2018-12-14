@@ -11,7 +11,9 @@
     "format:check": "npm run prettier -- -l",
     "start": "SECRET_KEY=test ts-node src/main.ts",
     "build": "tsc",
-    "start:prod": "node dist/main.js"
+    "start:prod": "node dist/main.js",
+    "start:webpack": "node dist/server",
+    "webpack": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "@nestjs/common": "^5.4.0",
@@ -34,6 +36,7 @@
     "passport-jwt": "^4.0.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.3",
+    "ts-loader": "^5.3.1",
     "typescript": "^3.1.6"
   },
   "devDependencies": {
@@ -44,7 +47,10 @@
     "nyc": "^13.1.0",
     "prettier": "^1.15.2",
     "supertest": "^3.3.0",
-    "ts-node": "^7.0.1"
+    "ts-node": "^7.0.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
   },
   "nyc": {
     "require": [
