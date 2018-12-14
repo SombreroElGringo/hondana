@@ -84,7 +84,7 @@ class BookPage extends Component {
                             )
                           }
                         >
-                          Monther sur la carte
+                          Montrer sur la carte
                         </button>
                       </div>
                     </div>
