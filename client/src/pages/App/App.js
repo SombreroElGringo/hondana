@@ -16,9 +16,14 @@ class App extends Component {
           <Switch>
             <Route component={HomePage} exact path="/" />
             <Route
+              component={() => <AuthPage type="login" />}
+              exact
+              path="/connexion"
+            />
+            <Route
               component={() => <AuthPage type="register" />}
               exact
-              path="/sign"
+              path="/inscription"
             />
             <Route component={BookPage} exact path="/books/search/" />
             <Route component={NotFoundPage} />

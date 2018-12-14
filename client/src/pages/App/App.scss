@@ -17,6 +17,13 @@ code {
     monospace;
 }
 
+button,
+input.btn-form {
+  background-color: darkslategray !important;
+  border-color: darkslategray !important;
+  color: white !important;
+}
+
 button {
   cursor: pointer;
   font-weight: bold;
