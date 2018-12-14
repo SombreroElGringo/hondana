@@ -34,7 +34,7 @@ class UserRating extends Component {
     }
     if (rightComma > 2 && rightComma <= 7)
       ratingRender.push(
-        <span className="fa fa-star-half checked" key={Math.random() * 100} />
+        <span className="fa fa-star-half-o checked" key={Math.random() * 100} />
       );
     else if (rightComma > 7)
       ratingRender.push(
