@@ -9,11 +9,13 @@ class LibraryBook extends Component {
       <section className={'user--library'}>
         <div className="container">
           <div className="row">
-            {bookcases.map(bookcase =>
-              bookcase.books.map(
-                book => book && <Book bookId={book} key={Math.random() * 100} />
-              )
-            )}
+            {bookcases &&
+              bookcases.map(bookcase =>
+                bookcase.books.map(
+                  book =>
+                    book && <Book bookId={book} key={Math.random() * 100} />
+                )
+              )}
           </div>
         </div>
       </section>

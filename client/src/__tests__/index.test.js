@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from '../index';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 jest.mock('react-dom', () => ({ render: jest.fn() }));
 
 it('renders without crashing', () => {
-  shallow(<Main />);
+  mount(<Main />);
 });
 
 it('should call render with Main component', () => {

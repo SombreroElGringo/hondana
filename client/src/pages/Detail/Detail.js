@@ -10,7 +10,7 @@ import getAccess from '../../redux/selectors/auth/getAccess';
 
 class Detail extends Component {
   state = {
-    libraryId: 0,
+    libraryId: undefined,
   };
   componentDidMount() {
     const { access } = this.props;

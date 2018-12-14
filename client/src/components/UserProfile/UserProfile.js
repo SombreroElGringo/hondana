@@ -28,7 +28,7 @@ class UserProfile extends Component {
         <div className="user--info">
           <h2 className="user--pseudo">{user && user.pseudo}</h2>
           <p className="user--mail">{user && user.email}</p>
-          {user && <UserRating userRating={user.comments} />}
+          {user && user.comments && <UserRating userRating={user.comments} />}
         </div>
       </section>
     );
