@@ -30,6 +30,6 @@ describe('BookPage', () => {
     mountedBookPage = undefined;
   });
   it('renders without crashing', () => {
-    const bookPage = bookPageComponent();
+    bookPageComponent();
   });
 });

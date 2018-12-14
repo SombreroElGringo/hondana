@@ -29,6 +29,6 @@ describe('Detail', () => {
     mountedDetail = undefined;
   });
   it('renders without crashing', () => {
-    const detail = detailComponent();
+    detailComponent();
   });
 });

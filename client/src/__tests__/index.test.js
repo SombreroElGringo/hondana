@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from '../index';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 jest.mock('react-dom', () => ({ render: jest.fn() }));
 
