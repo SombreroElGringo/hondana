@@ -41,7 +41,7 @@ class BookPage extends Component {
   }
 
   render() {
-    const { books, location } = this.props;
+    const { books, location, history } = this.props;
     const { title, categories } = location.state;
     const { details, bookcases } = this.state;
 
@@ -149,7 +149,7 @@ class BookPage extends Component {
         )}
         <div className="right">
           <div className="map">
-            {books && <Map books={books} parent={this} />}
+            {books && <Map books={books} parent={this} history={history} />}
           </div>
         </div>
       </div>
