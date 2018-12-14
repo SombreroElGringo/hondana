@@ -15,7 +15,6 @@ class Detail extends Component {
   componentDidMount() {
     const { access } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
-    console.log('token', token);
 
     const { id } = this.props.match.params;
     axios
