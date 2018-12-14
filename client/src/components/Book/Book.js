@@ -5,25 +5,19 @@ import axios from 'axios';
 import './Book.css';
 
 class Book extends Component {
-  state = {
-    bookId: 0,
-    bookTitle: '',
-    bookAuthor: '',
-    bookCover: '',
-    bookDescription: '',
-  };
+  state = {};
 
   componentDidMount() {
     const { bookId } = this.props;
-    axios.get(`${API_URL}/books/${bookId}`).then(response =>
+    axios.get(`${API_URL}/books/${bookId}`).then(response => {
       this.setState({
         bookId: response.data._id,
         bookTitle: response.data.title,
         bookCover: response.data.coverImageUrl,
-        bookAuthor: response.data.authors.name,
+        bookAuthor: (response.data.authors || {}).name,
         bookDescription: response.data.description,
-      })
-    );
+      });
+    });
   }
 
   render() {
