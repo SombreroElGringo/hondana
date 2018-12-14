@@ -31,7 +31,7 @@ class Map extends Component {
 
     const bookcases = {};
     books &&
-      books.map(book => {
+      books.forEach(book => {
         book.bookcases &&
           book.bookcases.map(async bookcase => {
             if (bookcases[bookcase._id])

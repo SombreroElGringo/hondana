@@ -28,7 +28,12 @@ class SearchBook extends React.Component {
           <div className="d-flex">
             <Search
               name="title"
-              results={books}
+              results={
+                books &&
+                books.map(b => ({
+                  title: b.title,
+                }))
+              }
               selectFirstResult={true}
               className={'flex-1 autocomplete'}
               onSearchChange={this.handleAutocomplete}

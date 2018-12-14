@@ -10,6 +10,7 @@ import axios from 'axios';
 import moment from 'moment';
 import 'moment/locale/fr';
 import { Link } from 'react-router-dom';
+import _ from 'lodash';
 
 class BookPage extends Component {
   state = {
@@ -25,6 +26,7 @@ class BookPage extends Component {
   };
 
   fetchBookcases = async ids => {
+    ids = _.uniq(ids);
     this.setState({
       bookcases: await Promise.all(
         ids.map(async id => (await axios.get(BOOKCASES_URL + '/' + id)).data)
@@ -78,7 +80,7 @@ class BookPage extends Component {
                                 bookcase.coordinate.latitude,
                                 bookcase.coordinate.longitude,
                               ],
-                              10
+                              13
                             )
                           }
                         >
@@ -106,7 +108,6 @@ class BookPage extends Component {
               <ul>
                 {books &&
                   books.map(book => {
-                    console.log(book);
                     return (
                       <li
                         className="hoverable"
@@ -119,7 +120,7 @@ class BookPage extends Component {
                         }}
                       >
                         <div className="cover">
-                          <img src={book.coverImageUrl} alt="cover" />
+                          <img src={book.coverImageUrl || null} alt="cover" />
                         </div>
                         <div className="details">
                           <div className="title">{book.title}</div>
