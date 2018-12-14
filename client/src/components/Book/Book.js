@@ -28,9 +28,7 @@ class Book extends Component {
 
   render() {
     const {
-      bookId,
       bookTitle,
-      bookAuthor,
       bookCover,
       bookDescription,
     } = this.state;
