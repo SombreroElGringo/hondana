@@ -13,12 +13,12 @@ class Map extends Component {
   }
 
   setupMap() {
-    const { books, parent } = this.props;
+    const { books, parent, history } = this.props;
     let position = { latitude: 44.8538445, longitude: -0.5716133 };
 
     this.map = parent.map = L.map('map').setView(
       [position.latitude, position.longitude],
-      3
+      10
     );
     L.tileLayer(
       'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
@@ -50,7 +50,11 @@ class Map extends Component {
                   .map(b => b.title)
                   .join(', '),
               }
-            ).addTo(this.map);
+            )
+              .addTo(this.map)
+              .on('click', () => {
+                history.push('/bookcases/' + bookcase.owner);
+              });
             return (bookcases[bookcase._id] = {
               coordinate,
               marker,
