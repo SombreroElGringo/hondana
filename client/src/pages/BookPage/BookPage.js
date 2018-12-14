@@ -5,7 +5,7 @@ import getBooks from '../../redux/selectors/app/getBooks';
 import { connect } from 'react-redux';
 import { fetchBooks } from '../../redux/actions/app';
 import { mapDispatchToProps, mapStateToProps } from '../../utils/redux_helpers';
-import { BOOKCASES_URL } from '../../utils/api_enpoints';
+import { BOOKCASES_URL } from '../../utils/api_endpoints';
 import axios from 'axios';
 import moment from 'moment';
 import 'moment/locale/fr';

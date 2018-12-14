@@ -6,15 +6,17 @@ import UserProfile from '../../components/UserProfile/UserProfile';
 import LibraryBook from '../../components/LibraryBook/LibraryBook';
 import { API_URL } from '../../utils/api_endpoints';
 import { mapStateToProps } from '../../utils/redux_helpers';
-import getToken from '../../redux/selectors/auth/getToken';
+import getAccess from '../../redux/selectors/auth/getAccess';
 
 class Detail extends Component {
   state = {
     libraryId: 0,
   };
   componentDidMount() {
-    const { token } = this.props;
-    console.log(token);
+    const { access } = this.props;
+    const token = !access ? '' : access.auth ? access.auth.token : '';
+    console.log('token', token);
+
     const { id } = this.props.match.params;
     axios
       .get(`${API_URL}/users/${id}`, {
@@ -38,6 +40,6 @@ class Detail extends Component {
 
 export default connect(
   mapStateToProps({
-    token: getToken,
+    access: getAccess,
   })
 )(Detail);
