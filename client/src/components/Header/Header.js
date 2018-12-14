@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'react-router-dom/es/Link';
 import './Header.css';
 import { mapStateToProps } from '../../utils/redux_helpers';
-import getToken from '../../redux/selectors/auth/getToken';
+import getAccess from '../../redux/selectors/auth/getAccess';
 import { connect } from 'react-redux';
 
 class Header extends React.Component {
   render() {
-    const { token } = this.props;
+    const { access } = this.props;
 
     return (
       <header>
@@ -17,9 +17,9 @@ class Header extends React.Component {
               <Link to="/">Hondana</Link>
             </div>
           </div>
-          {token ? (
+          {access ? (
             <div className="right">
-              <div>Vous êtes connecté</div>
+              <div>{access.user.pseudo}</div>
             </div>
           ) : (
             <div className="right">
@@ -39,6 +39,6 @@ class Header extends React.Component {
 
 export default connect(
   mapStateToProps({
-    token: getToken,
+    access: getAccess,
   })
 )(Header);

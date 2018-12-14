@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BOOKCASES_URL } from '../../utils/api_enpoints';
+import { BOOKCASES_URL } from '../../utils/api_endpoints';
 const L = window.L;
 
 class Map extends Component {

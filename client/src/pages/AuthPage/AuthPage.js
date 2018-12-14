@@ -5,7 +5,7 @@ import { handle_auth } from '../../redux/actions/auth';
 import { connect } from 'react-redux';
 import HttpError from '../../components/HttpError/HttpError';
 import './AuthPage.css';
-import getToken from '../../redux/selectors/auth/getToken';
+import getAccess from '../../redux/selectors/auth/getAccess';
 import getErrors from '../../redux/selectors/auth/getErrors';
 import Register from '../../components/Register/Register';
 import Login from '../../components/Login/Login';
@@ -29,7 +29,7 @@ class Auth extends React.Component {
   render() {
     const { type } = this.state;
 
-    const { token, errors } = this.props;
+    const { access, errors } = this.props;
 
     const emailError = errors.find(e => e.param === 'email') || null;
     const pseudoError = errors.find(e => e.param === 'pseudo') || null;
@@ -37,7 +37,7 @@ class Auth extends React.Component {
     const confirmPasswordError =
       errors.find(e => e.param === 'confirmPassword') || null;
 
-    return token ? (
+    return access ? (
       <Redirect to="/" />
     ) : typeof errors === 'object' && !Array.isArray(errors) ? (
       <HttpError error={errors.status} />
@@ -103,7 +103,7 @@ class Auth extends React.Component {
 
 export default connect(
   mapStateToProps({
-    token: getToken,
+    access: getAccess,
     errors: getErrors,
   }),
   mapDispatchToProps({

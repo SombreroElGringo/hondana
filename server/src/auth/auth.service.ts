@@ -17,9 +17,16 @@ export class AuthService {
   async login(payload: JwtPayload): Promise<Object> {
     await this.validateUser(payload);
     const token = this.jwtService.sign(payload);
+    const userInst = await this.userService.findByEmail(payload.email);
     return {
-      expiresIn: 3600,
-      token,
+      user: {
+        id: userInst._id,
+        pseudo: userInst.pseudo,
+      },
+      auth: {
+        expiresIn: 3600,
+        token,
+      },
     };
   }
 
@@ -36,8 +43,14 @@ export class AuthService {
       const token = this.jwtService.sign(payload);
 
       return {
-        expiresIn: 3600,
-        token,
+        user: {
+          id: userInst._id,
+          pseudo: userInst.pseudo,
+        },
+        auth: {
+          expiresIn: 3600,
+          token,
+        },
       };
     } catch (err) {
       const customError =

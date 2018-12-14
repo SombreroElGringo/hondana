@@ -6,15 +6,15 @@ import {
 } from '../consts/app';
 
 const initState = Map({
-  token: undefined,
+  access: undefined,
   errors: [],
 });
 
 const handlers = {
   [HANDLE_AUTH]: (state, { errors }) => state.set('errors', errors),
-  [HANDLE_AUTH_SUCCESS]: (state, { payload }) => state.set('token', payload),
+  [HANDLE_AUTH_SUCCESS]: (state, { payload }) => state.set('access', payload),
   [HANDLE_AUTH_FAIL]: (state, { payload, errors }) =>
-    state.set('token', null).set('errors', errors),
+    state.set('access', null).set('errors', errors),
 };
 
 export default (state = initState, action) => {

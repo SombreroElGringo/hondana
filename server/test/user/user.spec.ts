@@ -37,7 +37,7 @@ describe("Module User: ", () => {
       })
       .then((res, err) => {
         if (err) throw err;
-        token = !res.body ? "" : !res.body.data ? "" : res.body.data.token;
+        token = !res.body ? "" : !res.body.data ? "" : res.body.data.auth.token;
       });
   });
 
