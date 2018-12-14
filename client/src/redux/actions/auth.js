@@ -11,9 +11,7 @@ export const handle_auth = (data, type) => dispatch => {
     type: HANDLE_AUTH,
     errors: [],
   });
-
-  console.log(data, type);
-
+  
   const url =
     type === 'register' ? AUTH_URL + '/register' : AUTH_URL + '/login';
 
