@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
 
 import UserProfile from '../../components/UserProfile/UserProfile';
 import LibraryBook from '../../components/LibraryBook/LibraryBook';
 import { API_URL } from '../../utils/api_endpoints';
+import { mapStateToProps } from '../../utils/redux_helpers';
+import getToken from '../../redux/selectors/auth/getToken';
 
-export default class Detail extends Component {
+class Detail extends Component {
   state = {
     libraryId: 0,
   };
   componentDidMount() {
-    // USER MOCKING
-    // const userId = '5c0ab0de12e593135f96c575'
-
+    const { token } = this.props;
+    console.log(token);
     const { id } = this.props.match.params;
     axios
-      .get(`${API_URL}/users/${id}`)
+      .get(`${API_URL}/users/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
       .then(response => this.setState({ libraryId: response.data }));
   }
 
@@ -29,3 +35,9 @@ export default class Detail extends Component {
     );
   }
 }
+
+export default connect(
+  mapStateToProps({
+    token: getToken,
+  })
+)(Detail);

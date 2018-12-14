@@ -27,11 +27,7 @@ class Book extends Component {
   }
 
   render() {
-    const {
-      bookTitle,
-      bookCover,
-      bookDescription,
-    } = this.state;
+    const { bookTitle, bookCover, bookDescription } = this.state;
     return (
       <div className="book">
         <h2 className="book--title">{bookTitle}</h2>
