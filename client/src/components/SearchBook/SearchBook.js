@@ -8,7 +8,7 @@ import { mapDispatchToProps, mapStateToProps } from '../../utils/redux_helpers';
 
 class SearchBook extends React.Component {
   render() {
-    const { books } = this.props;
+    const { books, history } = this.props;
 
     const categories = [
       'Polar',
@@ -48,6 +48,12 @@ class SearchBook extends React.Component {
               ) : (
                 'Rechercher'
               )}
+            </button>
+            <button
+              className="btn btn-info ml-2"
+              onClick={() => history.push(`/books/search/`, { title: '' })}
+            >
+              Tous les livres
             </button>
           </div>
           <div className="mt-3">
