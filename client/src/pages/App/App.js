@@ -26,7 +26,7 @@ class App extends Component {
               exact
               path="/inscription"
             />
-            <Route component={BookPage} exact path="/books/search/:query" />
+            <Route component={BookPage} exact path="/books/search/" />
             <Route component={Detail} exact path="/bookcases/:id" />
             <Route component={NotFoundPage} />
           </Switch>
