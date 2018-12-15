@@ -11,8 +11,8 @@ export class BookGateway {
   constructor(private readonly bookService: BookService) {}
 
   @SubscribeMessage("eventFindAllBooks")
-  async eventFindAllBooks(client, query): Promise<any> {
-    const books = await this.bookService.findAll(query);
+  async eventFindAllBooks(client): Promise<any> {
+    const books = await this.bookService.findAll();
     return books;
   }
 
@@ -24,7 +24,6 @@ export class BookGateway {
 
   @SubscribeMessage("identity")
   async identity(client) {
-    this.sendAllBooksOnNewRow();
     this.server.emit("hello", "Hello, I am the Server of Hondana!");
   }
 }
