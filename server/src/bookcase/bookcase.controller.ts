@@ -62,4 +62,27 @@ export class BookcaseController {
       message: "Book removed from the Bookcase!",
     });
   }
+
+  @Post(":id/coordinate")
+  async editBookcaseCoordinate(
+    @Response() res,
+    @Param() param,
+    @Body() body,
+  ): Promise<any> {
+    if (!_.isEmpty(body)) {
+      const coordinate = {
+        latitude: body.latitude,
+        longitude: body.longitude,
+      };
+      await this.bookcaseService.editBookcaseCoordinate(param.id, coordinate);
+      res
+        .status(HttpStatus.OK)
+        .json({ status: HttpStatus.OK, message: "Coordinate updated!" });
+    } else {
+      res.status(HttpStatus.BAD_REQUEST).json({
+        status: HttpStatus.BAD_REQUEST,
+        message: "Please renseign the body!",
+      });
+    }
+  }
 }

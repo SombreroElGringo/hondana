@@ -18,12 +18,13 @@ export class BookGateway {
 
   @SubscribeMessage("sendAllBooksOnNewRow")
   async sendAllBooksOnNewRow() {
-    const books = await this.bookService.findAll({});
+    const books = await this.bookService.findLastestBookAdded(5);
     this.server.emit("sendAllBooksOnNewRow", books);
   }
 
   @SubscribeMessage("identity")
   async identity(client) {
+    this.sendAllBooksOnNewRow();
     this.server.emit("hello", "Hello, I am the Server of Hondana!");
   }
 }

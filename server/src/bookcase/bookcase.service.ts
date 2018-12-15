@@ -39,6 +39,17 @@ export class BookcaseService {
     );
   }
 
+  async editBookcaseCoordinate(id: string, coordinate: object) {
+    return await this.bookcaseModel.updateOne(
+      { _id: new Types.ObjectId(id) },
+      {
+        $set: {
+          coordinate: coordinate,
+        },
+      },
+    );
+  }
+
   async removeBookFromBookcase(id: string, bookId: string) {
     return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },

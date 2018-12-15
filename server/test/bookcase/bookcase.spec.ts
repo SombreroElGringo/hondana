@@ -121,6 +121,44 @@ describe("Module Bookcase: ", () => {
       .then(async () => await bookcaseService.deleteBookcase(user._id));
   });
 
+  it("/POST bookcases/:id/coordinate", async () => {
+    return await request(app.getHttpServer())
+      .post(encodeURI("/bookcases"))
+      .send({
+        owner: user._id,
+        books: [],
+      })
+      .then(async () => {
+        const bookcase = await bookcaseService.findByOwner(user._id);
+        await request(app.getHttpServer())
+          .post(encodeURI(`/bookcases/${bookcase._id}/coordinate`))
+          .send({
+            latitude: "64.4",
+            longitude: "3.1",
+          })
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/);
+      })
+      .then(async () => await bookcaseService.deleteBookcase(user._id));
+  });
+
+  it("/POST bookcases/:id/coordinate without body", async () => {
+    return await request(app.getHttpServer())
+      .post(encodeURI("/bookcases"))
+      .send({
+        owner: user._id,
+        books: [],
+      })
+      .then(async () => {
+        const bookcase = await bookcaseService.findByOwner(user._id);
+        await request(app.getHttpServer())
+          .post(encodeURI(`/bookcases/${bookcase._id}/coordinate`))
+          .expect(HttpStatus.BAD_REQUEST)
+          .expect("Content-Type", /json/);
+      })
+      .then(async () => await bookcaseService.deleteBookcase(user._id));
+  });
+
   it("/DELETE bookcases/:id/book/:bookId", async () => {
     return await request(app.getHttpServer())
       .post(encodeURI("/bookcases"))
