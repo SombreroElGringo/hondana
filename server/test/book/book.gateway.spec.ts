@@ -28,7 +28,7 @@ describe("Gateway Book: ", () => {
   });
 
   it("eventFindAllBooks", async () => {
-    await bookGateway.eventFindAllBooks(null, {}).then(data => {
+    await bookGateway.eventFindAllBooks(null).then(data => {
       chai.assert.isArray(data);
     });
   });
