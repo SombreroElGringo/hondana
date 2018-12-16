@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-
-//import UserProfile from '../../components/UserProfile/UserProfile';
-//import Bookcase from '../../components/Bookcase/Bookcase';
-
 import { API_URL } from '../../utils/api_endpoints';
 import { mapStateToProps } from '../../utils/redux_helpers';
 import getAccess from '../../redux/selectors/auth/getAccess';
@@ -39,11 +35,6 @@ class BookcasePage extends Component {
     );
   }
 }
-
-/*
-<UserProfile userId={this.props.match.params.id} />
-{bookcase && <Bookcase data={bookcase} />}
-*/
 
 export default connect(
   mapStateToProps({
