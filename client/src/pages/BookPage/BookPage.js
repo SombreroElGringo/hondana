@@ -61,7 +61,7 @@ class BookPage extends Component {
                     </div>
                     <div className="details">
                       <div className="title">
-                        <Link to={'/bookcases/' + bookcase.owner._id}>
+                        <Link to={'/bookcases/' + bookcase._id}>
                           Bibliothèque de {bookcase.owner.pseudo}
                         </Link>
                       </div>

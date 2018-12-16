@@ -53,7 +53,7 @@ class Map extends Component {
             )
               .addTo(this.map)
               .on('click', () => {
-                history.push('/bookcases/' + bookcase.owner);
+                history.push('/bookcases/' + bookcase._id);
               });
             return (bookcases[bookcase._id] = {
               coordinate,

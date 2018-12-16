@@ -1,34 +1,37 @@
 import React, { Component } from 'react';
-import { API_URL } from '../../utils/api_endpoints';
-import axios from 'axios';
-
 import './Book.css';
 
-class Book extends Component {
-  state = {};
+export default class Book extends Component {
+  state = {
+    detail: false,
+  };
 
-  componentDidMount() {
-    const { bookId } = this.props;
-    axios.get(`${API_URL}/books/${bookId}`).then(response => {
-      this.setState({
-        bookId: response.data._id,
-        bookTitle: response.data.title,
-        bookCover: response.data.coverImageUrl,
-        bookAuthor: (response.data.authors || {}).name,
-        bookDescription: response.data.description,
-      });
+  handleClick(detail) {
+    this.setState({
+      detail: detail ? false : true,
     });
   }
 
   render() {
-    const { bookTitle, bookCover, bookDescription } = this.state;
+    const { book } = this.props;
+    const { detail } = this.state;
+
+    if (detail) {
+      return (
+        <div className="book" onClick={e => this.handleClick(detail)}>
+          <img src={book.coverImageUrl} className="book--cover" alt="cover" />
+          <h2 className="book--title">{book.title}</h2>
+          <p>Auteur(s): {book.authors.map(author => author.name)}</p>
+          <p className="book--description">{book.description}</p>
+        </div>
+      );
+    }
+
     return (
-      <div className="book">
-        <h2 className="book--title">{bookTitle}</h2>
-        <img src={bookCover} className="book--cover" alt="cover" />
-        <p className="book--description">{bookDescription}</p>
+      <div className="book" onClick={e => this.handleClick(detail)}>
+        <img src={book.coverImageUrl} className="book--cover" alt="cover" />
+        <h2 className="book--title">{book.title}</h2>
       </div>
     );
   }
 }
-export default Book;
