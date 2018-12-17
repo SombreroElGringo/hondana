@@ -15,7 +15,7 @@ export default class BookcaseList extends Component {
   }
 
   render() {
-    const { books, isCurrentUser } = this.props;
+    const { books, bookcaseId, isCurrentUser } = this.props;
     const { showDetailOfBookId } = this.state;
     return (
       <section className="user--library">
@@ -25,6 +25,7 @@ export default class BookcaseList extends Component {
               books.map(book => (
                 <Book
                   book={book}
+                  bookcaseId={bookcaseId}
                   showDetail={this.handleDetail.bind(this)}
                   detail={book._id === showDetailOfBookId ? true : false}
                   isCurrentUser={isCurrentUser}

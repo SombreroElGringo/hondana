@@ -4,7 +4,7 @@ import {
   HANDLE_AUTH_SUCCESS,
   HANDLE_AUTH_FAIL,
 } from '../consts/app';
-import { AUTH_URL } from '../../utils/api_endpoints';
+import { AUTH_URL } from '../../utils/constants';
 
 export const handle_auth = (data, type) => dispatch => {
   dispatch({

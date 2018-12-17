@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Rating from '../Rating/Rating';
 import BookcaseBookForm from './BookcaseBookForm';
+import BookcaseSearchBook from './BookcaseSearchBook';
 
 export default class BookcaseHeader extends Component {
   state = {
@@ -16,7 +17,7 @@ export default class BookcaseHeader extends Component {
   }
 
   render() {
-    const { user, isCurrentUser, isLogged } = this.props;
+    const { user, bookcaseId, isCurrentUser, isLogged } = this.props;
     const { showAddBook } = this.state;
     // TODO: Nice button on the right or middle
     // nice <a> for the email when we are logged
@@ -37,11 +38,14 @@ export default class BookcaseHeader extends Component {
           {user && user.comments && <Rating rates={user.comments} />}
         </div>
         {isCurrentUser ? (
-          <button onClick={e => this.handleAddBook(e)}>
-            Add book in the bookcase
-          </button>
+          <button onClick={e => this.handleAddBook(e)}>Ajouter un livre</button>
         ) : null}
-        {showAddBook ? <BookcaseBookForm /> : null}
+        {showAddBook ? (
+          <div>
+            <BookcaseSearchBook bookcaseId={bookcaseId} />
+            <BookcaseBookForm bookcaseId={bookcaseId} />
+          </div>
+        ) : null}
       </section>
     );
   }

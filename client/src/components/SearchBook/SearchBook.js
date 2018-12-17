@@ -5,22 +5,11 @@ import getBooks from '../../redux/selectors/app/getBooks';
 import { Search } from 'semantic-ui-react';
 import './SearchBook.css';
 import { mapDispatchToProps, mapStateToProps } from '../../utils/redux_helpers';
+import { CATEGORIES } from '../../utils/constants';
 
 class SearchBook extends React.Component {
   render() {
     const { books, history } = this.props;
-
-    const categories = [
-      'Polar',
-      'Animation',
-      'Action',
-      'Aventure',
-      'Fantasy',
-      'Cuisine',
-      'Botannique',
-      'Manga',
-      'Contes & Légendes',
-    ];
 
     return (
       <div className="search-book">
@@ -60,7 +49,7 @@ class SearchBook extends React.Component {
             <div>
               <b>Recherche par categorie :</b>
             </div>
-            {categories.map(category => (
+            {CATEGORIES.map(category => (
               <label key={category} className="mr-3">
                 <input
                   type="checkbox"

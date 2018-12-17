@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-import { API_URL } from '../../utils/api_endpoints';
+import { BOOKCASES_URL } from '../../utils/constants';
 import { mapStateToProps } from '../../utils/redux_helpers';
 import getAccess from '../../redux/selectors/auth/getAccess';
 import Bookcase from '../../components/Bookcase/Bookcase';
@@ -18,7 +18,7 @@ class BookcasePage extends Component {
     const { bookcaseId } = this.state;
 
     axios
-      .get(`${API_URL}/bookcases/${bookcaseId}`, {
+      .get(`${BOOKCASES_URL}/${bookcaseId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

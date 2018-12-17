@@ -1,93 +1,86 @@
 import React, { Component } from 'react';
+import * as axios from 'axios';
+import {
+  ADD_BOOK_FORM_FIELDS,
+  CATEGORIES,
+  BOOKS_URL,
+} from '../../utils/constants';
 
 export default class BookcaseBookForm extends Component {
+  state = {
+    isCreated: null,
+    error: null,
+  };
+
   handleSubmit(e) {
+    e.preventDefault();
+    const { bookcaseId } = this.props;
+    const formData = new FormData(this.refs.form);
+    const bookcases = !formData.get('addInBookcase') ? [] : [bookcaseId];
     const data = {
-      isbn10: this.isbn10.value,
+      isbn10: formData.get('isbn10'),
+      isbn13: formData.get('isbn13'),
+      title: formData.get('title'),
+      description: formData.get('description'),
+      coverImageUrl: formData.get('coverImageUrl'),
+      categories: formData.getAll('category'),
+      releaseAt: formData.get('releaseAt'),
+      bookcases: bookcases,
     };
-    console.log(data);
+
+    axios
+      .post(BOOKS_URL, data)
+      .then(({ data }) => this.setState({ isCreated: true, error: null }))
+      .catch(error => {
+        const msg = !error.response
+          ? 'Bad Request'
+          : error.response.message
+            ? error.response.message
+            : 'Internal Error';
+        this.setState({ isCreated: false, error: msg });
+      });
   }
 
   // TODO nice form book
   render() {
-    const categories = [
-      'Polar',
-      'Animation',
-      'Action',
-      'Aventure',
-      'Fantasy',
-      'Cuisine',
-      'Botannique',
-      'Manga',
-      'Contes & Légendes',
-    ];
-
-    const bookFormFields = [
-      {
-        name: 'isbn10',
-        placeholder: 'ISBN 10',
-      },
-      {
-        name: 'isbn13',
-        placeholder: 'ISBN 13',
-      },
-      {
-        name: 'title',
-        placeholder: 'Titre du livre',
-      },
-      {
-        name: 'description',
-        placeholder: 'Description',
-      },
-      {
-        name: 'coverImageUrl',
-        placeholder: 'Image de couverture',
-      },
-      {
-        name: 'categories',
-      },
-      {
-        name: 'releaseAt',
-        placeholder: 'Date de sortie',
-      },
-      {
-        name: 'addInBookcase',
-      },
-    ];
-
     // TODO: Nice form under the black header
+    const { isCreated, error } = this.state;
     return (
       <div>
-        <form>
-          {bookFormFields
-            ? bookFormFields.map(
+        {isCreated ? (
+          <span>Le livre a bien été crée</span>
+        ) : (
+          <span>{error}</span>
+        )}
+        <form ref="form">
+          {ADD_BOOK_FORM_FIELDS
+            ? ADD_BOOK_FORM_FIELDS.map(
                 field =>
                   field.name === 'categories' ? (
                     <label key={Math.random() * 100}>
-                      {categories
-                        ? categories.map(categorie => (
-                            <label key={Math.random() * 100}>
-                              {categorie}{' '}
+                      {CATEGORIES
+                        ? CATEGORIES.map(category => (
+                            <label key={category} className="mr-3">
                               <input
                                 type="checkbox"
-                                name="categories[]"
-                                value={categorie}
+                                name="category"
+                                multiple="multiple"
+                                value={category}
+                                className="mr-2"
                               />
+                              {category[0].toUpperCase() + category.slice(1)}
                             </label>
                           ))
                         : null}
                     </label>
                   ) : field.name === 'addInBookcase' ? (
-                    <label  key={Math.random() * 100}>
+                    <label key={Math.random() * 100}>
                       <input type="checkbox" name="addInBookcase" value="yes" />{' '}
                       Ajouter dans ma bookcase!
                     </label>
                   ) : (
                     <input
                       className="field"
-                      ref={ref => {
-                        this[field.name] = ref;
-                      }}
                       type="text"
                       name={field.name}
                       placeholder={field.placeholder}
@@ -100,7 +93,7 @@ export default class BookcaseBookForm extends Component {
           <input
             className="btn-form"
             type="button"
-            value="Ajouter le livre"
+            value="Créer le livre"
             onClick={e => this.handleSubmit(e)}
           />
         </form>

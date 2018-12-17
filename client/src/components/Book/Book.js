@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Book.css';
+import { BOOKCASES_URL } from '../../utils/constants';
+import * as axios from 'axios';
 
 export default class Book extends Component {
   state = {
@@ -11,7 +13,14 @@ export default class Book extends Component {
   }
 
   handleRemoveBookFromBookcase(bookId) {
-    console.log('Book removed');
+    const { bookcaseId } = this.props;
+
+    axios
+      .delete(`${BOOKCASES_URL}/${bookcaseId}/book/${bookId}`)
+      .then(({ data }) => {})
+      .catch(error => {
+        console.log(error);
+      });
   }
 
   render() {
@@ -28,7 +37,7 @@ export default class Book extends Component {
           <p className="book--description">{book.description}</p>
           {isCurrentUser ? (
             <button onClick={e => this.handleRemoveBookFromBookcase(book._id)}>
-              Remove book from Bookcase
+              Retirer le livre
             </button>
           ) : null}
         </div>
