@@ -1,34 +1,26 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { connect } from 'react-redux';
-import { BOOKCASES_URL } from '../../utils/constants';
-import { mapStateToProps } from '../../utils/redux_helpers';
+import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
+import { fetchBookcase, resetBookcase } from '../../redux/actions/app';
 import getAccess from '../../redux/selectors/auth/getAccess';
+import getBookcase from '../../redux/selectors/app/getBookcase';
 import Bookcase from '../../components/Bookcase/Bookcase';
 
 class BookcasePage extends Component {
   state = {
     bookcaseId: this.props.match.params.bookcaseId,
-    bookcase: null,
   };
 
   componentDidMount() {
     const { access } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
     const { bookcaseId } = this.state;
-
-    axios
-      .get(`${BOOKCASES_URL}/${bookcaseId}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .then(({ data }) => this.setState({ bookcase: data }));
+    
+    this.props.fetchBookcase(bookcaseId, token);
   }
 
   render() {
-    const { bookcase } = this.state;
-    const { access } = this.props;
+    const { access, bookcase } = this.props;
     const currentUser = !access ? null : access.user ? access.user : null;
     const currentPseudo = currentUser ? currentUser.pseudo : null;
     return (
@@ -42,5 +34,10 @@ class BookcasePage extends Component {
 export default connect(
   mapStateToProps({
     access: getAccess,
+    bookcase: getBookcase,
+  }),
+  mapDispatchToProps({
+    fetchBookcase,
+    resetBookcase,
   })
 )(BookcasePage);

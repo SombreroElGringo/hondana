@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import './Book.css';
-import { BOOKCASES_URL } from '../../utils/constants';
 import * as axios from 'axios';
+import { BOOKCASES_URL } from '../../utils/constants';
+import { connect } from 'react-redux';
+import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
+import { fetchBookcase, resetBookcase } from '../../redux/actions/app';
+import getAccess from '../../redux/selectors/auth/getAccess';
+import getBookcase from '../../redux/selectors/app/getBookcase';
 
-export default class Book extends Component {
+class Book extends Component {
   state = {
     detail: this.props.detail || false,
   };
@@ -13,11 +18,15 @@ export default class Book extends Component {
   }
 
   handleRemoveBookFromBookcase(bookId) {
-    const { bookcaseId } = this.props;
+    const { access, bookcaseId } = this.props;
+    const token = !access ? '' : access.auth ? access.auth.token : '';
 
     axios
       .delete(`${BOOKCASES_URL}/${bookcaseId}/book/${bookId}`)
-      .then(({ data }) => {})
+      .then(({ data }) => {
+        this.props.resetBookcase();
+        this.props.fetchBookcase(bookcaseId, token);
+      })
       .catch(error => {
         console.log(error);
       });
@@ -52,3 +61,15 @@ export default class Book extends Component {
     );
   }
 }
+
+export default connect(
+  mapStateToProps({
+    access: getAccess,
+    bookcase: getBookcase,
+  }),
+  mapDispatchToProps({
+    fetchBookcase,
+    resetBookcase,
+  })
+)(Book);
+

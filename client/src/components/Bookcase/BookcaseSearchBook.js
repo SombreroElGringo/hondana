@@ -1,12 +1,14 @@
 import React from 'react';
 import axios from 'axios';
-import { fetchBooks, resetBooks } from '../../redux/actions/app';
-import { connect } from 'react-redux';
-import getBooks from '../../redux/selectors/app/getBooks';
 import { Search } from 'semantic-ui-react';
-import '../SearchBook/SearchBook.css';
-import { mapDispatchToProps, mapStateToProps } from '../../utils/redux_helpers';
+import { connect } from 'react-redux';
+import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
+import { fetchBooks, resetBooks, fetchBookcase, resetBookcase } from '../../redux/actions/app';
+import getAccess from '../../redux/selectors/auth/getAccess';
+import getBooks from '../../redux/selectors/app/getBooks';
+import getBookcase from '../../redux/selectors/app/getBookcase';
 import { BOOKCASES_URL } from '../../utils/constants';
+import '../SearchBook/SearchBook.css';
 
 class BookcaseSearchBook extends React.Component {
   state = {
@@ -17,7 +19,9 @@ class BookcaseSearchBook extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    const { bookcaseId, resetBooks, books } = this.props;
+    const {access, bookcase, resetBooks, bookcaseId, books } = this.props;
+    const token = !access ? '' : access.auth ? access.auth.token : '';
+
     const formData = new FormData(this.refs.form);
     const title = formData.get('title');
     resetBooks();
@@ -26,7 +30,12 @@ class BookcaseSearchBook extends React.Component {
 
     axios
       .post(`${BOOKCASES_URL}/${bookcaseId}/book/${wantedBook[0]._id}`)
-      .then(({ data }) => this.setState({ isAdded: true, error: null }))
+      .then(({ data }) => {
+        this.setState({ isAdded: true, error: null })
+
+        this.props.resetBookcase();
+        this.props.fetchBookcase(bookcaseId, token);
+      })
       .catch(error => {
         const msg = !error.response
           ? 'Bad Request'
@@ -88,12 +97,17 @@ class BookcaseSearchBook extends React.Component {
   }
 }
 
+
 export default connect(
   mapStateToProps({
+    access: getAccess,
     books: getBooks,
+    bookcase: getBookcase,
   }),
   mapDispatchToProps({
     fetchBooks,
     resetBooks,
+    fetchBookcase,
+    resetBookcase,
   })
 )(BookcaseSearchBook);

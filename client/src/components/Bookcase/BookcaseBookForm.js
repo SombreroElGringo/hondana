@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import * as axios from 'axios';
+import { connect } from 'react-redux';
+import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
+import { fetchBookcase, resetBookcase } from '../../redux/actions/app';
+import getAccess from '../../redux/selectors/auth/getAccess';
+import getBookcase from '../../redux/selectors/app/getBookcase';
 import {
   ADD_BOOK_FORM_FIELDS,
   CATEGORIES,
   BOOKS_URL,
 } from '../../utils/constants';
 
-export default class BookcaseBookForm extends Component {
+class BookcaseBookForm extends Component {
   state = {
     isCreated: null,
     error: null,
@@ -14,7 +19,9 @@ export default class BookcaseBookForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const { bookcaseId } = this.props;
+    const { bookcaseId , access} = this.props;
+    const token = !access ? '' : access.auth ? access.auth.token : '';
+
     const formData = new FormData(this.refs.form);
     const bookcases = !formData.get('addInBookcase') ? [] : [bookcaseId];
     const data = {
@@ -30,7 +37,13 @@ export default class BookcaseBookForm extends Component {
 
     axios
       .post(BOOKS_URL, data)
-      .then(({ data }) => this.setState({ isCreated: true, error: null }))
+      .then(({ data }) => {
+
+        this.setState({ isCreated: true, error: null })
+
+        this.props.resetBookcase();
+        this.props.fetchBookcase(bookcaseId, token);
+      })
       .catch(error => {
         const msg = !error.response
           ? 'Bad Request'
@@ -101,3 +114,14 @@ export default class BookcaseBookForm extends Component {
     );
   }
 }
+
+export default connect(
+  mapStateToProps({
+    access: getAccess,
+    bookcase: getBookcase,
+  }),
+  mapDispatchToProps({
+    fetchBookcase,
+    resetBookcase,
+  })
+)(BookcaseBookForm);
