@@ -78,7 +78,7 @@ export default class BookcaseBookForm extends Component {
                         : null}
                     </label>
                   ) : field.name === 'addInBookcase' ? (
-                    <label>
+                    <label  key={Math.random() * 100}>
                       <input type="checkbox" name="addInBookcase" value="yes" />{' '}
                       Ajouter dans ma bookcase!
                     </label>
