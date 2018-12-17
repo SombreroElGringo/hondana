@@ -4,8 +4,7 @@ import './Rating.css';
 export default class Rating extends Component {
   render() {
     const { rates } = this.props;
-    let avg =
-      rates.reduce((a, b) => a + b.rating, 0) / rates.length;
+    let avg = rates.reduce((a, b) => a + b.rating, 0) / rates.length;
 
     let ratingRender = [];
     for (let i = 0; i < 5; i++) {

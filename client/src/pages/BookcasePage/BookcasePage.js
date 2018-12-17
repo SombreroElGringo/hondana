@@ -28,9 +28,12 @@ class BookcasePage extends Component {
 
   render() {
     const { bookcase } = this.state;
+    const { access } = this.props;
+    const currentUser = !access ? null : access.user ? access.user : null;
+    const currentPseudo = currentUser ? currentUser.pseudo : null;
     return (
       <div className="related--book">
-        {bookcase && <Bookcase data={bookcase} />}
+        {bookcase && <Bookcase data={bookcase} currentPseudo={currentPseudo} />}
       </div>
     );
   }

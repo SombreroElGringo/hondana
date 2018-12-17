@@ -5,12 +5,20 @@ import './Bookcase.css';
 
 export default class Bookcase extends Component {
   render() {
-    const { data } = this.props;
+    const { data, currentPseudo } = this.props;
     const { books, owner } = data;
+    const ownerPseudo = owner ? owner.pseudo : null;
+    const isCurrentUser =
+      ownerPseudo && ownerPseudo === currentPseudo ? true : false;
+    const isLogged = currentPseudo ? true : false;
     return (
       <div>
-        <BookcaseHeader user={owner} />
-        <BookcaseList books={books} />
+        <BookcaseHeader
+          user={owner}
+          isCurrentUser={isCurrentUser}
+          isLogged={isLogged}
+        />
+        <BookcaseList books={books} isCurrentUser={isCurrentUser} />
       </div>
     );
   }
