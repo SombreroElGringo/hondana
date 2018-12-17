@@ -13,11 +13,7 @@ export default class Bookcase extends Component {
     const isLogged = currentPseudo ? true : false;
     return (
       <div>
-        <BookcaseHeader
-          user={owner}
-          isCurrentUser={isCurrentUser}
-          isLogged={isLogged}
-        />
+        <BookcaseHeader user={owner} isCurrentUser={true} isLogged={isLogged} />
         <BookcaseList books={books} isCurrentUser={isCurrentUser} />
       </div>
     );
