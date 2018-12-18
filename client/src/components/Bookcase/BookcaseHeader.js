@@ -17,7 +17,7 @@ export default class BookcaseHeader extends Component {
   }
 
   render() {
-    const { user, bookcaseId, isCurrentUser, isLogged } = this.props;
+    const { user, isCurrentUser, isLogged } = this.props;
     const { showAddBook } = this.state;
     // TODO: Nice button on the right or middle
     // nice <a> for the email when we are logged
@@ -42,8 +42,8 @@ export default class BookcaseHeader extends Component {
         ) : null}
         {showAddBook ? (
           <div>
-            <BookcaseSearchBook bookcaseId={bookcaseId} />
-            <BookcaseBookForm bookcaseId={bookcaseId} />
+            <BookcaseSearchBook />
+            <BookcaseBookForm />
           </div>
         ) : null}
       </section>

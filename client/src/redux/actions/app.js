@@ -7,6 +7,12 @@ import {
   FETCH_BOOKCASE,
   FETCH_BOOKCASE_SUCCESS,
   FETCH_BOOKCASE_FAIL,
+  ADD_BOOK,
+  ADD_BOOK_SUCCESS,
+  ADD_BOOK_FAIL,
+  REMOVE_BOOK_FROM_BOOKCASE_SUCCESS,
+  REMOVE_BOOK_FROM_BOOKCASE_FAIL,
+  REMOVE_BOOK_FROM_BOOKCASE,
 } from '../consts/app';
 import { BOOKS_URL, BOOKCASES_URL } from '../../utils/constants';
 import axios from 'axios';
@@ -55,7 +61,8 @@ export const fetchBookcase = (bookcaseId, token) => async dispatch => {
     const response = await axios.get(`${BOOKCASES_URL}/${bookcaseId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
-      }});
+      },
+    });
 
     if (!response.data) throw new Error('There is no results');
 
@@ -69,6 +76,51 @@ export const fetchBookcase = (bookcaseId, token) => async dispatch => {
     dispatch({
       type: FETCH_BOOKCASE_FAIL,
       error,
+    });
+  }
+};
+
+export const addBook = data => async dispatch => {
+  dispatch({ type: ADD_BOOK });
+  try {
+    await axios.post(BOOKS_URL, data);
+
+    dispatch({
+      type: ADD_BOOK_SUCCESS,
+      bookIsCreated: true,
+    });
+  } catch (error) {
+    const msg = !error.response
+      ? 'Bad Request'
+      : (error.response.message = 'Internal Error'
+          ? 'Le livre existe déjà!'
+          : 'Internal Error');
+
+    dispatch({
+      type: ADD_BOOK_FAIL,
+      bookIsCreated: false,
+      error: msg,
+    });
+  }
+};
+
+export const removeBookFromBookcase = (
+  bookcaseId,
+  bookId
+) => async dispatch => {
+  dispatch({ type: REMOVE_BOOK_FROM_BOOKCASE });
+  try {
+    await axios.delete(`${BOOKCASES_URL}/${bookcaseId}/book/${bookId}`);
+
+    dispatch({
+      type: REMOVE_BOOK_FROM_BOOKCASE_SUCCESS,
+      bookIsRemoved: true,
+    });
+  } catch (error) {
+    dispatch({
+      type: REMOVE_BOOK_FROM_BOOKCASE_FAIL,
+      bookIsRemoved: false,
+      error: error,
     });
   }
 };

@@ -1,29 +1,22 @@
 import React, { Component } from 'react';
-import * as axios from 'axios';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
-import { fetchBookcase, resetBookcase } from '../../redux/actions/app';
+import { addBook, fetchBookcase, resetBookcase } from '../../redux/actions/app';
 import getAccess from '../../redux/selectors/auth/getAccess';
 import getBookcase from '../../redux/selectors/app/getBookcase';
-import {
-  ADD_BOOK_FORM_FIELDS,
-  CATEGORIES,
-  BOOKS_URL,
-} from '../../utils/constants';
+import getBookIsCreated from '../../redux/selectors/app/getBookIsCreated';
+import getError from '../../redux/selectors/app/getError';
+
+import { ADD_BOOK_FORM_FIELDS, CATEGORIES } from '../../utils/constants';
 
 class BookcaseBookForm extends Component {
-  state = {
-    isCreated: null,
-    error: null,
-  };
-
   handleSubmit(e) {
     e.preventDefault();
-    const { bookcaseId , access} = this.props;
+    const { bookcase, access } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     const formData = new FormData(this.refs.form);
-    const bookcases = !formData.get('addInBookcase') ? [] : [bookcaseId];
+    const bookcases = !formData.get('addInBookcase') ? [] : [bookcase._id];
     const data = {
       isbn10: formData.get('isbn10'),
       isbn13: formData.get('isbn13'),
@@ -31,36 +24,23 @@ class BookcaseBookForm extends Component {
       description: formData.get('description'),
       coverImageUrl: formData.get('coverImageUrl'),
       categories: formData.getAll('category'),
-      releaseAt: formData.get('releaseAt'),
+      releaseAt: new Date(formData.get('releaseAt')),
       bookcases: bookcases,
     };
 
-    axios
-      .post(BOOKS_URL, data)
-      .then(({ data }) => {
-
-        this.setState({ isCreated: true, error: null })
-
-        this.props.resetBookcase();
-        this.props.fetchBookcase(bookcaseId, token);
-      })
-      .catch(error => {
-        const msg = !error.response
-          ? 'Bad Request'
-          : error.response.message
-            ? error.response.message
-            : 'Internal Error';
-        this.setState({ isCreated: false, error: msg });
-      });
+    this.props.addBook(data).then(() => {
+      this.props.resetBookcase();
+      this.props.fetchBookcase(bookcase._id, token);
+    });
   }
 
   // TODO nice form book
   render() {
     // TODO: Nice form under the black header
-    const { isCreated, error } = this.state;
+    const { bookIsCreated, error } = this.props;
     return (
       <div>
-        {isCreated ? (
+        {bookIsCreated ? (
           <span>Le livre a bien été crée</span>
         ) : (
           <span>{error}</span>
@@ -119,8 +99,11 @@ export default connect(
   mapStateToProps({
     access: getAccess,
     bookcase: getBookcase,
+    bookIsCreated: getBookIsCreated,
+    error: getError,
   }),
   mapDispatchToProps({
+    addBook,
     fetchBookcase,
     resetBookcase,
   })

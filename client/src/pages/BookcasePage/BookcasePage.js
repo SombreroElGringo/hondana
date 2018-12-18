@@ -7,15 +7,11 @@ import getBookcase from '../../redux/selectors/app/getBookcase';
 import Bookcase from '../../components/Bookcase/Bookcase';
 
 class BookcasePage extends Component {
-  state = {
-    bookcaseId: this.props.match.params.bookcaseId,
-  };
-
   componentDidMount() {
     const { access } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
-    const { bookcaseId } = this.state;
-    
+    const { bookcaseId } = this.props.match.params;
+
     this.props.fetchBookcase(bookcaseId, token);
   }
 

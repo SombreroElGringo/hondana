@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './Book.css';
-import * as axios from 'axios';
-import { BOOKCASES_URL } from '../../utils/constants';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
-import { fetchBookcase, resetBookcase } from '../../redux/actions/app';
+import {
+  removeBookFromBookcase,
+  fetchBookcase,
+  resetBookcase,
+} from '../../redux/actions/app';
 import getAccess from '../../redux/selectors/auth/getAccess';
 import getBookcase from '../../redux/selectors/app/getBookcase';
+import getBookIsRemoved from '../../redux/selectors/app/getBookIsRemoved';
+import getError from '../../redux/selectors/app/getError';
 
 class Book extends Component {
   state = {
@@ -17,19 +21,14 @@ class Book extends Component {
     this.props.showDetail(bookId);
   }
 
-  handleRemoveBookFromBookcase(bookId) {
-    const { access, bookcaseId } = this.props;
+  async handleRemoveBookFromBookcase(bookId) {
+    const { access, bookcase } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
-    axios
-      .delete(`${BOOKCASES_URL}/${bookcaseId}/book/${bookId}`)
-      .then(({ data }) => {
-        this.props.resetBookcase();
-        this.props.fetchBookcase(bookcaseId, token);
-      })
-      .catch(error => {
-        console.log(error);
-      });
+    await this.props.removeBookFromBookcase(bookcase._id, bookId).then(() => {
+      this.props.resetBookcase();
+      this.props.fetchBookcase(bookcase._id, token);
+    });
   }
 
   render() {
@@ -66,10 +65,12 @@ export default connect(
   mapStateToProps({
     access: getAccess,
     bookcase: getBookcase,
+    bookIsRemoved: getBookIsRemoved,
+    error: getError,
   }),
   mapDispatchToProps({
+    removeBookFromBookcase,
     fetchBookcase,
     resetBookcase,
   })
 )(Book);
-

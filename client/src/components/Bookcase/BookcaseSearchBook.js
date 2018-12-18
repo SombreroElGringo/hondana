@@ -3,7 +3,12 @@ import axios from 'axios';
 import { Search } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
-import { fetchBooks, resetBooks, fetchBookcase, resetBookcase } from '../../redux/actions/app';
+import {
+  fetchBooks,
+  resetBooks,
+  fetchBookcase,
+  resetBookcase,
+} from '../../redux/actions/app';
 import getAccess from '../../redux/selectors/auth/getAccess';
 import getBooks from '../../redux/selectors/app/getBooks';
 import getBookcase from '../../redux/selectors/app/getBookcase';
@@ -19,7 +24,7 @@ class BookcaseSearchBook extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    const {access, bookcase, resetBooks, bookcaseId, books } = this.props;
+    const { access, books, bookcase, resetBooks } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     const formData = new FormData(this.refs.form);
@@ -29,12 +34,12 @@ class BookcaseSearchBook extends React.Component {
     const wantedBook = books.filter(book => book.title === title);
 
     axios
-      .post(`${BOOKCASES_URL}/${bookcaseId}/book/${wantedBook[0]._id}`)
+      .post(`${BOOKCASES_URL}/${bookcase._id}/book/${wantedBook[0]._id}`)
       .then(({ data }) => {
-        this.setState({ isAdded: true, error: null })
+        this.setState({ isAdded: true, error: null });
 
         this.props.resetBookcase();
-        this.props.fetchBookcase(bookcaseId, token);
+        this.props.fetchBookcase(bookcase._id, token);
       })
       .catch(error => {
         const msg = !error.response
@@ -96,7 +101,6 @@ class BookcaseSearchBook extends React.Component {
     );
   }
 }
-
 
 export default connect(
   mapStateToProps({
