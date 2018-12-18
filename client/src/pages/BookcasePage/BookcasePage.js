@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
-import { fetchBookcase, resetBookcase } from '../../redux/actions/app';
+import { fetchBookcase, resetBookcase } from '../../redux/actions/bookcases';
 import getAccess from '../../redux/selectors/auth/getAccess';
-import getBookcase from '../../redux/selectors/app/getBookcase';
+import getBookcase from '../../redux/selectors/bookcases/getBookcase';
 import Bookcase from '../../components/Bookcase/Bookcase';
 
 class BookcasePage extends Component {
   componentDidMount() {
-    const { access } = this.props;
+    const { access, fetchBookcase } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
     const { bookcaseId } = this.props.match.params;
 
-    this.props.fetchBookcase(bookcaseId, token);
+    fetchBookcase(bookcaseId, token);
   }
 
   render() {

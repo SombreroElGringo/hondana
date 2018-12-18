@@ -1,18 +1,16 @@
 import React from 'react';
-import axios from 'axios';
 import { Search } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
 import {
-  fetchBooks,
-  resetBooks,
+  addBookInBookcase,
   fetchBookcase,
   resetBookcase,
-} from '../../redux/actions/app';
+} from '../../redux/actions/bookcases';
+import { fetchBooks, resetBooks } from '../../redux/actions/app';
 import getAccess from '../../redux/selectors/auth/getAccess';
 import getBooks from '../../redux/selectors/app/getBooks';
-import getBookcase from '../../redux/selectors/app/getBookcase';
-import { BOOKCASES_URL } from '../../utils/constants';
+import getBookcase from '../../redux/selectors/bookcases/getBookcase';
 import '../SearchBook/SearchBook.css';
 
 class BookcaseSearchBook extends React.Component {
@@ -21,10 +19,18 @@ class BookcaseSearchBook extends React.Component {
     error: null,
   };
 
-  handleSubmit = event => {
+  handleSubmit = async event => {
     event.preventDefault();
 
-    const { access, books, bookcase, resetBooks, resetBookcase, fetchBookcase } = this.props;
+    const {
+      access,
+      books,
+      bookcase,
+      resetBooks,
+      resetBookcase,
+      fetchBookcase,
+      addBookInBookcase,
+    } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     const formData = new FormData(this.refs.form);
@@ -33,25 +39,11 @@ class BookcaseSearchBook extends React.Component {
 
     const wantedBook = books.filter(book => book.title === title);
 
-    axios
-      .post(`${BOOKCASES_URL}/${bookcase._id}/book/${wantedBook[0]._id}`)
-      .then(({ data }) => {
-        this.setState({ isAdded: true, error: null });
-
-        resetBookcase();
-        fetchBookcase(bookcase._id, token);
-      })
-      .catch(error => {
-        const msg = !error.response
-          ? 'Bad Request'
-          : error.response.message
-            ? error.response.message
-            : 'Internal Error';
-        this.setState({ isAdded: false, error: msg });
-      });
+    await addBookInBookcase(bookcase._id, wantedBook[0]._id).then(() => {
+      resetBookcase();
+      fetchBookcase(bookcase._id, token);
+    });
   };
-
-  // TODO Improve CSS
 
   handleAutocomplete = event => {
     const { fetchBooks } = this.props;
@@ -64,6 +56,8 @@ class BookcaseSearchBook extends React.Component {
     }, 500);
   };
 
+  // TODO Improve CSS
+  
   render() {
     const { books } = this.props;
     const { isAdded, error } = this.state;
@@ -111,6 +105,7 @@ export default connect(
   mapDispatchToProps({
     fetchBooks,
     resetBooks,
+    addBookInBookcase,
     fetchBookcase,
     resetBookcase,
   })

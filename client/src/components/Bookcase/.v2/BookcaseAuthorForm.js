@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
-import { addAuthor } from '../../redux/actions/app';
-import getAccess from '../../redux/selectors/auth/getAccess';
+import { mapStateToProps, mapDispatchToProps } from '../../../utils/redux_helpers';
+import { addAuthor } from '../../../redux/actions/app';
+import getAccess from '../../../redux/selectors/auth/getAccess';
 
-import { ADD_AUTHOR_FORM_FIELDS } from '../../utils/constants';
+import { ADD_AUTHOR_FORM_FIELDS } from '../../../utils/constants';
 
 class BookcaseAuthorForm extends Component {
   handleSubmit(e) {}
 
-  // TODO nice form book
   render() {
-    // TODO: Nice form under the black header
     return (
       <div>
         <form ref="form">

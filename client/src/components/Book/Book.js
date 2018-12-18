@@ -6,10 +6,10 @@ import {
   removeBookFromBookcase,
   fetchBookcase,
   resetBookcase,
-} from '../../redux/actions/app';
+} from '../../redux/actions/bookcases';
 import getAccess from '../../redux/selectors/auth/getAccess';
-import getBookcase from '../../redux/selectors/app/getBookcase';
-import getBookIsRemoved from '../../redux/selectors/app/getBookIsRemoved';
+import getBookcase from '../../redux/selectors/bookcases/getBookcase';
+import getBookIsRemoved from '../../redux/selectors/bookcases/getBookIsRemoved';
 import getError from '../../redux/selectors/app/getError';
 
 class Book extends Component {

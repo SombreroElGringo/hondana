@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Rating from '../Rating/Rating';
-import BookcaseForms from './BookcaseForms';
+import BookcaseSearchBook from './BookcaseSearchBook';
 
 export default class BookcaseHeader extends Component {
   state = {
@@ -39,7 +39,7 @@ export default class BookcaseHeader extends Component {
         {isCurrentUser ? (
           <button onClick={e => this.handleAddBook(e)}>Ajouter un livre</button>
         ) : null}
-        {showAddBook ? <BookcaseForms /> : null}
+        {showAddBook ? <BookcaseSearchBook /> : null}
       </section>
     );
   }

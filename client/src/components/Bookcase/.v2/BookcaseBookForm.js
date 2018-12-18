@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
-import { addBook, fetchBookcase, resetBookcase } from '../../redux/actions/app';
-import getAccess from '../../redux/selectors/auth/getAccess';
-import getBookcase from '../../redux/selectors/app/getBookcase';
-import getBookIsCreated from '../../redux/selectors/app/getBookIsCreated';
-import getError from '../../redux/selectors/app/getError';
-import BookcaseSearchAuthor from './BookcaseSearchAuthor';
+import { mapStateToProps, mapDispatchToProps } from '../../../utils/redux_helpers';
+import { addBook, fetchBookcase, resetBookcase } from '../../../redux/actions/app';
+import getAccess from '../../../redux/selectors/auth/getAccess';
+import getBookcase from '../../../redux/selectors/app/getBookcase';
+import getBookIsCreated from '../../../redux/selectors/app/getBookIsCreated';
+import getError from '../../../redux/selectors/app/getError';
+import BookcaseSearchAuthor from '../BookcaseSearchAuthor';
 
-import { ADD_BOOK_FORM_FIELDS, CATEGORIES } from '../../utils/constants';
+import { ADD_BOOK_FORM_FIELDS, CATEGORIES } from '../../../utils/constants';
 
 class BookcaseBookForm extends Component {
   handleSubmit(e) {
@@ -43,9 +43,7 @@ class BookcaseBookForm extends Component {
     });
   }
 
-  // TODO nice form book
   render() {
-    // TODO: Nice form under the black header
     const { bookIsCreated, error } = this.props;
     return (
       <div>
