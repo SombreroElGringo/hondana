@@ -13,10 +13,14 @@ import {
   REMOVE_BOOK_FROM_BOOKCASE_SUCCESS,
   REMOVE_BOOK_FROM_BOOKCASE_FAIL,
   RESET_REMOVE_BOOK_FROM_BOOKCASE,
+  RESET_AUTHORS,
+  FETCH_AUTHORS_SUCCESS,
+  FETCH_AUTHORS_FAIL,
 } from '../consts/app';
 
 const initState = Map({
   appName: 'Hondana',
+  authors: null,
   books: null,
   bookcase: null,
   bookIsCreated: null,
@@ -39,7 +43,8 @@ const handlers = {
   [RESET_ADD_BOOK]: state => state.set('bookIsCreated', null),
   [ADD_BOOK_SUCCESS]: (state, action) =>
     state.set('bookIsCreated', action.payload),
-  [ADD_BOOK_FAIL]: state => state.set('bookIsCreated', null),
+  [ADD_BOOK_FAIL]: (state, { error }) =>
+    state.set('bookIsCreated', null).set('error', error),
 
   [RESET_REMOVE_BOOK_FROM_BOOKCASE]: (state, { error }) =>
     state.set('bookIsRemoved', null).set('error', error),
@@ -47,6 +52,11 @@ const handlers = {
     state.set('bookIsRemoved', action.payload),
   [REMOVE_BOOK_FROM_BOOKCASE_FAIL]: (state, { error }) =>
     state.set('bookIsRemoved', null).set('error', error),
+
+  [RESET_AUTHORS]: state => state.set('authors', null),
+  [FETCH_AUTHORS_SUCCESS]: (state, action) =>
+    state.set('authors', action.payload),
+  [FETCH_AUTHORS_FAIL]: state => state.set('authors', null),
 };
 
 export default (state = initState, action) => {

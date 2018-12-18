@@ -22,24 +22,33 @@ class Book extends Component {
   }
 
   async handleRemoveBookFromBookcase(bookId) {
-    const { access, bookcase } = this.props;
+    const { access, bookcase, resetBookcase, fetchBookcase } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     await this.props.removeBookFromBookcase(bookcase._id, bookId).then(() => {
-      this.props.resetBookcase();
-      this.props.fetchBookcase(bookcase._id, token);
+      resetBookcase();
+      fetchBookcase(bookcase._id, token);
     });
   }
 
   render() {
     const { book, isCurrentUser } = this.props;
     const { detail } = this.state;
+    const placeholderImg = '/static/media/404_cover_not_found.d98d8fb7.jpg';
     // TODO: CSS nice detail plz
     // U can add more detail if u want
     if (detail) {
       return (
         <div className="book" onClick={e => this.handleClick(book._id)}>
-          <img src={book.coverImageUrl} className="book--cover" alt="cover" />
+          <img
+            src={
+              book.coverImageUrl && book.coverImageUrl !== ''
+                ? book.coverImageUrl
+                : placeholderImg
+            }
+            className="book--cover"
+            alt="cover"
+          />
           <h2 className="book--title">{book.title}</h2>
           <p>Auteur(s): {book.authors.map(author => author.name)}</p>
           <p className="book--description">{book.description}</p>
@@ -54,7 +63,15 @@ class Book extends Component {
 
     return (
       <div className="book" onClick={e => this.handleClick(book._id)}>
-        <img src={book.coverImageUrl} className="book--cover" alt="cover" />
+        <img
+          src={
+            book.coverImageUrl && book.coverImageUrl !== ''
+              ? book.coverImageUrl
+              : placeholderImg
+          }
+          className="book--cover"
+          alt="cover"
+        />
         <h2 className="book--title">{book.title}</h2>
       </div>
     );

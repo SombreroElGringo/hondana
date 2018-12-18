@@ -13,8 +13,11 @@ import {
   REMOVE_BOOK_FROM_BOOKCASE_SUCCESS,
   REMOVE_BOOK_FROM_BOOKCASE_FAIL,
   REMOVE_BOOK_FROM_BOOKCASE,
+  RESET_AUTHORS,
+  FETCH_AUTHORS_SUCCESS,
+  FETCH_AUTHORS_FAIL,
 } from '../consts/app';
-import { BOOKS_URL, BOOKCASES_URL } from '../../utils/constants';
+import { BOOKS_URL, BOOKCASES_URL, AUTHORS_URL } from '../../utils/constants';
 import axios from 'axios';
 
 export const resetBooks = () => ({
@@ -121,6 +124,39 @@ export const removeBookFromBookcase = (
       type: REMOVE_BOOK_FROM_BOOKCASE_FAIL,
       bookIsRemoved: false,
       error: error,
+    });
+  }
+};
+
+export const resetAuthors = () => ({
+  type: RESET_AUTHORS,
+});
+
+export const fetchAuthors = (name, full) => async dispatch => {
+  dispatch({ type: FETCH_BOOKS });
+  try {
+    const response = await axios.get(AUTHORS_URL, {
+      params: {
+        name,
+      },
+    });
+
+    if (!(response.data.length >= 0)) throw new Error('There is no results');
+
+    const payload = full
+      ? response.data
+      : response.data.map(({ name }) => ({
+          name,
+        }));
+
+    dispatch({
+      type: FETCH_AUTHORS_SUCCESS,
+      payload,
+    });
+  } catch (error) {
+    dispatch({
+      type: FETCH_AUTHORS_FAIL,
+      error,
     });
   }
 };

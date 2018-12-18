@@ -12,7 +12,13 @@ import { ADD_BOOK_FORM_FIELDS, CATEGORIES } from '../../utils/constants';
 class BookcaseBookForm extends Component {
   handleSubmit(e) {
     e.preventDefault();
-    const { bookcase, access } = this.props;
+    const {
+      bookcase,
+      access,
+      addBook,
+      resetBookcase,
+      fetchBookcase,
+    } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     const formData = new FormData(this.refs.form);
@@ -28,9 +34,11 @@ class BookcaseBookForm extends Component {
       bookcases: bookcases,
     };
 
-    this.props.addBook(data).then(() => {
-      this.props.resetBookcase();
-      this.props.fetchBookcase(bookcase._id, token);
+    addBook(data).then(() => {
+      setTimeout(() => {
+        resetBookcase();
+        fetchBookcase(bookcase._id, token);
+      }, 500);
     });
   }
 
