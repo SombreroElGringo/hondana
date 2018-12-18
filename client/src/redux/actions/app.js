@@ -16,6 +16,7 @@ import {
   RESET_AUTHORS,
   FETCH_AUTHORS_SUCCESS,
   FETCH_AUTHORS_FAIL,
+  FETCH_AUTHORS,
 } from '../consts/app';
 import { BOOKS_URL, BOOKCASES_URL, AUTHORS_URL } from '../../utils/constants';
 import axios from 'axios';
@@ -133,7 +134,7 @@ export const resetAuthors = () => ({
 });
 
 export const fetchAuthors = (name, full) => async dispatch => {
-  dispatch({ type: FETCH_BOOKS });
+  dispatch({ type: FETCH_AUTHORS });
   try {
     const response = await axios.get(AUTHORS_URL, {
       params: {
@@ -142,12 +143,8 @@ export const fetchAuthors = (name, full) => async dispatch => {
     });
 
     if (!(response.data.length >= 0)) throw new Error('There is no results');
-
-    const payload = full
-      ? response.data
-      : response.data.map(({ name }) => ({
-          name,
-        }));
+    
+    const payload = response.data;
 
     dispatch({
       type: FETCH_AUTHORS_SUCCESS,

@@ -6,6 +6,7 @@ import getAccess from '../../redux/selectors/auth/getAccess';
 import getBookcase from '../../redux/selectors/app/getBookcase';
 import getBookIsCreated from '../../redux/selectors/app/getBookIsCreated';
 import getError from '../../redux/selectors/app/getError';
+import BookcaseSearchAuthor from './BookcaseSearchAuthor';
 
 import { ADD_BOOK_FORM_FIELDS, CATEGORIES } from '../../utils/constants';
 
@@ -79,7 +80,15 @@ class BookcaseBookForm extends Component {
                       <input type="checkbox" name="addInBookcase" value="yes" />{' '}
                       Ajouter dans ma bookcase!
                     </label>
-                  ) : (
+                  ) : field.name === 'authors' ?
+                  (
+                    <label key={Math.random() * 100}>
+                      Auteur(s)
+                      <BookcaseSearchAuthor />
+                    </label>
+                  )
+                  :
+                  (
                     <input
                       className="field"
                       type="text"

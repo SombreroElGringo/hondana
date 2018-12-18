@@ -15,7 +15,7 @@ class BookcaseSearchAuthor extends React.Component {
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     const formData = new FormData(this.refs.form);
-    const name = formData.get('name');
+    const name = formData.get('bookname');
     resetAuthors();
 
     const wantedBook = authors.filter(author => author.name === name);
@@ -24,10 +24,11 @@ class BookcaseSearchAuthor extends React.Component {
   };
 
   handleAutocomplete = event => {
-    const { fetchAuthors } = this.props;
+    const {authors, fetchAuthors,resetAuthors } = this.props;
     const value = event.target.value;
     this.timer = null;
-
+    //resetAuthors()
+    console.log(authors)
     if (this.timer) clearTimeout(this.timer);
     this.time = setTimeout(() => {
       fetchAuthors(value, true);
@@ -37,16 +38,16 @@ class BookcaseSearchAuthor extends React.Component {
   // TODO Improve CSS
   render() {
     const { authors } = this.props;
+    console.log("A", authors)
     return (
       <div className="search-book">
-        <form autoComplete="off" ref="form" onSubmit={this.handleSubmit}>
           <div className="d-flex">
             <Search
-              name="name"
+              name="bookname"
               results={
                 authors &&
                 authors.map(a => ({
-                  name: a.name,
+                  bookname: a.name,
                 }))
               }
               selectFirstResult={true}
@@ -65,7 +66,6 @@ class BookcaseSearchAuthor extends React.Component {
               )}
             </button>
           </div>
-        </form>
       </div>
     );
   }

@@ -24,7 +24,7 @@ class BookcaseSearchBook extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    const { access, books, bookcase, resetBooks } = this.props;
+    const { access, books, bookcase, resetBooks, resetBookcase, fetchBookcase } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     const formData = new FormData(this.refs.form);
@@ -38,8 +38,8 @@ class BookcaseSearchBook extends React.Component {
       .then(({ data }) => {
         this.setState({ isAdded: true, error: null });
 
-        this.props.resetBookcase();
-        this.props.fetchBookcase(bookcase._id, token);
+        resetBookcase();
+        fetchBookcase(bookcase._id, token);
       })
       .catch(error => {
         const msg = !error.response

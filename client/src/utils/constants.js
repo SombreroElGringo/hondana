@@ -30,6 +30,10 @@ export const ADD_BOOK_FORM_FIELDS = [
     placeholder: 'Titre du livre',
   },
   {
+    name: 'authors',
+    placeholder: 'Auteurs, ...',
+  },
+  {
     name: 'description',
     placeholder: 'Description',
   },
