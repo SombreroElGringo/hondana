@@ -12,6 +12,7 @@ describe("Gateway Book: ", () => {
   let server;
   let app: INestApplication;
   let bookGateway: BookGateway;
+  let bookService: BookService;
 
   before(async () => {
     const module = await Test.createTestingModule({
@@ -25,10 +26,17 @@ describe("Gateway Book: ", () => {
     await app.init();
 
     bookGateway = module.get<BookGateway>(BookGateway);
+    bookService = module.get<BookService>(BookService);
   });
 
   it("eventGetFiveLastBooks", async () => {
     await bookGateway.eventGetFiveLastBooks(null).then(data => {
+      chai.assert.isArray(data);
+    });
+  });
+
+  it("eventGetAllbooks", async () => {
+    await bookService.findAll().then(data => {
       chai.assert.isArray(data);
     });
   });
