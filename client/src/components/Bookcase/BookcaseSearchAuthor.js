@@ -4,18 +4,19 @@ import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../utils/redux_helpers';
 import { fetchAuthors, resetAuthors } from '../../redux/actions/app';
 import getAccess from '../../redux/selectors/auth/getAccess';
-import getAuthors from '../../redux/selectors/app/getBooks';
+import getAuthors from '../../redux/selectors/app/getAuthors';
 import '../SearchBook/SearchBook.css';
 
 class BookcaseSearchAuthor extends React.Component {
-  handleSubmit = event => {
+  handleOnclick = event => {
     event.preventDefault();
 
     const { access, authors, resetAuthors } = this.props;
     const token = !access ? '' : access.auth ? access.auth.token : '';
 
     const formData = new FormData(this.refs.form);
-    const name = formData.get('bookname');
+    const name = formData.get('authorname');
+    console.log(name)
     resetAuthors();
 
     const wantedBook = authors.filter(author => author.name === name);
@@ -43,11 +44,15 @@ class BookcaseSearchAuthor extends React.Component {
       <div className="search-book">
           <div className="d-flex">
             <Search
-              name="bookname"
+              name="authorname"
+              ref={ ref => {
+                this.authorname = ref;
+              }}
               results={
                 authors &&
                 authors.map(a => ({
-                  bookname: a.name,
+                  title: a.name,
+                  description: a.authorCode
                 }))
               }
               selectFirstResult={true}
@@ -56,7 +61,7 @@ class BookcaseSearchAuthor extends React.Component {
             />
             <button
               className="btn btn-info ml-2"
-              type="submit"
+              onClick={this.handleOnclick}
               disabled={authors === undefined}
             >
               {authors === undefined ? (

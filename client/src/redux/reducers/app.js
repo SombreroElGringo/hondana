@@ -54,9 +54,8 @@ const handlers = {
     state.set('bookIsRemoved', null).set('error', error),
 
   [RESET_AUTHORS]: state => state.set('authors', null),
-  [FETCH_AUTHORS_SUCCESS]: (state, action) => {
-    console.log(action)
-    state.set('authors', action)},
+  [FETCH_AUTHORS_SUCCESS]: (state, action) => 
+    state.set('authors', action.payload),
   [FETCH_AUTHORS_FAIL]: state => state.set('authors', null),
 };
 
