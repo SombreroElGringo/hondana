@@ -27,14 +27,14 @@ describe("Gateway Book: ", () => {
     bookGateway = module.get<BookGateway>(BookGateway);
   });
 
-  it("eventFindAllBooks", async () => {
-    await bookGateway.eventFindAllBooks(null).then(data => {
+  it("eventGetFiveLastBooks", async () => {
+    await bookGateway.eventGetFiveLastBooks(null).then(data => {
       chai.assert.isArray(data);
     });
   });
 
-  it("sendAllBooksOnNewRow", async () => {
-    await bookGateway.sendAllBooksOnNewRow();
+  it("eventSendFiveLastBooks", async () => {
+    await bookGateway.eventSendFiveLastBooks();
   });
 
   it("identity", async () => {

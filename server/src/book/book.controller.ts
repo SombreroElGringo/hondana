@@ -38,7 +38,7 @@ export class BookController {
         hidden: body.hidden,
       };
       await this.bookService.createBook(book);
-      await this.bookGateway.sendAllBooksOnNewRow();
+      await this.bookGateway.eventSendFiveLastBooks();
       res.status(HttpStatus.CREATED).json(book);
     } else {
       res.status(HttpStatus.BAD_REQUEST).json({
@@ -51,6 +51,12 @@ export class BookController {
   @Get()
   async getAllBooks(@Response() res, @Query() query): Promise<any> {
     const books = await this.bookService.findAll(query);
+    res.status(HttpStatus.OK).json(books);
+  }
+
+  @Get("last")
+  async getFiveLastBooks(@Response() res): Promise<any> {
+    const books = await this.bookService.findLastestBookAdded(5);
     res.status(HttpStatus.OK).json(books);
   }
 

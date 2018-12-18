@@ -10,16 +10,16 @@ export class BookGateway {
   @WebSocketServer() server;
   constructor(private readonly bookService: BookService) {}
 
-  @SubscribeMessage("eventFindAllBooks")
-  async eventFindAllBooks(client): Promise<any> {
-    const books = await this.bookService.findAll();
+  @SubscribeMessage("eventGetFiveLastBooks")
+  async eventGetFiveLastBooks(client): Promise<any> {
+    const books = await this.bookService.findLastestBookAdded(5);
     return books;
   }
 
-  @SubscribeMessage("sendAllBooksOnNewRow")
-  async sendAllBooksOnNewRow() {
+  @SubscribeMessage("eventSendFiveLastBooks")
+  async eventSendFiveLastBooks() {
     const books = await this.bookService.findLastestBookAdded(5);
-    this.server.emit("sendAllBooksOnNewRow", books);
+    this.server.emit("eventSendFiveLastBooks", books);
   }
 
   @SubscribeMessage("identity")

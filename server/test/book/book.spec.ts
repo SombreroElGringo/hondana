@@ -130,6 +130,20 @@ describe("Module Book: ", () => {
       .then(async () => await bookService.deleteBook(bookMockup.isbn10));
   });
 
+  it("/GET books/last", async () => {
+    return await request(app.getHttpServer())
+      .post(encodeURI("/books"))
+      .send(bookMockup)
+      .then(async () => {
+        await request(app.getHttpServer())
+          .get("/books/last")
+          .expect(HttpStatus.OK)
+          .expect("Content-Type", /json/)
+          .expect(({ body }) => Array.isArray(body));
+      })
+      .then(async () => await bookService.deleteBook(bookMockup.isbn10));
+  });
+
   it("/GET books/:id", async () => {
     return await request(app.getHttpServer())
       .post(encodeURI("/books"))
