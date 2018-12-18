@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './HomePage.css';
 import SearchBook from '../../components/SearchBook/SearchBook';
+import LastFiveBooks from '../../components/LastFiveBooks/LastFiveBooks';
 
 class HomePage extends Component {
   render() {
@@ -13,6 +14,7 @@ class HomePage extends Component {
           alt=""
         />
         <SearchBook history={history} />
+        <LastFiveBooks />
       </div>
     );
   }
