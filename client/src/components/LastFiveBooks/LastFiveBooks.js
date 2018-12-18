@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './LastFiveBooks.css';
 import openSocket from 'socket.io-client';
+import { Link } from 'react-router-dom';
 
 class LastFiveBooks extends React.Component {
   state = { books: undefined };
@@ -32,11 +33,11 @@ class LastFiveBooks extends React.Component {
               <div className="cover">
                 <img src={book.coverImageUrl} alt="cover" />
               </div>
-              <a className="title" title={book.title}>
+              <abbr className="title" title={book.title}>
                 {book.title.length < 15
                   ? book.title
                   : book.title.substr(0, 15) + '...'}
-              </a>
+              </abbr>
               <div className="meta">
                 <div className="description">{book.description}</div>
                 <div className="authors">
