@@ -1,7 +1,6 @@
 import * as React from 'react';
 import './LastFiveBooks.css';
 import openSocket from 'socket.io-client';
-import { Link } from 'react-router-dom';
 
 class LastFiveBooks extends React.Component {
   state = { books: undefined };
