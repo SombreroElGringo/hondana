@@ -1,8 +1,27 @@
 import React, { Component } from 'react';
 import './HomePage.css';
 import SearchBook from '../../components/SearchBook/SearchBook';
+import LastFiveBooks from '../../components/LastFiveBooks/LastFiveBooks';
 
 class HomePage extends Component {
+  componentDidMount() {
+    const socket = window.io('http://localhost:5000');
+
+    socket.on('connect', function() {
+      console.log('connected');
+      socket.on('eventGetFiveLastBooks', response =>
+        console.log('Get five last:', response)
+      );
+      socket.on('eventSendFiveLastBooks', response =>
+        console.log('Send five last:', response)
+      );
+    });
+
+    socket.on('disconnect', function() {
+      console.log('Disconnected');
+    });
+  }
+
   render() {
     const { history } = this.props;
     return (
@@ -13,6 +32,7 @@ class HomePage extends Component {
           alt=""
         />
         <SearchBook history={history} />
+        <LastFiveBooks />
       </div>
     );
   }
