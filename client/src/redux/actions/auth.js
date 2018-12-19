@@ -4,7 +4,11 @@ import {
   HANDLE_AUTH_SUCCESS,
   HANDLE_AUTH_FAIL,
 } from '../consts/app';
+
+import { CHECK_TOKEN_SUCCESS } from '../consts/auth';
+
 import { AUTH_URL } from '../../utils/constants';
+import { getCookie } from '../../utils/cookie_helpers';
 
 export const handle_auth = (data, type) => dispatch => {
   dispatch({
@@ -35,5 +39,17 @@ export const handle_auth = (data, type) => dispatch => {
           errors: { status: error.response.status },
         });
       }
+    });
+};
+
+export const checkToken = () => dispatch => {
+  const cookie = getCookie('access');
+  if (cookie === '') return;
+  const access = JSON.parse(cookie);
+
+  if (access)
+    dispatch({
+      type: CHECK_TOKEN_SUCCESS,
+      payload: access,
     });
 };

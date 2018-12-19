@@ -2,6 +2,10 @@
   transition: color, background 0.3s;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +26,11 @@ input.btn-form {
   background-color: darkslategray !important;
   border-color: darkslategray !important;
   color: white !important;
+}
+
+img {
+  background: url('https://images-na.ssl-images-amazon.com/images/I/61ztm36SbiL._SX258_BO1, 204, 203, 200_.jpg')
+    no-repeat center / cover;
 }
 
 button {

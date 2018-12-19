@@ -10,7 +10,6 @@ import {
 import getAccess from '../../redux/selectors/auth/getAccess';
 import getBookcase from '../../redux/selectors/bookcases/getBookcase';
 import getBookIsRemoved from '../../redux/selectors/bookcases/getBookIsRemoved';
-import getError from '../../redux/selectors/app/getError';
 
 class Book extends Component {
   state = {
@@ -83,7 +82,6 @@ export default connect(
     access: getAccess,
     bookcase: getBookcase,
     bookIsRemoved: getBookIsRemoved,
-    error: getError,
   }),
   mapDispatchToProps({
     removeBookFromBookcase,

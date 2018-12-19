@@ -7,8 +7,16 @@ import Header from '../../components/Header/Header';
 import AuthPage from '../AuthPage/AuthPage';
 import BookPage from '../BookPage/BookPage';
 import BookcasePage from '../BookcasePage/BookcasePage';
+import { mapDispatchToProps } from '../../utils/redux_helpers';
+import { checkToken } from '../../redux/actions/auth';
+import { connect } from 'react-redux';
 
 class App extends Component {
+  componentDidMount() {
+    const { checkToken } = this.props;
+    checkToken();
+  }
+
   render() {
     return (
       <Router>
@@ -40,4 +48,9 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(
+  null,
+  mapDispatchToProps({
+    checkToken,
+  })
+)(App);
