@@ -284,13 +284,15 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d60d"
+		"$oid": "5c0ad06b9033b01bc0c8d60b"
 	},
 	"meta": {
 		"favorites": [
 			"test"
 		],
-		"likes": []
+		"likes": [
+			"test"
+		]
 	},
 	"authors": [
 		{
@@ -299,50 +301,38 @@
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f4284"
+			"$oid": "5c0aea042b6d72232c9f4280"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f428a"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f428e"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4299"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42aa"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429f"
+			"$oid": "5c0aea042b6d72232c9f42a9"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2012014933",
-	"isbn13": "2012014933",
-	"title": "Saga Twilight, tome 3 : Hésitation",
+	"isbn10": "2013212119",
+	"isbn13": "2013212119",
+	"title": "Saga Twilight - Tome 1 - Fascination",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012014933.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013212119.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2007-01-01T00:00:00.000Z"
+		"$date": "2011-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d60e"
+				"$oid": "5c0ad06b9033b01bc0c8d60c"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.684Z"
+				"$date": "2018-12-07T19:56:27.668Z"
 			}
 		}
 	],
 	"createdAt": {
-		"$date": "2018-12-07T19:56:27.687Z"
+		"$date": "2018-12-07T19:56:27.675Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.252Z"
+		"$date": "2018-12-07T21:45:42.099Z"
 	},
 	"__v": 0
 },
@@ -407,12 +397,74 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d60b"
+		"$oid": "5c0ad06b9033b01bc0c8d60d"
 	},
 	"meta": {
 		"favorites": [
 			"test"
 		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56281"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4284"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f428a"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f428e"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4299"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42aa"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429f"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2012014933",
+	"isbn13": "2012014933",
+	"title": "Saga Twilight, tome 3 : Hésitation",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012014933.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d60e"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.684Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.687Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.252Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d611"
+	},
+	"meta": {
+		"favorites": [],
 		"likes": [
 			"test"
 		]
@@ -424,38 +476,38 @@
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f4280"
+			"$oid": "5c0aea042b6d72232c9f428f"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f42a9"
+			"$oid": "5c0aea042b6d72232c9f42a7"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2013212119",
-	"isbn13": "2013212119",
-	"title": "Saga Twilight - Tome 1 - Fascination",
+	"isbn10": "2013232721",
+	"isbn13": "2013232721",
+	"title": "Saga Twilight - Tome 4 - Révélation",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013212119.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013232721.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
+		"$date": "2012-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d60c"
+				"$oid": "5c0ad06b9033b01bc0c8d612"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.668Z"
+				"$date": "2018-12-07T19:56:27.685Z"
 			}
 		}
 	],
 	"createdAt": {
-		"$date": "2018-12-07T19:56:27.675Z"
+		"$date": "2018-12-07T19:56:27.687Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.099Z"
+		"$date": "2018-12-07T21:45:42.242Z"
 	},
 	"__v": 0
 },
@@ -518,169 +570,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.241Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d611"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d56281"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f428f"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a7"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2013232721",
-	"isbn13": "2013232721",
-	"title": "Saga Twilight - Tome 4 - Révélation",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2013232721.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2012-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d612"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.685Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.687Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.242Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d60f"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d56284"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4292"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ac"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ae"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429e"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2747014401",
-	"isbn13": "2747014401",
-	"title": "Eragon, Tome 1 : Eragon",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2747014401.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2004-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d610"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.685Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.687Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.117Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d613"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d56284"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4284"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4299"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ae"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "274701455X",
-	"isbn13": "274701455X",
-	"title": "L'Héritage, Tome 2: : L'Aîné",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/274701455X.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2006-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d614"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.693Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.697Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.138Z"
 	},
 	"__v": 0
 },
@@ -799,7 +688,7 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d61d"
+		"$oid": "5c0ad06b9033b01bc0c8d60f"
 	},
 	"meta": {
 		"favorites": [
@@ -814,155 +703,44 @@
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f4280"
+			"$oid": "5c0aea042b6d72232c9f4292"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f4288"
+			"$oid": "5c0aea042b6d72232c9f42ac"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f4297"
+			"$oid": "5c0aea042b6d72232c9f42ae"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f42a5"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a9"
+			"$oid": "5c0aea042b6d72232c9f429e"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2747028550",
-	"isbn13": "2747028550",
-	"title": "Héritage Eragon Tome 4",
+	"isbn10": "2747014401",
+	"isbn13": "2747014401",
+	"title": "Eragon, Tome 1 : Eragon",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2747028550.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2747014401.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2012-01-01T00:00:00.000Z"
+		"$date": "2004-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d61e"
+				"$oid": "5c0ad06b9033b01bc0c8d610"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.743Z"
+				"$date": "2018-12-07T19:56:27.685Z"
 			}
 		}
 	],
 	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
+		"$date": "2018-12-07T19:56:27.687Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.229Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d61b"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d56291"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f428c"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429a"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429b"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "226619870X",
-	"isbn13": "226619870X",
-	"title": "Lexi Smart a la mémoire qui flanche",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/226619870X.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d61c"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.743Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.079Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d61f"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d562a9"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4286"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4289"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a1"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2266165100",
-	"isbn13": "2266165100",
-	"title": "Pourrie gâtée",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266165100.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2008-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d620"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.744Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.141Z"
+		"$date": "2018-12-07T21:45:42.117Z"
 	},
 	"__v": 0
 },
@@ -1025,7 +803,115 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d617"
+		"$oid": "5c0ad06b9033b01bc0c8d613"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56284"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4284"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4299"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42ae"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "274701455X",
+	"isbn13": "274701455X",
+	"title": "L'Héritage, Tome 2: : L'Aîné",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/274701455X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d614"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.693Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.697Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.138Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d61b"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56291"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f428c"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429a"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429b"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "226619870X",
+	"isbn13": "226619870X",
+	"title": "Lexi Smart a la mémoire qui flanche",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/226619870X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d61c"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.743Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.795Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.079Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d61d"
 	},
 	"meta": {
 		"favorites": [
@@ -1035,40 +921,52 @@
 	},
 	"authors": [
 		{
-			"$oid": "5c0acf5208a9d81b53d56289"
+			"$oid": "5c0acf5208a9d81b53d56284"
 		}
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f428c"
+			"$oid": "5c0aea042b6d72232c9f4280"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4288"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4297"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a5"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a9"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2266201344",
-	"isbn13": "2266201344",
-	"title": "Wings, Tome 1",
+	"isbn10": "2747028550",
+	"isbn13": "2747028550",
+	"title": "Héritage Eragon Tome 4",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266201344.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2747028550.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
+		"$date": "2012-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d618"
+				"$oid": "5c0ad06b9033b01bc0c8d61e"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.695Z"
+				"$date": "2018-12-07T19:56:27.743Z"
 			}
 		}
 	],
 	"createdAt": {
-		"$date": "2018-12-07T19:56:27.698Z"
+		"$date": "2018-12-07T19:56:27.795Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:41.862Z"
+		"$date": "2018-12-07T21:45:42.229Z"
 	},
 	"__v": 0
 },
@@ -1121,6 +1019,55 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.229Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d617"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56289"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f428c"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2266201344",
+	"isbn13": "2266201344",
+	"title": "Wings, Tome 1",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266201344.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d618"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.695Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.698Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:41.862Z"
 	},
 	"__v": 0
 },
@@ -1185,6 +1132,59 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d61f"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d562a9"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4286"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4289"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a1"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2266165100",
+	"isbn13": "2266165100",
+	"title": "Pourrie gâtée",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266165100.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2008-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d620"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.744Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.795Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.141Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d629"
 	},
 	"meta": {
@@ -1238,6 +1238,58 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.218Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d62b"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5628a"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f42ae"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42ac"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2012020046",
+	"isbn13": "2012020046",
+	"title": "Série Blonde - Tome 2 - Toujours blonde",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012020046.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2010-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d62c"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.749Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.795Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.064Z"
 	},
 	"__v": 0
 },
@@ -1302,58 +1354,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.585Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d62b"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d5628a"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f42ae"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ac"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2012020046",
-	"isbn13": "2012020046",
-	"title": "Série Blonde - Tome 2 - Toujours blonde",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2012020046.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2010-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d62c"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.749Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.064Z"
 	},
 	"__v": 0
 },
@@ -1469,6 +1469,59 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d637"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d56298"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f429d"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4292"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4295"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2266182692",
+	"isbn13": "2266182692",
+	"title": "Hunger Games - Tome 1",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266182692.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2009-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d638"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.756Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.795Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.229Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d631"
 	},
 	"meta": {
@@ -1536,46 +1589,50 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d637"
+		"$oid": "5c0ad06b9033b01bc0c8d63b"
 	},
 	"meta": {
-		"favorites": [],
-		"likes": []
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
 	},
 	"authors": [
 		{
-			"$oid": "5c0acf5208a9d81b53d56298"
+			"$oid": "5c0acf5208a9d81b53d562a1"
 		}
 	],
 	"bookcases": [
 		{
-			"$oid": "5c0aea042b6d72232c9f429d"
+			"$oid": "5c0aea042b6d72232c9f4289"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f4292"
+			"$oid": "5c0aea042b6d72232c9f42ad"
 		},
 		{
-			"$oid": "5c0aea042b6d72232c9f4295"
+			"$oid": "5c0aea042b6d72232c9f42ad"
 		}
 	],
 	"categories": [],
 	"hidden": false,
-	"isbn10": "2266182692",
-	"isbn13": "2266182692",
-	"title": "Hunger Games - Tome 1",
+	"isbn10": "2253162213",
+	"isbn13": "2253162213",
+	"title": "Le Théorème de Cupidon",
 	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266182692.01._SCLZZZZZZZ_.jpg",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253162213.01._SCLZZZZZZZ_.jpg",
 	"releaseAt": {
-		"$date": "2009-01-01T00:00:00.000Z"
+		"$date": "2012-01-01T00:00:00.000Z"
 	},
 	"comments": [
 		{
 			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d638"
+				"$oid": "5c0ad06b9033b01bc0c8d63c"
 			},
 			"message": "Excellent!",
 			"createdAt": {
-				"$date": "2018-12-07T19:56:27.756Z"
+				"$date": "2018-12-07T19:56:27.757Z"
 			}
 		}
 	],
@@ -1583,7 +1640,7 @@
 		"$date": "2018-12-07T19:56:27.795Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.229Z"
+		"$date": "2018-12-07T21:45:42.097Z"
 	},
 	"__v": 0
 },
@@ -1641,63 +1698,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:41.898Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d63b"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": [
-			"test"
-		]
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d562a1"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4289"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ad"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42ad"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2253162213",
-	"isbn13": "2253162213",
-	"title": "Le Théorème de Cupidon",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253162213.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2012-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d63c"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.757Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.795Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.097Z"
 	},
 	"__v": 0
 },
@@ -1883,6 +1883,58 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d63f"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5628e"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4281"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f429b"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2070634388",
+	"isbn13": "2070634388",
+	"title": "Promise",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2070634388.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2011-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d640"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.759Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.796Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.117Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d643"
 	},
 	"meta": {
@@ -1934,58 +1986,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.098Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d63f"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d5628e"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4281"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f429b"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2070634388",
-	"isbn13": "2070634388",
-	"title": "Promise",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2070634388.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2011-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d640"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.759Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.796Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.117Z"
 	},
 	"__v": 0
 },
@@ -2104,59 +2104,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d649"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d5628d"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f428d"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42a4"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f42aa"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2070348199",
-	"isbn13": "2070348199",
-	"title": "À la croisée des mondes, I : Les Royaumes du Nord",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2070348199.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2007-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d64a"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.765Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.796Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.241Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d64b"
 	},
 	"meta": {
@@ -2215,6 +2162,59 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.217Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d649"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5628d"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f428d"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42a4"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f42aa"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2070348199",
+	"isbn13": "2070348199",
+	"title": "À la croisée des mondes, I : Les Royaumes du Nord",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2070348199.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d64a"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.765Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.796Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.241Z"
 	},
 	"__v": 0
 },
@@ -2399,6 +2399,55 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad06b9033b01bc0c8d657"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0acf5208a9d81b53d5629b"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f428a"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2253129658",
+	"isbn13": "2253129658",
+	"title": "Mon journal intime",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253129658.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2009-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad06b9033b01bc0c8d658"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T19:56:27.771Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T19:56:27.796Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:41.743Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad06b9033b01bc0c8d655"
 	},
 	"meta": {
@@ -2456,55 +2505,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.217Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad06b9033b01bc0c8d657"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0acf5208a9d81b53d5629b"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f428a"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2253129658",
-	"isbn13": "2253129658",
-	"title": "Mon journal intime",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253129658.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2009-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad06b9033b01bc0c8d658"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T19:56:27.771Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T19:56:27.796Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:41.743Z"
 	},
 	"__v": 0
 },
@@ -3063,6 +3063,53 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a17f5"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a018"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4290"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0994488017",
+	"isbn13": "0994488017",
+	"title": "Vocation: The Astrology of Career, Creativity and Calling",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0994488017.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2016-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a17f6"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.024Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.106Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:42.216Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad23c8226ce1c191a17ed"
 	},
 	"meta": {
@@ -3118,53 +3165,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.098Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a17f5"
-	},
-	"meta": {
-		"favorites": [],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a018"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4290"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "0994488017",
-	"isbn13": "0994488017",
-	"title": "Vocation: The Astrology of Career, Creativity and Calling",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0994488017.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2016-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a17f6"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.024Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.106Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:42.216Z"
 	},
 	"__v": 0
 },
@@ -3971,6 +3971,58 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad23d8226ce1c191a1829"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c0ad1da7c05971bf155a019"
+		}
+	],
+	"bookcases": [
+		{
+			"$oid": "5c0aea042b6d72232c9f4299"
+		},
+		{
+			"$oid": "5c0aea042b6d72232c9f4296"
+		}
+	],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2296039790",
+	"isbn13": "2296039790",
+	"title": "Le sens de l'orientation (French Edition)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2296039790.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c0ad23d8226ce1c191a182a"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-07T20:04:13.059Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-07T20:04:13.107Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T21:45:41.997Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad23d8226ce1c191a1823"
 	},
 	"meta": {
@@ -4093,58 +4145,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:42.139Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad23d8226ce1c191a1829"
-	},
-	"meta": {
-		"favorites": [
-			"test"
-		],
-		"likes": []
-	},
-	"authors": [
-		{
-			"$oid": "5c0ad1da7c05971bf155a019"
-		}
-	],
-	"bookcases": [
-		{
-			"$oid": "5c0aea042b6d72232c9f4299"
-		},
-		{
-			"$oid": "5c0aea042b6d72232c9f4296"
-		}
-	],
-	"categories": [],
-	"hidden": false,
-	"isbn10": "2296039790",
-	"isbn13": "2296039790",
-	"title": "Le sens de l'orientation (French Edition)",
-	"description": "Neque porro quisquam est qui dolorem",
-	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2296039790.01._SCLZZZZZZZ_.jpg",
-	"releaseAt": {
-		"$date": "2007-01-01T00:00:00.000Z"
-	},
-	"comments": [
-		{
-			"_id": {
-				"$oid": "5c0ad23d8226ce1c191a182a"
-			},
-			"message": "Excellent!",
-			"createdAt": {
-				"$date": "2018-12-07T20:04:13.059Z"
-			}
-		}
-	],
-	"createdAt": {
-		"$date": "2018-12-07T20:04:13.107Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T21:45:41.997Z"
 	},
 	"__v": 0
 },
@@ -4645,6 +4645,7643 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T21:45:41.998Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f1a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca9"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0755308441",
+	"isbn13": "0755308441",
+	"title": "The Vanishing Act of Esme Lennox",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0755308441.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f1b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.423Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.425Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.425Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f12"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca4"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0099458365",
+	"isbn13": "0099458365",
+	"title": "The Moons of Jupiter",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0099458365.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f13"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.397Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.406Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.406Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f1c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca9"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0755302664",
+	"isbn13": "0755302664",
+	"title": "The Distance Between Us",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0755302664.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2005-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f1d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.424Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.425Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.425Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f16"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca5"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0385490445",
+	"isbn13": "0385490445",
+	"title": "Alias Grace: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0385490445.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f17"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.415Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.418Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.418Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f14"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca4"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1400042828",
+	"isbn13": "1400042828",
+	"title": "The View from Castle Rock: Stories",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1400042828.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f15"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.400Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.406Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.406Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f18"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca6"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0060586370",
+	"isbn13": "0060586370",
+	"title": "The Way the Crow Flies: A Novel (P.S.)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0060586370.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f19"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.416Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.418Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.418Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f1e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cab"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0679761616",
+	"isbn13": "0679761616",
+	"title": "Letters from London",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0679761616.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1995-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f1f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.492Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f20"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375709053",
+	"isbn13": "0375709053",
+	"title": "Waxwings",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375709053.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f21"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.493Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f22"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375725938",
+	"isbn13": "0375725938",
+	"title": "Coasting: A Private Voyage",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375725938.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f23"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.494Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f26"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0553299646",
+	"isbn13": "0553299646",
+	"title": "Kingdom of Summer",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/33/5d/335dd256e918155593276744d67414141414141.jpg",
+	"releaseAt": {
+		"$date": "1992-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f27"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.499Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f28"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0727860976",
+	"isbn13": "0727860976",
+	"title": "Alchemy of Fire",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0727860976.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f29"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.500Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f2a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1932425624",
+	"isbn13": "1932425624",
+	"title": "The Mark of the Horse Lord",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1932425624.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f2b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.501Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f2c"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192755056",
+	"isbn13": "0192755056",
+	"title": "The Silver Branch",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192755056.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f2d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.502Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f2e"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0525302603",
+	"isbn13": "0525302603",
+	"title": "Frontier Wolf",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/44/cf/44cf6edff79acd5593446455967414141414141.jpg",
+	"releaseAt": {
+		"$date": "1981-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f2f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.503Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f30"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cd0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0316010707",
+	"isbn13": "0316010707",
+	"title": "Case Histories: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0316010707.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2005-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f31"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.504Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f32"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb5"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0385503954",
+	"isbn13": "0385503954",
+	"title": "Atonement: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0385503954.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f33"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.506Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f34"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cdb"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0060548266",
+	"isbn13": "0060548266",
+	"title": "The Hollow Hills (The Arthurian Saga, Book 2)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0060548266.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f35"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.508Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f36"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d26"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0671622005",
+	"isbn13": "0671622005",
+	"title": "Child of the northern spring",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/b0/92/b0922b5ed2282ef593630764677414141414141.jpg",
+	"releaseAt": {
+		"$date": "1987-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f37"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.509Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f38"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0394751043",
+	"isbn13": "0394751043",
+	"title": "The King Must Die: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0394751043.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1988-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f39"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.510Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f3a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cca"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0671731378",
+	"isbn13": "0671731378",
+	"title": "Secret Harmonies",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0671731378.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1991-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f3b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.511Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f3e"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d05"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192805622",
+	"isbn13": "0192805622",
+	"title": "Mary Barton (Oxford World's Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192805622.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f3f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.514Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f42"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d07"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "031214699X",
+	"isbn13": "031214699X",
+	"title": "Pendragon's Banner (Hollick, Helen. Pendragon's Banner, Bk 2)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/031214699X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1996-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f43"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.517Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f44"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbe"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0307279464",
+	"isbn13": "0307279464",
+	"title": "A Walk in the Woods: Rediscovering America on the Appalachian Trail",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0307279464.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f45"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.518Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f46"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0449908585",
+	"isbn13": "0449908585",
+	"title": "Happy Isles of Oceania: Paddling the Pacific",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0449908585.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1993-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f47"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.520Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f48"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0141439580",
+	"isbn13": "0141439580",
+	"title": "Emma (Penguin Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0141439580.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f49"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.521Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f4a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d30"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0061120162",
+	"isbn13": "0061120162",
+	"title": "The Giant's House: A Romance (P.S.)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0061120162.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f4b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.522Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f4c"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d0c"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0743271327",
+	"isbn13": "0743271327",
+	"title": "Brokeback Mountain: Now a Major Motion Picture",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0743271327.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2005-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f4d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.523Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f4e"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d32"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140285210",
+	"isbn13": "0140285210",
+	"title": "English Passengers",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140285210.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f4f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.524Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f52"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d0f"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1862071063",
+	"isbn13": "1862071063",
+	"title": "The Soccer War",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1862071063.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1998-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f53"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.526Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f54"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375700889",
+	"isbn13": "0375700889",
+	"title": "The House of Sleep",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375700889.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1999-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f55"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.527Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f56"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cec"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1557426414",
+	"isbn13": "1557426414",
+	"title": "Armadale",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1557426414.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f57"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.528Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f58"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d37"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0553816691",
+	"isbn13": "0553816691",
+	"title": "Narrow Dog to Carcassonne",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0553816691.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f59"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.529Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f5a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d0c"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "185702575X",
+	"isbn13": "185702575X",
+	"title": "Accordion Crimes",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/185702575X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f5b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.530Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f5c"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cf1"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0689710887",
+	"isbn13": "0689710887",
+	"title": "Greenwitch (The Dark Is Rising Sequence)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0689710887.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1986-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f5d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.532Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f5e"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d3a"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1841958689",
+	"isbn13": "1841958689",
+	"title": "Once Upon A Time In England",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1841958689.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2008-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f5f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.533Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f60"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d3b"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0743237374",
+	"isbn13": "0743237374",
+	"title": "Fall on Your Knees",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/d5/be/d5beee20f674774592f57485077414141414141.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f61"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.534Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.623Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f62"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d3c"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1844082466",
+	"isbn13": "1844082466",
+	"title": "The Night Watch",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1844082466.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f63"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.535Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f64"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cf2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1841156590",
+	"isbn13": "1841156590",
+	"title": "Instances of the Number 3",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1841156590.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f65"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.536Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f66"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d3e"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375407243",
+	"isbn13": "0375407243",
+	"title": "Everything You Know",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375407243.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2000-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f67"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.537Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f68"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cab"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1400097037",
+	"isbn13": "1400097037",
+	"title": "Arthur and George",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1400097037.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f69"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.538Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f6a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375422447",
+	"isbn13": "0375422447",
+	"title": "Surveillance: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375422447.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f6b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.539Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f6c"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375725946",
+	"isbn13": "0375725946",
+	"title": "Foreign Land: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375725946.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f6d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.540Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f6e"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cd3"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0679739807",
+	"isbn13": "0679739807",
+	"title": "The Sweet-Shop Owner",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0679739807.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1993-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f6f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.541Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f72"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0812545141",
+	"isbn13": "0812545141",
+	"title": "Island of Ghosts: A Novel of Roman Britain",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0812545141.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1999-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f73"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.542Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f74"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192750402",
+	"isbn13": "0192750402",
+	"title": "Outcast (Oxford Children's Modern Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192750402.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1999-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f75"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.543Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f76"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0872261956",
+	"isbn13": "0872261956",
+	"title": "The Best of Rosemary Sutcliff: Warrior Scarlet, the Mark of the Horselord, Knight's Fee",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/91/6b/916b4f1dbfae7935933424e5867414141414141.jpg",
+	"releaseAt": {
+		"$date": "1989-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f77"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.544Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f78"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0809831058",
+	"isbn13": "0809831058",
+	"title": "The Shield Ring.",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/df/ee/dfeecfd20f8eb235978507a4c41414141414141.jpg",
+	"releaseAt": {
+		"$date": "1972-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f79"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.545Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f7a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cd0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0552996181",
+	"isbn13": "0552996181",
+	"title": "Behind the Scenes at the Museu",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0552996181.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f7b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.546Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f7c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cdb"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0060548274",
+	"isbn13": "0060548274",
+	"title": "The Last Enchantment (The Arthurian Saga, Book 3)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0060548274.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f7d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.547Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f7e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312353243",
+	"isbn13": "0312353243",
+	"title": "Guinevere Evermore",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/1d/8f/1d8f8caca2261f1592f32654951414141414141.jpg",
+	"releaseAt": {
+		"$date": "1986-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f7f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.549Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f80"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0099463555",
+	"isbn13": "0099463555",
+	"title": "Last of the Wine",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0099463555.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f81"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.550Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f82"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cca"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0385319436",
+	"isbn13": "0385319436",
+	"title": "Lucid Stars",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0385319436.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f83"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.551Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f86"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d05"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140620192",
+	"isbn13": "0140620192",
+	"title": "North and South (Penguin Popular Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140620192.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f87"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.554Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f88"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ce1"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0143039997",
+	"isbn13": "0143039997",
+	"title": "War and Peace (Penguin Classics, Deluxe Edition)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0143039997.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f89"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.554Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f8a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d07"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312135335",
+	"isbn13": "0312135335",
+	"title": "The Kingmaking (Pendragon's Banner Trilogy, Vol 1)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/28/61/2861a53d2771359593445395251414141414141.jpg",
+	"releaseAt": {
+		"$date": "1995-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f8b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.555Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f8c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbe"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0552998087",
+	"isbn13": "0552998087",
+	"title": "The Lost Continent",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0552998087.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1999-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f8d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.556Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f8e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0517030322",
+	"isbn13": "0517030322",
+	"title": "Riding The Iron Rooster: By Train Through China",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/33/0a/330a241a0fc4a26593076515067414141414141.jpg",
+	"releaseAt": {
+		"$date": "1990-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f8f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.557Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f90"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192804782",
+	"isbn13": "0192804782",
+	"title": "Sense and Sensibility (Oxford World's Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192804782.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f91"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.558Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f92"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ce6"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375724508",
+	"isbn13": "0375724508",
+	"title": "Ghostwritten",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375724508.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f93"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.559Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f94"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d0c"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0684852225",
+	"isbn13": "0684852225",
+	"title": "Close Range : Wyoming Stories",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0684852225.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2000-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f95"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.562Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f96"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ce8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0743418263",
+	"isbn13": "0743418263",
+	"title": "Music \u0026 Silence",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0743418263.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f97"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.564Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f9a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d0f"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1862071055",
+	"isbn13": "1862071055",
+	"title": "Imperium",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1862071055.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1998-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f9b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.567Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f9c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0679754059",
+	"isbn13": "0679754059",
+	"title": "The Winshaw Legacy: or, What a Carve Up!",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0679754059.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1996-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f9d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.570Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0f9e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cec"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140620133",
+	"isbn13": "0140620133",
+	"title": "The Moonstone (Penguin Popular Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140620133.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0f9f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.571Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fa0"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140119000",
+	"isbn13": "0140119000",
+	"title": "In Trouble Again",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140119000.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1989-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fa1"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.572Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fa2"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d13"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0828837945",
+	"isbn13": "0828837945",
+	"title": "LeCoq de Bruyere",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0828837945.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1980-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fa3"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.574Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fa4"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d14"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0340896183",
+	"isbn13": "0340896183",
+	"title": "The Conjuror's Bird",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0340896183.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fa5"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.575Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fa6"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d15"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0394524063",
+	"isbn13": "0394524063",
+	"title": "The Mists of Avalon",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/9c/bc/9cbcdc0f4e4af89597a73624567414141414141.jpg",
+	"releaseAt": {
+		"$date": "1982-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fa7"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.576Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fa8"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d16"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312993560",
+	"isbn13": "0312993560",
+	"title": "The Tea Rose",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0312993560.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fa9"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.577Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0faa"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d17"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0316731064",
+	"isbn13": "0316731064",
+	"title": "The Steep Approach to Garbadale",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0316731064.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fab"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.578Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fac"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cef"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0330449605",
+	"isbn13": "0330449605",
+	"title": "The Forgotten Garden",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0330449605.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2008-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fad"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.579Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fae"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d19"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1857990889",
+	"isbn13": "1857990889",
+	"title": "A Suitable Boy",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1857990889.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1994-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0faf"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.581Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fb0"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d1a"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0804104530",
+	"isbn13": "0804104530",
+	"title": "Greenlanders",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0804104530.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1989-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fb1"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.582Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.624Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fb4"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "037570101X",
+	"isbn13": "037570101X",
+	"title": "Hunting Mister Heartbreak: A Discovery of America",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/037570101X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1998-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fb5"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.843Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fb2"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca5"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1860498809",
+	"isbn13": "1860498809",
+	"title": "The Blind Assassin",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1860498809.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fb3"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.842Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fb6"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0517282313",
+	"isbn13": "0517282313",
+	"title": "Bad Land",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/4e/c0/4ec0a9ab6c02115593358795141414141414141.jpg",
+	"releaseAt": {
+		"$date": "1998-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fb7"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.843Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fba"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0553298992",
+	"isbn13": "0553298992",
+	"title": "In Winter's Shadow",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/ca/27/ca27e4169c84a7c59312f744d67414141414141.jpg",
+	"releaseAt": {
+		"$date": "1992-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fbb"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.845Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fb8"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cd3"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1400032210",
+	"isbn13": "1400032210",
+	"title": "The Light of Day: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1400032210.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fb9"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.844Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fbe"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0374482446",
+	"isbn13": "0374482446",
+	"title": "Warrior Scarlet",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0374482446.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1994-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fbf"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.846Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fbc"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0395436206",
+	"isbn13": "0395436206",
+	"title": "The Bearkeeper's Daughter",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/4a/60/4a60ec23a07d4a8593137574d41414141414141.jpg",
+	"releaseAt": {
+		"$date": "1987-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fbd"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.845Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fc0"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0525267301",
+	"isbn13": "0525267301",
+	"title": "Blood Feud",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/a3/e0/a3e06648d9d9baa593937395651414141414141.jpg",
+	"releaseAt": {
+		"$date": "1977-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fc1"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.847Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fc2"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0727812270",
+	"isbn13": "0727812270",
+	"title": "The Flowers of Adonis",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/4f/e3/4fe373e92304d2559326b535341414141414141.jpg",
+	"releaseAt": {
+		"$date": "1986-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fc3"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.848Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fc4"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cd0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312186886",
+	"isbn13": "0312186886",
+	"title": "Human Croquet: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0312186886.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fc5"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.849Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fc6"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0395436354",
+	"isbn13": "0395436354",
+	"title": "Imperial purple",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/c4/22/c422be7098da698593167595051414141414141.jpg",
+	"releaseAt": {
+		"$date": "1988-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fc7"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.850Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fc8"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cdb"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0060548258",
+	"isbn13": "0060548258",
+	"title": "The Crystal Cave (The Arthurian Saga, Book 1)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0060548258.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fc9"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.851Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fca"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d26"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0671622013",
+	"isbn13": "0671622013",
+	"title": "Queen of the summer stars",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/74/e8/74e877204ef538d593538764677414141414141.jpg",
+	"releaseAt": {
+		"$date": "1990-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fcb"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.853Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fcc"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0394751019",
+	"isbn13": "0394751019",
+	"title": "The Persian Boy",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0394751019.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1988-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fcd"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.855Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fd0"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d4e"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1406927953",
+	"isbn13": "1406927953",
+	"title": "Wives and Daughters",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1406927953.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fd1"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.857Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fd4"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d07"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312170009",
+	"isbn13": "0312170009",
+	"title": "Shadow of the King: Being the Third Part of a Trilogy (Pendragon's banner)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0312170009.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fd5"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.859Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fd6"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbe"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0385600739",
+	"isbn13": "0385600739",
+	"title": "Notes from a Small Island",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0385600739.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1999-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fd7"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.860Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fd8"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0449910857",
+	"isbn13": "0449910857",
+	"title": "Pillars of Hercules",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0449910857.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1996-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fd9"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.860Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fdc"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d3e"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0141012250",
+	"isbn13": "0141012250",
+	"title": "Notes on a Scandal",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0141012250.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fdd"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.861Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fde"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d0c"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0007151527",
+	"isbn13": "0007151527",
+	"title": "That Old Ace in the Hole",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0007151527.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fdf"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.862Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fe0"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d32"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140296638",
+	"isbn13": "0140296638",
+	"title": "Sweet Thames",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140296638.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fe1"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.863Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fe2"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc4"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2259001629",
+	"isbn13": "2259001629",
+	"title": "Le mort saisit le vif",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2259001629.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1976-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fe3"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.863Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fe4"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d0f"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2266114581",
+	"isbn13": "2266114581",
+	"title": "Ebène",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2266114581.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fe5"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.864Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fe6"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375713123",
+	"isbn13": "0375713123",
+	"title": "The Rotters' Club",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375713123.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fe7"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.865Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fe8"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d1a"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1400033837",
+	"isbn13": "1400033837",
+	"title": "A Thousand Acres: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1400033837.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fe9"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.866Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fea"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d5b"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "014028446X",
+	"isbn13": "014028446X",
+	"title": "Rumours of a Hurricane",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/014028446X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0feb"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.867Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fec"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0002727781",
+	"isbn13": "0002727781",
+	"title": "Soft City",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/b0/a0/b0a078514cef054596c374e6777414141414141.jpg",
+	"releaseAt": {
+		"$date": "1992-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fed"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.868Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0fee"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cba"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0770420699",
+	"isbn13": "0770420699",
+	"title": "A Bird In The House",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/67/56/6756f32f68f0dd55932364d5451414141414141.jpg",
+	"releaseAt": {
+		"$date": "1985-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fef"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.868Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ff0"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d5e"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2253150711",
+	"isbn13": "2253150711",
+	"title": "Stupeurs Et Tremblements",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253150711.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0ff1"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.869Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ff2"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d5f"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0679776818",
+	"isbn13": "0679776818",
+	"title": "Birdsong",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0679776818.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0ff3"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.869Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ff4"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d60"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2253152846",
+	"isbn13": "2253152846",
+	"title": "Métaphysique des tubes",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/2253152846.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0ff5"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.870Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ff6"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5d62"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0141016388",
+	"isbn13": "0141016388",
+	"title": "The Dig",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0141016388.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2008-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0ff7"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.870Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ff8"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ca9"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0747268169",
+	"isbn13": "0747268169",
+	"title": "After You'd Gone",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0747268169.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0ff9"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.871Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ffa"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "033030058X",
+	"isbn13": "033030058X",
+	"title": "Arabia (Picador Books)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/033030058X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1987-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0ffb"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.872Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ffc"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0330346296",
+	"isbn13": "0330346296",
+	"title": "Passage to Juneau",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0330346296.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2000-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0ffd"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.873Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f0ffe"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5caf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0393311147",
+	"isbn13": "0393311147",
+	"title": "Sacred Hunger (Norton Paperback Fiction)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0393311147.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1993-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f0fff"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.874Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1000"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0553299220",
+	"isbn13": "0553299220",
+	"title": "Hawk of May",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/95/c6/95c6c36a3bc3c89592b43745051414141414141.jpg",
+	"releaseAt": {
+		"$date": "1992-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1001"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.874Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1002"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0765302292",
+	"isbn13": "0765302292",
+	"title": "Cleopatra's Heir",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0765302292.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1003"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.875Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1004"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192750453",
+	"isbn13": "0192750453",
+	"title": "The Eagle of the Ninth",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192750453.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2000-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1005"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.875Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.960Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f100a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb5"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1400076196",
+	"isbn13": "1400076196",
+	"title": "Saturday",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1400076196.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f100b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.877Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f100c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0385414668",
+	"isbn13": "0385414668",
+	"title": "Horses of Heaven",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/69/8d/698d13f0dbdf9b4592b596f5051414141414141.jpg",
+	"releaseAt": {
+		"$date": "1991-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f100d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.877Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f100e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0553203541",
+	"isbn13": "0553203541",
+	"title": "Guinevere",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/39/e1/39e10d16f0c1bb4592b41475251414141414141.jpg",
+	"releaseAt": {
+		"$date": "1982-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f100f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.878Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1010"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0099463539",
+	"isbn13": "0099463539",
+	"title": "Bull from the Sea",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0099463539.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1011"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.879Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1012"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0394751051",
+	"isbn13": "0394751051",
+	"title": "The Mask of Apollo: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0394751051.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1988-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1013"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.880Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1014"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cba"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "077104707X",
+	"isbn13": "077104707X",
+	"title": "The Stone Angel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/077104707X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1998-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1015"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.880Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1016"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbb"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0739416707",
+	"isbn13": "0739416707",
+	"title": "REBECCA",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/c1/47/c1472c9bf408de0593459695367414141414141.jpg",
+	"releaseAt": {
+		"$date": "1938-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1017"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.881Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1018"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbc"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140620761",
+	"isbn13": "0140620761",
+	"title": "Middlemarch (Penguin Popular Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140620761.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1994-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1019"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.881Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f101a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbd"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0356024709",
+	"isbn13": "0356024709",
+	"title": "Myself my sepulchre",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/b7/d3/b7d3830fcdd9d44597745414141414141414141.jpg",
+	"releaseAt": {
+		"$date": "1969-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f101b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.882Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f101c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbe"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "076791936X",
+	"isbn13": "076791936X",
+	"title": "The Life and Times of the Thunderbolt Kid: A Memoir",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/076791936X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f101d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.884Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f101e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0618658947",
+	"isbn13": "0618658947",
+	"title": "The Great Railway Bazaar",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0618658947.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f101f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.884Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1020"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192802631",
+	"isbn13": "0192802631",
+	"title": "Persuasion (Oxford World's Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192802631.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1021"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.885Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1022"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc1"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0939149990",
+	"isbn13": "0939149990",
+	"title": "The Corn King and the Spring Queen (The Hera)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0939149990.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1994-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1023"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.885Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1024"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312421443",
+	"isbn13": "0312421443",
+	"title": "The Trick of It: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0312421443.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1025"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.886Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1026"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc3"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "000771873X",
+	"isbn13": "000771873X",
+	"title": "The Shipping News",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/b7/1d/b71d7d44b565a82592b70385067414141414141.jpg",
+	"releaseAt": {
+		"$date": "1994-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1027"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.887Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1028"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc4"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "208066591X",
+	"isbn13": "208066591X",
+	"title": "Aliocha : roman",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/208066591X.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1991-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1029"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.887Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f102c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc6"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140120831",
+	"isbn13": "0140120831",
+	"title": "Perfume",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140120831.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1989-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f102d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.889Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f102e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140294910",
+	"isbn13": "0140294910",
+	"title": "A Touch of Love",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140294910.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2000-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f102f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.889Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1030"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1400078105",
+	"isbn13": "1400078105",
+	"title": "Trawler: A Journey Through the North Atlantic",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1400078105.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1031"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.890Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1032"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc9"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0785928332",
+	"isbn13": "0785928332",
+	"title": "Suite Francaise (Original French edition)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0785928332.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1033"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.891Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1034"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cca"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0393323579",
+	"isbn13": "0393323579",
+	"title": "Servants of the Map: Stories",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0393323579.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1035"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.891Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1036"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ccb"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0743249291",
+	"isbn13": "0743249291",
+	"title": "Wideacre: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0743249291.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1037"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.892Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1038"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0727866419",
+	"isbn13": "0727866419",
+	"title": "The Sun's Bride",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0727866419.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2008-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1039"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.892Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f103a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cba"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0860688186",
+	"isbn13": "0860688186",
+	"title": "The Diviners (Manawka)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0860688186.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1989-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f103b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.893Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f103e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ccf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0393333078",
+	"isbn13": "0393333078",
+	"title": "The Air We Breathe: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0393333078.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2008-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f103f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.894Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f103c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cce"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0552996459",
+	"isbn13": "0552996459",
+	"title": "The Wrong Boy",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0552996459.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2001-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f103d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.893Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1042"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cae"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375701001",
+	"isbn13": "0375701001",
+	"title": "Old Glory : A Voyage Down the Mississippi",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375701001.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1998-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1043"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.895Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1044"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cd3"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0330336320",
+	"isbn13": "0330336320",
+	"title": "Waterland",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0330336320.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1996-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1045"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.896Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1046"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1569470103",
+	"isbn13": "1569470103",
+	"title": "Beacon at Alexandria (The Hera Series)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1569470103.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1994-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1047"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.896Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1048"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0765306549",
+	"isbn13": "0765306549",
+	"title": "Render Unto Caesar",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0765306549.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1049"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.897Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f104a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312875959",
+	"isbn13": "0312875959",
+	"title": "The Wolf Hunt",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0312875959.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f104b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.897Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f104c"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0374466165",
+	"isbn13": "0374466165",
+	"title": "The Shining Company (A Sunburst Book)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0374466165.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1992-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f104d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.898Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f104e"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192755064",
+	"isbn13": "0192755064",
+	"title": "The Lantern Bearers",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192755064.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f104f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.900Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1050"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cd0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0316154849",
+	"isbn13": "0316154849",
+	"title": "One Good Turn: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0316154849.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1051"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.901Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1054"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cdb"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0060548282",
+	"isbn13": "0060548282",
+	"title": "The Wicked Day (The Arthurian Saga, Book 4)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0060548282.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1055"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.903Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1052"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb5"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0385497520",
+	"isbn13": "0385497520",
+	"title": "The Child in Time",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0385497520.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1999-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1053"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.902Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1056"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312863918",
+	"isbn13": "0312863918",
+	"title": "The chessboard queen",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0312863918.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1997-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1057"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.905Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1058"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cb8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375726829",
+	"isbn13": "0375726829",
+	"title": "Fire from Heaven",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375726829.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2002-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1059"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.906Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f105a"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cde"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0156000601",
+	"isbn13": "0156000601",
+	"title": "Mary Renault: A Biography (A Harvest Book)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0156000601.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1994-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f105b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.907Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f105c"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cdf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140239820",
+	"isbn13": "0140239820",
+	"title": "Hidden Lives",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140239820.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1996-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f105d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.907Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f105e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ce1"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140449175",
+	"isbn13": "0140449175",
+	"title": "Anna Karenina (Penguin Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0140449175.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f105f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.908Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1060"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ce2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0140470476",
+	"isbn13": "0140470476",
+	"title": "To Spare The Conquered",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/96/04/96047cb7a73c2e8597245336741414141414141.jpg",
+	"releaseAt": {
+		"$date": "1965-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1061"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.909Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1062"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbe"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0380713802",
+	"isbn13": "0380713802",
+	"title": "Neither Here nor There: Travels in Europe",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0380713802.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1999-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1063"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.909Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1064"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cbf"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0618658955",
+	"isbn13": "0618658955",
+	"title": "The Kingdom by the Sea: A Journey Around the Coast of Great Britain",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0618658955.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1065"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.910Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1066"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc0"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0192802380",
+	"isbn13": "0192802380",
+	"title": "Pride and Prejudice (Oxford World's Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0192802380.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1067"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.911Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1068"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ce6"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0340822783",
+	"isbn13": "0340822783",
+	"title": "Cloud Atlas",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0340822783.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2005-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1069"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.912Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f106a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0571212964",
+	"isbn13": "0571212964",
+	"title": "Spies",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0571212964.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f106b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.912Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f106c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5ce8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0312423101",
+	"isbn13": "0312423101",
+	"title": "The Colour: A Novel",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0312423101.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2004-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f106d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.913Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1072"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc7"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0375713956",
+	"isbn13": "0375713956",
+	"title": "The Closed Circle",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0375713956.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2006-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1073"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.917Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f106e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc4"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "2259027997",
+	"isbn13": "2259027997",
+	"title": "L'araigne : roman",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/b7/d3/b7d3830fcdd9d44597745414141414141414141.jpg",
+	"releaseAt": {
+		"$date": "1993-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f106f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.914Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1074"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cec"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0141439610",
+	"isbn13": "0141439610",
+	"title": "The Woman in White (Penguin Classics)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0141439610.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2003-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1075"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.917Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1076"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cc8"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0394755405",
+	"isbn13": "0394755405",
+	"title": "Into the Heart of Borneo",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0394755405.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1987-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1077"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.918Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1078"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cee"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0785903771",
+	"isbn13": "0785903771",
+	"title": "Passe Muraille",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0785903771.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1943-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1079"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.919Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f107a"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cef"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0330448447",
+	"isbn13": "0330448447",
+	"title": "The House at Riverton",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0330448447.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2007-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f107b"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.920Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f107c"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cca"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0006551416",
+	"isbn13": "0006551416",
+	"title": "The Voyage of the Narwhal",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0006551416.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2000-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f107d"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.921Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f107e"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cf1"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0590433172",
+	"isbn13": "0590433172",
+	"title": "The Grey King (The Dark is Rising Sequence)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/72/2a/722a805e097bbbc597843554951414141414141.jpg",
+	"releaseAt": {
+		"$date": "1990-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f107f"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.922Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1080"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cf2"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "1847670725",
+	"isbn13": "1847670725",
+	"title": "Where Three Roads Meet (Canongate Myths)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/1847670725.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "2008-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1081"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.924Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1082"
+	},
+	"meta": {
+		"favorites": [
+			"test"
+		],
+		"likes": [
+			"test"
+		]
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cf3"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0330349236",
+	"isbn13": "0330349236",
+	"title": "The Country Life",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://ecx.images-amazon.com/images/P/0330349236.01._SCLZZZZZZZ_.jpg",
+	"releaseAt": {
+		"$date": "1998-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1083"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.925Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8d7b781e9d068f5f1084"
+	},
+	"meta": {
+		"favorites": [],
+		"likes": []
+	},
+	"authors": [
+		{
+			"$oid": "5c1a8aa8165c6705df6e5cba"
+		}
+	],
+	"bookcases": [],
+	"categories": [],
+	"hidden": false,
+	"isbn10": "0771047010",
+	"isbn13": "0771047010",
+	"title": "A JEST OF GOD (filmed as Rachel Rachel)",
+	"description": "Neque porro quisquam est qui dolorem",
+	"coverImageUrl": "http://pics.cdn.librarything.com/picsizes/89/da/89da6e144f297b5597a66425a41414141414141.jpg",
+	"releaseAt": {
+		"$date": "1972-01-01T00:00:00.000Z"
+	},
+	"comments": [
+		{
+			"_id": {
+				"$oid": "5c1a8d7b781e9d068f5f1085"
+			},
+			"message": "Excellent!",
+			"createdAt": {
+				"$date": "2018-12-19T18:27:07.925Z"
+			}
+		}
+	],
+	"createdAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.961Z"
 	},
 	"__v": 0
 }]

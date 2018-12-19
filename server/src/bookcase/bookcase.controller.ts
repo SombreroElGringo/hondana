@@ -17,7 +17,7 @@ export class BookcaseController {
   constructor(private readonly bookcaseService: BookcaseService) {}
 
   @Post()
-  async createBookcase(@Response() res, @Body() body) {
+  async createBookcase(@Response() res, @Body() body: Bookcase) {
     if (!_.isEmpty(body)) {
       const bookcase: Bookcase = {
         owner: body.owner,

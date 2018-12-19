@@ -17,8 +17,8 @@ async function bootstrap() {
   });
 
   const options = new DocumentBuilder()
-    .setTitle("SNCF-Live API")
-    .setDescription("The SNCF-Live API")
+    .setTitle("Hondana API")
+    .setDescription("The Hondana API")
     .setVersion("1.0")
     .build();
   const document = SwaggerModule.createDocument(app, options);
