@@ -41,15 +41,15 @@ export class AuthService {
       };
 
       await this.bookcaseService.createBookcase({ owner: userInst._id });
-      const userWithBookcase = await this.userService.findByEmail(user.email);
-
+      const bookcase = await this.bookcaseService.findByOwner(userInst._id);
+    
       const token = this.jwtService.sign(payload);
 
       return {
         user: {
-          id: userWithBookcase._id,
-          pseudo: userWithBookcase.pseudo,
-          bookcase: userWithBookcase.bookcases[0],
+          id: userInst._id,
+          pseudo: userInst.pseudo,
+          bookcase: bookcase,
         },
         auth: {
           expiresIn: 3600,
