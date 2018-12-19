@@ -1,65 +1,5 @@
 [{
 	"_id": {
-		"$oid": "5c0acf5208a9d81b53d56289"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d617"
-		},
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d645"
-		}
-	],
-	"name": "Aprilynne Pike",
-	"authorCode": "pikeaprilynne",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.169Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.918Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0accf6b9bada1a75498b6b"
-	},
-	"books": [
-		{
-			"$oid": "5c0acd9b712c951a9ef7c328"
-		},
-		{
-			"$oid": "5c0acd9b712c951a9ef7c32a"
-		},
-		{
-			"$oid": "5c0acd9b712c951a9ef7c32c"
-		},
-		{
-			"$oid": "5c0acd9b712c951a9ef7c32e"
-		},
-		{
-			"$oid": "5c0acd9b712c951a9ef7c326"
-		},
-		{
-			"$oid": "5c0acd9b712c951a9ef7c330"
-		}
-	],
-	"name": "J. K. Rowling",
-	"authorCode": "rowlingjk",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:41:42.715Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:44:27.227Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0acf5208a9d81b53d5628a"
 	},
 	"books": [
@@ -82,78 +22,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T19:56:27.929Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0acf5208a9d81b53d5628d"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d649"
-		}
-	],
-	"name": "Philip Pullman",
-	"authorCode": "pullmanphilip",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.207Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.880Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0acf5208a9d81b53d56284"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d613"
-		},
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d619"
-		},
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d60f"
-		},
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d61d"
-		}
-	],
-	"name": "Christopher Paolini",
-	"authorCode": "paolinichristopher",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.165Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.944Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0acf5208a9d81b53d56288"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d615"
-		}
-	],
-	"name": "Cat Patrick",
-	"authorCode": "patrickcat",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.169Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.910Z"
 	},
 	"__v": 0
 },
@@ -192,6 +60,72 @@
 },
 {
 	"_id": {
+		"$oid": "5c0acf5208a9d81b53d56289"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d617"
+		},
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d645"
+		}
+	],
+	"name": "Aprilynne Pike",
+	"authorCode": "pikeaprilynne",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:51:46.169Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:56:27.918Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0acf5208a9d81b53d56288"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d615"
+		}
+	],
+	"name": "Cat Patrick",
+	"authorCode": "patrickcat",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:51:46.169Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:56:27.910Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0acf5208a9d81b53d5628d"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d649"
+		}
+	],
+	"name": "Philip Pullman",
+	"authorCode": "pullmanphilip",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:51:46.207Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:56:27.880Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0acf5208a9d81b53d5628c"
 	},
 	"books": [
@@ -213,22 +147,67 @@
 },
 {
 	"_id": {
-		"$oid": "5c0acf5208a9d81b53d56293"
+		"$oid": "5c0acf5208a9d81b53d56284"
 	},
 	"books": [
 		{
-			"$oid": "5c0ad06b9033b01bc0c8d62d"
+			"$oid": "5c0ad06b9033b01bc0c8d613"
+		},
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d619"
+		},
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d60f"
+		},
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d61d"
 		}
 	],
-	"name": "Claire Loup",
-	"authorCode": "loupclaire",
+	"name": "Christopher Paolini",
+	"authorCode": "paolinichristopher",
 	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 	"profileImageUrl": "https://picsum.photos/200/300/?random",
 	"createdAt": {
-		"$date": "2018-12-07T19:51:46.207Z"
+		"$date": "2018-12-07T19:51:46.165Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.910Z"
+		"$date": "2018-12-07T19:56:27.944Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0accf6b9bada1a75498b6b"
+	},
+	"books": [
+		{
+			"$oid": "5c0acd9b712c951a9ef7c328"
+		},
+		{
+			"$oid": "5c0acd9b712c951a9ef7c32a"
+		},
+		{
+			"$oid": "5c0acd9b712c951a9ef7c32c"
+		},
+		{
+			"$oid": "5c0acd9b712c951a9ef7c32e"
+		},
+		{
+			"$oid": "5c0acd9b712c951a9ef7c326"
+		},
+		{
+			"$oid": "5c0acd9b712c951a9ef7c330"
+		}
+	],
+	"name": "J. K. Rowling",
+	"authorCode": "rowlingjk",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:41:42.715Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:44:27.227Z"
 	},
 	"__v": 0
 },
@@ -288,45 +267,15 @@
 },
 {
 	"_id": {
-		"$oid": "5c0acf5208a9d81b53d5628e"
+		"$oid": "5c0acf5208a9d81b53d56298"
 	},
 	"books": [
 		{
-			"$oid": "5c0ad06b9033b01bc0c8d63f"
-		},
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d623"
-		},
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d64b"
+			"$oid": "5c0ad06b9033b01bc0c8d637"
 		}
 	],
-	"name": "Ally Condie",
-	"authorCode": "condieally",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.207Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.929Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0acf5208a9d81b53d56295"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d631"
-		},
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d659"
-		}
-	],
-	"name": "Candace Bushnell",
-	"authorCode": "bushnellcandace",
+	"name": "Suzanne Collins",
+	"authorCode": "collinssuzanne",
 	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 	"profileImageUrl": "https://picsum.photos/200/300/?random",
 	"createdAt": {
@@ -356,27 +305,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0acf5208a9d81b53d56298"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d637"
-		}
-	],
-	"name": "Suzanne Collins",
-	"authorCode": "collinssuzanne",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.207Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.929Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0acf5208a9d81b53d56299"
 	},
 	"books": [
@@ -393,6 +321,57 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T19:56:27.910Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0acf5208a9d81b53d56295"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d631"
+		},
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d659"
+		}
+	],
+	"name": "Candace Bushnell",
+	"authorCode": "bushnellcandace",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:51:46.207Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:56:27.929Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0acf5208a9d81b53d5628e"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d63f"
+		},
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d623"
+		},
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d64b"
+		}
+	],
+	"name": "Ally Condie",
+	"authorCode": "condieally",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:51:46.207Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:56:27.929Z"
 	},
 	"__v": 0
 },
@@ -419,6 +398,27 @@
 },
 {
 	"_id": {
+		"$oid": "5c0acf5208a9d81b53d56293"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d62d"
+		}
+	],
+	"name": "Claire Loup",
+	"authorCode": "loupclaire",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:51:46.207Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:56:27.910Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0acf5208a9d81b53d5629a"
 	},
 	"books": [
@@ -435,6 +435,27 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T19:56:27.929Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0acf5208a9d81b53d562a1"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d63b"
+		}
+	],
+	"name": "Agnès Abécassis",
+	"authorCode": "abeacutecassisagnegr",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T19:51:46.207Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T19:56:27.911Z"
 	},
 	"__v": 0
 },
@@ -477,27 +498,6 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T19:56:27.910Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0acf5208a9d81b53d562a1"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d63b"
-		}
-	],
-	"name": "Agnès Abécassis",
-	"authorCode": "abeacutecassisagnegr",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.207Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.911Z"
 	},
 	"__v": 0
 },
@@ -566,27 +566,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0acf5208a9d81b53d562ae"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad06b9033b01bc0c8d629"
-		}
-	],
-	"name": "John Green",
-	"authorCode": "greenjohn",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T19:51:46.208Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T19:56:27.911Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad1da7c05971bf155a00b"
 	},
 	"books": [
@@ -650,6 +629,23 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad1da7c05971bf155a012"
+	},
+	"books": [],
+	"name": "Roger Daoust",
+	"authorCode": "daoustroger",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T20:02:34.657Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T20:02:34.657Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad1da7c05971bf155a013"
 	},
 	"books": [
@@ -671,18 +667,22 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a012"
+		"$oid": "5c0acf5208a9d81b53d562ae"
 	},
-	"books": [],
-	"name": "Roger Daoust",
-	"authorCode": "daoustroger",
+	"books": [
+		{
+			"$oid": "5c0ad06b9033b01bc0c8d629"
+		}
+	],
+	"name": "John Green",
+	"authorCode": "greenjohn",
 	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 	"profileImageUrl": "https://picsum.photos/200/300/?random",
 	"createdAt": {
-		"$date": "2018-12-07T20:02:34.657Z"
+		"$date": "2018-12-07T19:51:46.208Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T20:02:34.657Z"
+		"$date": "2018-12-07T19:56:27.911Z"
 	},
 	"__v": 0
 },
@@ -697,63 +697,6 @@
 	],
 	"name": "Encyclopaedia Universalis",
 	"authorCode": "universalisencyclopa",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T20:02:34.657Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T20:04:13.257Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a011"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad23d8226ce1c191a1837"
-		}
-	],
-	"name": "Douglas J. Schuurman",
-	"authorCode": "schuurmandouglasj",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T20:02:34.657Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T20:04:13.247Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a016"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad23d8226ce1c191a1821"
-		},
-		{
-			"$oid": "5c0ad23d8226ce1c191a1833"
-		},
-		{
-			"$oid": "5c0ad23d8226ce1c191a1813"
-		},
-		{
-			"$oid": "5c0ad23d8226ce1c191a1823"
-		},
-		{
-			"$oid": "5c0ad23d8226ce1c191a1843"
-		},
-		{
-			"$oid": "5c0ad23d8226ce1c191a1831"
-		}
-	],
-	"name": "Samuel Beckett",
-	"authorCode": "beckettsamuel",
 	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 	"profileImageUrl": "https://picsum.photos/200/300/?random",
 	"createdAt": {
@@ -829,15 +772,15 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a01a"
+		"$oid": "5c0ad1da7c05971bf155a011"
 	},
 	"books": [
 		{
-			"$oid": "5c0ad23d8226ce1c191a182b"
+			"$oid": "5c0ad23d8226ce1c191a1837"
 		}
 	],
-	"name": "Bernard Fraysse",
-	"authorCode": "frayssebernard",
+	"name": "Douglas J. Schuurman",
+	"authorCode": "schuurmandouglasj",
 	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 	"profileImageUrl": "https://picsum.photos/200/300/?random",
 	"createdAt": {
@@ -913,27 +856,6 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a021"
-	},
-	"books": [
-		{
-			"$oid": "5c0ad23d8226ce1c191a180b"
-		}
-	],
-	"name": "Florentin Azia Dimbu",
-	"authorCode": "dimbuflorentinazia",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T20:02:34.657Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T20:04:13.247Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
 		"$oid": "5c0ad1da7c05971bf155a022"
 	},
 	"books": [],
@@ -951,22 +873,96 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a024"
+		"$oid": "5c0ad1da7c05971bf155a016"
 	},
 	"books": [
 		{
-			"$oid": "5c0ad23d8226ce1c191a1815"
+			"$oid": "5c0ad23d8226ce1c191a1821"
+		},
+		{
+			"$oid": "5c0ad23d8226ce1c191a1833"
+		},
+		{
+			"$oid": "5c0ad23d8226ce1c191a1813"
+		},
+		{
+			"$oid": "5c0ad23d8226ce1c191a1823"
+		},
+		{
+			"$oid": "5c0ad23d8226ce1c191a1843"
+		},
+		{
+			"$oid": "5c0ad23d8226ce1c191a1831"
 		}
 	],
-	"name": "Parker J. Palmer",
-	"authorCode": "palmerparkerj",
+	"name": "Samuel Beckett",
+	"authorCode": "beckettsamuel",
 	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 	"profileImageUrl": "https://picsum.photos/200/300/?random",
 	"createdAt": {
 		"$date": "2018-12-07T20:02:34.657Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T20:04:13.214Z"
+		"$date": "2018-12-07T20:04:13.257Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad1da7c05971bf155a01a"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad23d8226ce1c191a182b"
+		}
+	],
+	"name": "Bernard Fraysse",
+	"authorCode": "frayssebernard",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T20:02:34.657Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T20:04:13.247Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad1da7c05971bf155a026"
+	},
+	"books": [],
+	"name": "Arnold And Frances L. Ilg With Janet Learned Et Louise Bates-Ames {En Collaboration Avec} Gesell",
+	"authorCode": "gesellarnoldandfranc",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T20:02:34.658Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T20:02:34.658Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c0ad1da7c05971bf155a021"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad23d8226ce1c191a180b"
+		}
+	],
+	"name": "Florentin Azia Dimbu",
+	"authorCode": "dimbuflorentinazia",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T20:02:34.657Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T20:04:13.247Z"
 	},
 	"__v": 0
 },
@@ -993,39 +989,22 @@
 },
 {
 	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a025"
+		"$oid": "5c0ad1da7c05971bf155a024"
 	},
 	"books": [
 		{
-			"$oid": "5c0ad23d8226ce1c191a1817"
+			"$oid": "5c0ad23d8226ce1c191a1815"
 		}
 	],
-	"name": "Jean Guichard",
-	"authorCode": "guichardjean",
+	"name": "Parker J. Palmer",
+	"authorCode": "palmerparkerj",
 	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 	"profileImageUrl": "https://picsum.photos/200/300/?random",
 	"createdAt": {
-		"$date": "2018-12-07T20:02:34.658Z"
+		"$date": "2018-12-07T20:02:34.657Z"
 	},
 	"updatedAt": {
-		"$date": "2018-12-07T20:04:13.248Z"
-	},
-	"__v": 0
-},
-{
-	"_id": {
-		"$oid": "5c0ad1da7c05971bf155a026"
-	},
-	"books": [],
-	"name": "Arnold And Frances L. Ilg With Janet Learned Et Louise Bates-Ames {En Collaboration Avec} Gesell",
-	"authorCode": "gesellarnoldandfranc",
-	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
-	"profileImageUrl": "https://picsum.photos/200/300/?random",
-	"createdAt": {
-		"$date": "2018-12-07T20:02:34.658Z"
-	},
-	"updatedAt": {
-		"$date": "2018-12-07T20:02:34.658Z"
+		"$date": "2018-12-07T20:04:13.214Z"
 	},
 	"__v": 0
 },
@@ -1111,6 +1090,27 @@
 },
 {
 	"_id": {
+		"$oid": "5c0ad1da7c05971bf155a025"
+	},
+	"books": [
+		{
+			"$oid": "5c0ad23d8226ce1c191a1817"
+		}
+	],
+	"name": "Jean Guichard",
+	"authorCode": "guichardjean",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-07T20:02:34.658Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-07T20:04:13.248Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
 		"$oid": "5c0ad1da7c05971bf155a02e"
 	},
 	"books": [
@@ -1190,6 +1190,1865 @@
 	},
 	"updatedAt": {
 		"$date": "2018-12-07T20:04:13.247Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ca4"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f12"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f14"
+		}
+	],
+	"name": "Alice Munro",
+	"authorCode": "munroalice",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.674Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.414Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ca5"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f16"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fb2"
+		}
+	],
+	"name": "Margaret Atwood",
+	"authorCode": "atwoodmargaret",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.682Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ca6"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f18"
+		}
+	],
+	"name": "Ann-Marie MacDonald",
+	"authorCode": "macdonaldannmarie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.682Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ca9"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f1c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f1a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ff8"
+		}
+	],
+	"name": "Maggie O'Farrell",
+	"authorCode": "ofarrellmaggie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.686Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.517Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cab"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f68"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f1e"
+		}
+	],
+	"name": "Julian Barnes",
+	"authorCode": "barnesjulian",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.688Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.250Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cae"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f6a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f20"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f22"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f6c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fec"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1042"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fb4"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fb6"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ffc"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ffa"
+		}
+	],
+	"name": "Jonathan Raban",
+	"authorCode": "rabanjonathan",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.866Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.485Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5caf"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ffe"
+		}
+	],
+	"name": "Barry Unsworth",
+	"authorCode": "unsworthbarry",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.867Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cb2"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f74"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f2c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f2e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f2a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f78"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f76"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1004"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fc2"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fc0"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fbe"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f104e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f104c"
+		}
+	],
+	"name": "Rosemary Sutcliff",
+	"authorCode": "sutcliffrosemary",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.484Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cb0"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f72"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f28"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f26"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f100c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1038"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1048"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1002"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1000"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f104a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fba"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fc6"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1046"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fbc"
+		}
+	],
+	"name": "Gillian Bradshaw",
+	"authorCode": "bradshawgillian",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.867Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.533Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cb5"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f100a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1052"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f32"
+		}
+	],
+	"name": "Ian Mcewan",
+	"authorCode": "mcewanian",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cb7"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f7e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f100e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1056"
+		}
+	],
+	"name": "Sharan Newman",
+	"authorCode": "newmansharan",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.426Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cb8"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f80"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f38"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1012"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1010"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fcc"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1058"
+		}
+	],
+	"name": "Mary Renault",
+	"authorCode": "maryrenault",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.490Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cb9"
+	},
+	"books": [],
+	"name": "Mary Renault",
+	"authorCode": "renaultmary",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cba"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1014"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f103a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fee"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1084"
+		}
+	],
+	"name": "Margaret Laurence",
+	"authorCode": "laurencemargaret",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cbb"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1016"
+		}
+	],
+	"name": "Daphne Du Maurier",
+	"authorCode": "maurierdaphnedu",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cbc"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1018"
+		}
+	],
+	"name": "George Eliot",
+	"authorCode": "eliotgeorge",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cbd"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f101a"
+		}
+	],
+	"name": "Mary Teresa Ronalds",
+	"authorCode": "ronaldsmaryteresa",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cbe"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f8c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f44"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f101c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fd6"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1062"
+		}
+	],
+	"name": "Bill Bryson",
+	"authorCode": "brysonbill",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.427Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cbf"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f8e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f46"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1064"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fd8"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f101e"
+		}
+	],
+	"name": "Paul Theroux",
+	"authorCode": "therouxpaul",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.509Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc0"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f90"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f48"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1066"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1020"
+		}
+	],
+	"name": "Jane Austen",
+	"authorCode": "austenjane",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.397Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc1"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1022"
+		}
+	],
+	"name": "Naomi Mitchison",
+	"authorCode": "mitchisonnaomi",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc2"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f106a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1024"
+		}
+	],
+	"name": "Michael Frayn",
+	"authorCode": "fraynmichael",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.416Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc3"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1026"
+		}
+	],
+	"name": "E. Annie Proulx",
+	"authorCode": "proulxeannie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.367Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc4"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1028"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fe2"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f106e"
+		}
+	],
+	"name": "Henri Troyat",
+	"authorCode": "troyathenri",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.416Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc5"
+	},
+	"books": [],
+	"name": "Henri Troyat, Schriftsteller, Biograph, Frankreich",
+	"authorCode": "troyathenrischriftst",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc6"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f102c"
+		}
+	],
+	"name": "Patrick Suskind",
+	"authorCode": "suskindpatrick",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.868Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc7"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f54"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f9c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1072"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fe6"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f102e"
+		}
+	],
+	"name": "Jonathan Coe",
+	"authorCode": "coejonathan",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.869Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.448Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc8"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fa0"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1076"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1030"
+		}
+	],
+	"name": "Redmond O'Hanlon",
+	"authorCode": "ohanlonredmond",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.869Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cc9"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1032"
+		}
+	],
+	"name": "Irene Nemirovsky",
+	"authorCode": "nemirovskyirene",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.869Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.367Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cca"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f82"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f3a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f107c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1034"
+		}
+	],
+	"name": "Andrea Barrett",
+	"authorCode": "barrettandrea",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.869Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.447Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ccb"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1036"
+		}
+	],
+	"name": "Philippa Gregory",
+	"authorCode": "gregoryphilippa",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.869Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cce"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f103c"
+		}
+	],
+	"name": "Willy Russell",
+	"authorCode": "russellwilly",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.871Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ccf"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f103e"
+		}
+	],
+	"name": "A Barrett",
+	"authorCode": "barretta",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.872Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cd0"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f30"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f7a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fc4"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1050"
+		}
+	],
+	"name": "Kate Atkinson",
+	"authorCode": "atkinsonkate",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.872Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.471Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cd3"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f6e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fb8"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1044"
+		}
+	],
+	"name": "Graham Swift",
+	"authorCode": "swiftgraham",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.872Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cdb"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f34"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f7c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fc8"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1054"
+		}
+	],
+	"name": "Mary Stewart",
+	"authorCode": "stewartmary",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.872Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cde"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f105a"
+		}
+	],
+	"name": "David Sweetman",
+	"authorCode": "sweetmandavid",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.872Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cdf"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f105c"
+		}
+	],
+	"name": "Margaret Forster",
+	"authorCode": "forstermargaret",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.873Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ce1"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f88"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f105e"
+		}
+	],
+	"name": "Leo Tolstoy",
+	"authorCode": "tolstoyleo",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.873Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.367Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ce2"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1060"
+		}
+	],
+	"name": "Stephanie Plowman",
+	"authorCode": "plowmanstephanie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.873Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ce6"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f92"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1068"
+		}
+	],
+	"name": "David Mitchell",
+	"authorCode": "mitchelldavid",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.873Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.426Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5ce8"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f96"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f106c"
+		}
+	],
+	"name": "Rose Tremain",
+	"authorCode": "tremainrose",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.873Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cec"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f9e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1074"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f56"
+		}
+	],
+	"name": "Wilkie Collins",
+	"authorCode": "collinswilkie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.873Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.365Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cee"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1078"
+		}
+	],
+	"name": "Marcel Ayme",
+	"authorCode": "aymemarcel",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.874Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.438Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cef"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fac"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f107a"
+		}
+	],
+	"name": "Kate Morton",
+	"authorCode": "mortonkate",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.874Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.447Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cf1"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f5c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f107e"
+		}
+	],
+	"name": "Susan Cooper",
+	"authorCode": "coopersusan",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.874Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.253Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cf2"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f64"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1080"
+		}
+	],
+	"name": "Salley Vickers",
+	"authorCode": "vickerssalley",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.874Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.388Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5cf3"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f1082"
+		}
+	],
+	"name": "Rachel Cusk",
+	"authorCode": "cuskrachel",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.874Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d05"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f86"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f3e"
+		}
+	],
+	"name": "Elizabeth Gaskell",
+	"authorCode": "gaskellelizabeth",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.875Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.251Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d07"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f42"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f8a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fd4"
+		}
+	],
+	"name": "Helen Hollick",
+	"authorCode": "hollickhelen",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.875Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.513Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d0c"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f4c"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f94"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f5a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fde"
+		}
+	],
+	"name": "Annie Proulx",
+	"authorCode": "proulxannie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.875Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.490Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d0f"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f52"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f9a"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fe4"
+		}
+	],
+	"name": "Ryszard Kapuscinski",
+	"authorCode": "kapuscinskiryszard",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.388Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d13"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fa2"
+		}
+	],
+	"name": "Michel Tournier",
+	"authorCode": "tourniermichel",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.250Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d14"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fa4"
+		}
+	],
+	"name": "Martin Davies",
+	"authorCode": "daviesmartin",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:07.836Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d15"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fa6"
+		}
+	],
+	"name": "Marion Zimmer Bradley",
+	"authorCode": "bradleymarionzimmer",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.249Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d17"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0faa"
+		}
+	],
+	"name": "Iain Banks",
+	"authorCode": "banksiain",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.367Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d16"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fa8"
+		}
+	],
+	"name": "Jennifer Donnelly",
+	"authorCode": "donnellyjennifer",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d19"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fae"
+		}
+	],
+	"name": "Vikram Seth",
+	"authorCode": "sethvikram",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.250Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d1a"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fb0"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fe8"
+		}
+	],
+	"name": "Jane Smiley",
+	"authorCode": "smileyjane",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.407Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d26"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f36"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fca"
+		}
+	],
+	"name": "Persia Woolley",
+	"authorCode": "woolleypersia",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.876Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.489Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d2b"
+	},
+	"books": [],
+	"name": "Richard Powell",
+	"authorCode": "powellrichard",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.877Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:15:04.877Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d30"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f4a"
+		}
+	],
+	"name": "Elizabeth McCracken",
+	"authorCode": "mccrackenelizabeth",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.877Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.250Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d32"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f4e"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fe0"
+		}
+	],
+	"name": "Matthew Kneale",
+	"authorCode": "knealematthew",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.877Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.253Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d37"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f58"
+		}
+	],
+	"name": "Terry Darlington",
+	"authorCode": "darlingtonterry",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.877Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.252Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d3a"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f5e"
+		}
+	],
+	"name": "Helen Walsh",
+	"authorCode": "walshhelen",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.877Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.249Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d3b"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f60"
+		}
+	],
+	"name": "MACDONALD ANNE MARIE",
+	"authorCode": "mariemacdonaldanne",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.878Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.365Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d3c"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f62"
+		}
+	],
+	"name": "Sarah Waters",
+	"authorCode": "waterssarah",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.878Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.252Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d3e"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0f66"
+		},
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fdc"
+		}
+	],
+	"name": "Zoe Heller",
+	"authorCode": "hellerzoe",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.878Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.407Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d4e"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fd0"
+		}
+	],
+	"name": "Elizabeth Cleghorn Gaskell",
+	"authorCode": "gaskellelizabethcleg",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.878Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d53"
+	},
+	"books": [],
+	"name": "T. H. White",
+	"authorCode": "whiteth",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.879Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:15:04.879Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d5b"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0fea"
+		}
+	],
+	"name": "Tim Lott",
+	"authorCode": "lotttim",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.879Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d5f"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ff2"
+		}
+	],
+	"name": "Sebastian Faulks",
+	"authorCode": "faulkssebastian",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.879Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d5e"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ff0"
+		}
+	],
+	"name": "Amelie Nothomb",
+	"authorCode": "nothombamelie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.879Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.369Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d60"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ff4"
+		}
+	],
+	"name": "Amélie Nothomb",
+	"authorCode": "nothombameacutelie",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.879Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.368Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "5c1a8aa8165c6705df6e5d62"
+	},
+	"books": [
+		{
+			"$oid": "5c1a8d7b781e9d068f5f0ff6"
+		}
+	],
+	"name": "John Preston",
+	"authorCode": "prestonjohn",
+	"biography": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+	"profileImageUrl": "https://picsum.photos/200/300/?random",
+	"createdAt": {
+		"$date": "2018-12-19T18:15:04.879Z"
+	},
+	"updatedAt": {
+		"$date": "2018-12-19T18:27:08.252Z"
 	},
 	"__v": 0
 }]
