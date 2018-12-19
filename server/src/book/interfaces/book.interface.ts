@@ -1,4 +1,4 @@
-import { ApiModelProperty } from '@nestjs/swagger';
+import { ApiModelProperty } from "@nestjs/swagger";
 import { Meta } from "./meta.interface";
 import { Comment } from "./comment.interface";
 

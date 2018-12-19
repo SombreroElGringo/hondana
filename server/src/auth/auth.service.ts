@@ -33,7 +33,8 @@ export class AuthService {
 
   async register(user: User): Promise<Object> {
     try {
-      const userInst = await this.userService.createUser(user);
+      await this.userService.createUser(user);
+      const userInst = await this.userService.findByEmail(user.email);
       const payload: JwtPayload = {
         email: userInst.email,
         password: userInst.password,

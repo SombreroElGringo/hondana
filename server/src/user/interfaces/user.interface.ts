@@ -2,7 +2,6 @@ import { Comment } from "./comment.interface";
 import { ApiModelProperty } from "@nestjs/swagger";
 
 export class User {
-
   @ApiModelProperty({ required: false })
   public _id?: string;
   @ApiModelProperty()
