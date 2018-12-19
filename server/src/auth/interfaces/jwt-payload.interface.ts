@@ -1,4 +1,8 @@
-export interface JwtPayload {
+import { ApiModelProperty } from "@nestjs/swagger";
+
+export class JwtPayload {
+  @ApiModelProperty()
   email: string;
+  @ApiModelProperty()
   password: string;
 }

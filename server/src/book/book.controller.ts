@@ -21,7 +21,7 @@ export class BookController {
   ) {}
 
   @Post()
-  async createBook(@Response() res, @Body() body) {
+  async createBook(@Response() res, @Body() body: Book) {
     if (!_.isEmpty(body)) {
       const book: Book = {
         isbn10: body.isbn10,

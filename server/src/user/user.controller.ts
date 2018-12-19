@@ -19,7 +19,7 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Post()
-  async createUser(@Response() res, @Body() body) {
+  async createUser(@Response() res, @Body() body: User) {
     if (!_.isEmpty(body)) {
       const user: User = {
         pseudo: body.pseudo,

@@ -9,7 +9,7 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post("login")
-  async login(@Response() res, @Body() body): Promise<any> {
+  async login(@Response() res, @Body() body: JwtPayload): Promise<any> {
     const PARAMS = ["email", "password"];
     const errors = [];
     PARAMS.map(param => {

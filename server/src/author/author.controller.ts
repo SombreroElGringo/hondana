@@ -18,7 +18,7 @@ export class AuthorController {
   constructor(private readonly authorService: AuthorService) {}
 
   @Post()
-  async createAuthor(@Response() res, @Body() body) {
+  async createAuthor(@Response() res, @Body() body: Author) {
     if (!_.isEmpty(body)) {
       const author: Author = {
         name: body.name,
