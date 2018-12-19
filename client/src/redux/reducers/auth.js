@@ -16,6 +16,8 @@ const handlers = {
   [CHECK_TOKEN_SUCCESS]: (state, { payload }) => state.set('access', payload),
   [HANDLE_AUTH]: (state, { errors }) => state.set('errors', errors),
   [HANDLE_AUTH_SUCCESS]: (state, { payload }) => {
+    payload.user.bookcaseId = payload.user.bookcase._id;
+    delete payload.user.bookcase;
     setCookie('access', JSON.stringify(payload), payload.expiresIn);
     return state.set('access', payload);
   },
