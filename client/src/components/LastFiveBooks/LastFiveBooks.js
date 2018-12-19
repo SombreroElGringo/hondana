@@ -23,7 +23,6 @@ class LastFiveBooks extends React.Component {
 
   render() {
     const { books } = this.state;
-    console.log(books);
     return (
       <div id="LastFiveBooks">
         {books &&
