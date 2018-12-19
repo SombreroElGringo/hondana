@@ -4,7 +4,7 @@ import './Header.css';
 import { mapStateToProps } from '../../utils/redux_helpers';
 import getAccess from '../../redux/selectors/auth/getAccess';
 import { connect } from 'react-redux';
-import { deleteCookie } from '../../utils/cookie_helpers';
+import { deleteCookie} from '../../utils/cookie_helpers';
 
 class Header extends React.Component {
   render() {
@@ -19,7 +19,16 @@ class Header extends React.Component {
           </div>
           {access ? (
             <div className="right">
-              <div>{access.user.pseudo}</div>
+              <div
+                className="clickable"
+                onClick={() =>
+                  (window.location.href = `/bookcases/${
+                    access.user.bookcaseId
+                  }`)
+                }
+              >
+                {access.user.pseudo}
+              </div>
               <div className="clickable" onClick={this.handleLogout}>
                 Logout
               </div>

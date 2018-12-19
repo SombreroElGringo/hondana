@@ -22,7 +22,7 @@ export class AuthService {
       user: {
         id: userInst._id,
         pseudo: userInst.pseudo,
-        bookcaseId: userInst.bookcases[0],
+        bookcaseId: userInst.bookcases[0]['_id'],
       },
       auth: {
         expiresIn: 3600,
@@ -47,7 +47,7 @@ export class AuthService {
         user: {
           id: userInst._id,
           pseudo: userInst.pseudo,
-          bookcaseId: userInst.bookcases[0],
+          bookcaseId: userInst.bookcases[0]['_id'],
         },
         auth: {
           expiresIn: 3600,
