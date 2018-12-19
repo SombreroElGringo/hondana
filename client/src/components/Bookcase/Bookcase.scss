@@ -21,3 +21,12 @@
 .user--pseudo {
   margin-bottom: 1em;
 }
+
+#coordinates--map {
+  height: 300px;
+  width: 100%;
+}
+
+.leaflet-marker-icon {
+  background-image: none;
+}

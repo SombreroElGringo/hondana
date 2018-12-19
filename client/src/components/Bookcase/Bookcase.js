@@ -6,7 +6,7 @@ import './Bookcase.css';
 export default class Bookcase extends Component {
   render() {
     const { data, currentPseudo } = this.props;
-    const { books, owner } = data;
+    const { books, owner, coordinate } = data;
     const ownerPseudo = owner ? owner.pseudo : null;
     const isCurrentUser =
       ownerPseudo && ownerPseudo === currentPseudo ? true : false;
@@ -17,6 +17,7 @@ export default class Bookcase extends Component {
           user={owner}
           isCurrentUser={isCurrentUser}
           isLogged={isLogged}
+          coordinate={coordinate}
         />
         <BookcaseList books={books} isCurrentUser={isCurrentUser} />
       </div>
