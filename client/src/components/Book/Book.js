@@ -14,10 +14,13 @@ import getBookIsRemoved from '../../redux/selectors/bookcases/getBookIsRemoved';
 class Book extends Component {
   state = {
     detail: this.props.detail || false,
+    isDetailActive: false,
   };
 
   handleClick(bookId) {
+    const { isDetailActive } = this.state;
     this.props.showDetail(bookId);
+    this.setState({ isDetailActive: !isDetailActive });
   }
 
   async handleRemoveBookFromBookcase(bookId) {
@@ -32,7 +35,7 @@ class Book extends Component {
 
   render() {
     const { book, isCurrentUser } = this.props;
-    const { detail } = this.state;
+    const { detail, isDetailActive } = this.state;
     const placeholderImg = '/static/media/404_cover_not_found.d98d8fb7.jpg';
     // TODO: CSS nice detail plz
     // U can add more detail if u want
@@ -48,7 +51,11 @@ class Book extends Component {
             className="book--cover"
             alt="cover"
           />
-          <h2 className="book--title">{book.title}</h2>
+          {isDetailActive ? (
+            <h2 className="book--title">{book.title}</h2>
+          ) : (
+            <h2 className="book--title__opened">{book.title}</h2>
+          )}
           <p>Auteur(s): {book.authors.map(author => author.name)}</p>
           <p className="book--description">{book.description}</p>
           {isCurrentUser ? (

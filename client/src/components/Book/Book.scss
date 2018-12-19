@@ -15,9 +15,17 @@
 .book--title {
   font-size: 18px;
   max-width: 160px;
-  max-height: 2em;
+  max-height: 2.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
   padding-bottom: 2em;
+
+  &__opened {
+    padding-top: 1em;
+    max-width: 300px;
+  }
 }
 
 .book--description {

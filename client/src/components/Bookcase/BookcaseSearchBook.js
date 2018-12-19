@@ -57,7 +57,7 @@ class BookcaseSearchBook extends React.Component {
   };
 
   // TODO Improve CSS
-  
+
   render() {
     const { books } = this.props;
     const { isAdded, error } = this.state;
