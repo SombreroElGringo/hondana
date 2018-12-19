@@ -4,7 +4,7 @@ import {
   FETCH_BOOKS_SUCCESS,
   RESET_BOOKS,
 } from '../consts/app';
-import { BOOKS_URL } from '../../utils/api_endpoints';
+import { BOOKS_URL } from '../../utils/constants';
 import axios from 'axios';
 
 export const resetBooks = () => ({

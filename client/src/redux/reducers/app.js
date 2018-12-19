@@ -7,7 +7,7 @@ import {
 } from '../consts/app';
 
 const initState = Map({
-  appName: 'SNCF-LIVE',
+  appName: 'Hondana',
   books: null,
 });
 

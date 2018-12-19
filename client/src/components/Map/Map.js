@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BOOKCASES_URL } from '../../utils/api_endpoints';
+import { BOOKCASES_URL } from '../../utils/constants';
 const L = window.L;
 
 class Map extends Component {
@@ -53,7 +53,7 @@ class Map extends Component {
             )
               .addTo(this.map)
               .on('click', () => {
-                history.push('/bookcases/' + bookcase.owner);
+                history.push('/bookcases/' + bookcase._id);
               });
             return (bookcases[bookcase._id] = {
               coordinate,

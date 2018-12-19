@@ -6,7 +6,7 @@ import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Header from '../../components/Header/Header';
 import AuthPage from '../AuthPage/AuthPage';
 import BookPage from '../BookPage/BookPage';
-import Detail from '../Detail/Detail';
+import BookcasePage from '../BookcasePage/BookcasePage';
 
 class App extends Component {
   render() {
@@ -27,7 +27,11 @@ class App extends Component {
               path="/inscription"
             />
             <Route component={BookPage} exact path="/books/search/" />
-            <Route component={Detail} exact path="/bookcases/:id" />
+            <Route
+              component={BookcasePage}
+              exact
+              path="/bookcases/:bookcaseId"
+            />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

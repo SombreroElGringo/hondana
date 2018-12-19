@@ -32,7 +32,7 @@ export class BookcaseService {
     return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
       {
-        $push: {
+        $addToSet: {
           books: new Types.ObjectId(bookId),
         },
       },

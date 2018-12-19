@@ -5,7 +5,7 @@ import getBooks from '../../redux/selectors/app/getBooks';
 import { connect } from 'react-redux';
 import { fetchBooks } from '../../redux/actions/app';
 import { mapDispatchToProps, mapStateToProps } from '../../utils/redux_helpers';
-import { BOOKCASES_URL } from '../../utils/api_endpoints';
+import { BOOKCASES_URL } from '../../utils/constants';
 import axios from 'axios';
 import moment from 'moment';
 import 'moment/locale/fr';
@@ -61,7 +61,7 @@ class BookPage extends Component {
                     </div>
                     <div className="details">
                       <div className="title">
-                        <Link to={'/bookcases/' + bookcase.owner._id}>
+                        <Link to={'/bookcases/' + bookcase._id}>
                           Bibliothèque de {bookcase.owner.pseudo}
                         </Link>
                       </div>
