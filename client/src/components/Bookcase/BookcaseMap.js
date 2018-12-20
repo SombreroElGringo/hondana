@@ -43,7 +43,12 @@ class BookcaseMap extends React.Component {
   };
 
   setupMap = () => {
-    const { coordinate } = this.props;
+    const {
+      coordinate = {
+        latitude: 44.8613904,
+        longitude: -0.5678797,
+      },
+    } = this.props;
     let position = coordinate;
 
     this.map = L.map('coordinates--map').setView(
