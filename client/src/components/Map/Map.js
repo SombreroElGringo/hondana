@@ -36,6 +36,7 @@ class Map extends Component {
           book.bookcases.map(async bookcase => {
             if (bookcases[bookcase._id])
               return bookcases[bookcase._id].books.push(book);
+            if (!bookcase) return false;
             const coordinate = bookcase.coordinate;
             const marker = L.marker(
               [coordinate.latitude, coordinate.longitude],
