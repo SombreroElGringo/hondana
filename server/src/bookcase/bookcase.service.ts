@@ -64,7 +64,7 @@ export class BookcaseService {
     await this.bookModel.updateOne(
       { _id: new Types.ObjectId(bookId) },
       {
-        $set: {
+        $pull: {
           bookcases: id,
         },
       },
