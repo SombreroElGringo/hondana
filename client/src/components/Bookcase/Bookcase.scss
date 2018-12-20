@@ -1,12 +1,11 @@
 .user--profile {
   background-color: #333738;
   color: #c0c3cd;
+  padding: 16px 32px;
 }
 
 .profile--picture {
-  margin-left: 2em;
   margin-bottom: 2em;
-  margin-top: 1em;
   max-width: 100%;
   height: auto;
 }
@@ -14,7 +13,6 @@
 .user--info {
   display: inline-block;
   vertical-align: top;
-  margin: 1em;
   margin-left: 2em;
 }
 

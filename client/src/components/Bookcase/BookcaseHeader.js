@@ -39,13 +39,13 @@ export default class BookcaseHeader extends Component {
         </div>
         {isCurrentUser ? (
           <div>
+            {showAddBook ? <BookcaseSearchBook /> : null}
             <button onClick={e => this.handleAddBook(e)}>
               Ajouter un livre
             </button>
             <BookcaseMap coordinate={coordinate} />
           </div>
         ) : null}
-        {showAddBook ? <BookcaseSearchBook /> : null}
       </section>
     );
   }
