@@ -42,7 +42,7 @@ export class AuthService {
 
       await this.bookcaseService.createBookcase({ owner: userInst._id });
       const bookcase = await this.bookcaseService.findByOwner(userInst._id);
-    
+
       const token = this.jwtService.sign(payload);
 
       return {

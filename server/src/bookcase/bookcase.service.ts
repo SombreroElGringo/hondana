@@ -2,11 +2,13 @@ import { Model, Types } from "mongoose";
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Bookcase } from "./interfaces/bookcase.interface";
+import { Book } from "./interfaces/book.interface";
 
 @Injectable()
 export class BookcaseService {
   constructor(
     @InjectModel("Bookcase") private readonly bookcaseModel: Model<Bookcase>,
+    @InjectModel("Book") private readonly bookModel: Model<Book>,
   ) {}
 
   async createBookcase(bookcase: Bookcase): Promise<Bookcase> {
@@ -29,6 +31,14 @@ export class BookcaseService {
   }
 
   async addBookInBookcase(id: string, bookId: string) {
+    await this.bookModel.updateOne(
+      { _id: new Types.ObjectId(bookId) },
+      {
+        $addToSet: {
+          bookcases: new Types.ObjectId(id),
+        },
+      },
+    );
     return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
       {
@@ -51,6 +61,14 @@ export class BookcaseService {
   }
 
   async removeBookFromBookcase(id: string, bookId: string) {
+    await this.bookModel.updateOne(
+      { _id: new Types.ObjectId(bookId) },
+      {
+        $set: {
+          bookcases: id,
+        },
+      },
+    );
     return await this.bookcaseModel.updateOne(
       { _id: new Types.ObjectId(id) },
       { $pull: { books: bookId } },
